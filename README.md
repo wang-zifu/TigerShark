@@ -8,16 +8,29 @@ This campaign can be launched against a small group of targets or a mass campaig
 Possible Tools
 *****************
 
--- HiddenEye                                                -- PhishX
--- WeeMan                                                   -- ShellPhish
--- FiercePhish                                              -- Artemis
--- BlackEye                                                 -- PhishBait
--- Phishing-Frenzy                                          -- PhishPoll
--- King-Phisher                                             -- Social_Attacker
--- SocialPhish                                              -- Phisher-Man
--- Gophish                                                  -- TackleBox
--- StalkPhish                                               -- CredSniper
--- PhEmail                                                  -- CatPhish
--- EvilGinx2                                                -- DomainHunter
+- EvilGinx2
+- DomainHunter
 
--- Pupy
+- HiddenEye
+- PhishX
+- WeeMan
+- FiercePhish
+- BlackEye
+- Phishing-Frenzy
+- King-Phisher
+- SocialPhish
+- Gophish
+- StalkPhish
+- CredSniper
+- ShellPhish
+- Artemis
+- PhishBait
+- Social_Attacker
+- Phisher-Man
+- CatPhish
+
+- PhEmail
+- TackleBox
+- PhishPoll
+
+- Pupy
