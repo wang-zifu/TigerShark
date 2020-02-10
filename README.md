@@ -13,31 +13,29 @@
 
 
 # TigerShark
-Mega Phishing tool.
-S1l3nt78
+- Mega Phishing tool.
+<br>
 v0.5 (Alfa)
-
+<br>
+<br>
 Incorporating various different phishing tools and address finders in order to launch a fully customizable phishing page/server in
 whatever scripting language needed. 
 This campaign can be launched against a small group of targets or a mass campaign.
 
-Tools
-*****
+# Tools
 
-- catphish
-- HiddenEye
-- PhishX
-- WeeMan
-- King-Phisher
-- SocialPhish
-- Gophish
-- Artemis
-- PhishBait
-- CatPhish
+- HiddenEye = (https://github.com/DarkSecDevelopers/HiddenEye)
+- PhishX = (https://github.com/rezaaksa/PhishX)
+- WeeMan = (https://github.com/evait-security/weeman)
+- King-Phisher = (https://github.com/securestate/king-phisher)
+- SocialPhish = (https://github.com/UndeadSec/SocialFish)
+- Gophish = (https://github.com/gophish/gophish)
+- Artemis = (https://github.com/sweetsoftware/Artemis)
+- PhishBait = (https://github.com/pan0pt1c0n/PhishBait)
+- CatPhish = (https://github.com/ring0lab/catphish)
+- STP = (https://github.com/PowerScript/STP)
 
-
-Possible Tools
-*****************
+# Possible Tools
 
 - EvilGinx2
 - DomainHunter*
