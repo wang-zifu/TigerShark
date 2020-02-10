@@ -23,5 +23,35 @@ PS3='What would you like to do?'
                     echo -e "${W}CatPhish${NC}"
                     ./scripts/catphish.sh
                     ;;
+                
+                "GoPhish")
+                    echo -e "${W}GoPhish{NC}"
+                    ./scripts/gophish.sh
+                    ;;
 
-             esac
+                "HiddenEye")
+                    echo -e "${W}HiddenEye${NC}"
+                    ./scripts/hiddeneye.sh
+                    ;;
+
+                "PhishBait")
+                    echo -e "${W}PhishBait${NC}"
+                    ./scripts/phishbait.sh
+                    ;;
+
+                "PhishX")
+                    echo -e "${W}PhishX${NC}"
+                    ./scripts/phishx.sh
+                    ;;
+
+                "SocialFish")
+                    echo -e "${W}SocialFish${NC}"
+                    ./scripts/socialfish.sh
+                    ;;
+
+                "STP")
+                    echo -e "${W}STP${NC}"
+                    ./scripts/stp.sh
+                    ;;
+            esac
+        done
