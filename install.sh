@@ -57,7 +57,7 @@ fi
 if [[ -d 'weeman' ]]; then
 	echo ""
 else
-	git clone evait-security/weeman.git
+	git clone https://github.com/evait-security/weeman.git
 fi
 
 #SocialFish - Phishing server, can be used with mobile. (done)
