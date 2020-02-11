@@ -17,6 +17,8 @@
 <br>
 v0.5 (Alfa)
 <br>
+NOTICE: Still in early development. Still Buggy here and there
+<br>
 <br>
 Incorporating various different phishing tools and address finders in order to launch a fully customizable phishing page/server in
 whatever scripting language needed. 
