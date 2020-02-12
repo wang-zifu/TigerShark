@@ -6,7 +6,8 @@
  <a href="#"><img align="center" src="https://img.shields.io/github/issues/s1l3n7h0s7/TigerShark" /></a> 
  <a href="#"><img align="center" src="https://img.shields.io/github/forks/s1l3n7h0s7/TigerShark" /></a>
  <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3n7h0s7/TigerShark" /></a>
- <a href="#"><img align="center" src="https://img.shields.io/badge/Build-v0.5%20(Alfa)-orange"/></a>
+ <a href="#"><img align="center" src="https://img.shields.io/badge/Build-Beta-orange"/></a>
+ <a href="#"><img align="center" src="https://img.shields.io/badge/Version-1-yellow"/></a>
  <br>
   <a href="#"><img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen"</a>
 </p>
@@ -15,7 +16,7 @@
 # TigerShark
 - Mega Phishing tool.
 <br>
-v0.5 (Alfa)
+v1 (Beta)
 <br>
 NOTICE: Still in early development. Still Buggy here and there
 <br>

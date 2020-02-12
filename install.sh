@@ -28,6 +28,7 @@ else
 	cd catphish
 	bundle install
 	echo -e "${W}CatPhish Installed${NC}"
+	cd ..
 fi
 
 #Gophish (done)
@@ -41,6 +42,7 @@ else
 	sudo cp gophish -t /usr/sbin
 	sudo chown $USER:$USER /usr/sbin/gophish
 	echo -e "${W}GoPhish Installed${NC}"
+	cd ..
 fi
 
 #PhishX - Phishing generator with multiple tools (*useful*) (done)
@@ -53,6 +55,7 @@ else
 	bash installer.sh
 	python3 PhishX.py
 	echo -e "${W}PhishX Installed${NC}"
+	cd ..
 fi
 
 #WeeMan
@@ -70,6 +73,7 @@ else
 	cd SocialFish
 	python3 -m pip install -r requirements.txt
 	echo -e "${W}SocialPhish Installed${NC}"
+	cd ..
 fi
 
 #Artemis - Phishing page generator (clones a page, and allows your choice of selecter parameters.) (done)
@@ -80,6 +84,7 @@ else
 	cd Artemis
 	python2 -m pip install -r requirements.txt
 	echo -e "${W}Artemis Installed${NC}"
+	cd ..
 fi
 
 #PhishBait - Email harvester for attacks. (done)
@@ -118,6 +123,7 @@ else
 	sudo pip3 install -r requirements.txt
 	sudo pip3 install requests
 	echo -e "${W}HiddenEye Installed${NC}"
+	cd ..
 fi
 
 # PhEmail
@@ -134,6 +140,7 @@ else
 	git clone https://github.com/threatexpress/domainhunter
 	cd domainhunter
 	sudo python3 -m pip install -r requirements.txt
+	cd ..
 fi
 
 # CredSniper
@@ -145,6 +152,7 @@ else
 	sudo python3 -m pip install -r requirements.txt
 	chmod +x install.sh
 	./install.sh
+	cd ..
 fi
 
 
