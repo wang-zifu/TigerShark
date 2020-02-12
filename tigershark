@@ -1,0 +1,151 @@
+#!/bin/bash
+ORNG='\033[0;33m'
+NC='\033[0m'
+W='\033[1;37m'
+LP='\033[1;35m'
+YLW='\033[1;33m'
+LBBLUE='\e[104m'
+# Gathering Modules
+# Gathering Module Selector
+gathering_mods(){
+    PS3='What would you like to do?'
+        options=("Gather Potential eMails for Campaign" "Gather Potential Domains for Campaign") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Gather Potential eMails for Campaign")
+                    email_collection
+                    ;;
+
+                "Gather Potential Domains for Campaign")
+                    domain_collection
+                    ;;
+                              
+            esac
+        done    
+}
+# Email Collection Modules
+email_collection(){
+   PS3='Please select the tool for email gathering'
+        options=("PhishBait") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "PhishBait")
+                    ./Modules/Gathering/Email/phishbait.sh
+                    ;;
+             
+            esac
+        done 
+}
+# Domain Collection Modules
+domain_collection(){
+    PS3='Please select the tool for domain gathering'
+        options=("CatPhish" "DomainHunter") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "CatPhish")
+                    ./Modules/Gathering/Domain/catphish.sh
+                    ;;
+             
+                "DomainHunter")
+                    ./Modules/Gathering/Domain/domainhunter.sh
+            esac
+        done
+}
+
+# Exploitation Modules 
+# Exploitation Module Selector
+phishing_mods(){
+    PS3='What would you like to do?'
+        options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Create a Single-Page Phishing Site")
+                    single_pole
+                    ;;
+
+                "Create a Multi-Page/Phishing Campaign")
+                    trawler
+                    ;;
+                              
+            esac
+        done
+}
+# Single-Page Tools
+single_pole(){
+    PS3='Please Select Your Tool for Single-Page Phisher Generation'        options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Artemis")
+                    ./Modules/Phishing/Singular/artemis.sh
+                    ;;
+             
+                "HiddenEye")
+                    ./Modules/Phishing/Singular/hiddeneye.sh
+                    ;;
+
+                "PhishX")
+                    ./Modules/Phishing/Singular/phishx.sh
+                    ;;
+                
+                "WeeMan")
+                    ./Modules/Phishing/Singular/weeman.sh
+                    ;;
+
+                "CredSniper")
+                    ./Modules/Phishing/Singular/credsniper.sh
+                    ;;
+
+            esac
+        done
+}
+# Multi-Page Tools
+trawler(){
+    PS3='Please Select Your Tool for Campaign Phisher Generation'        
+    options=("GoPhish" "SocialFish" "STP" "King-Phisher") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "GoPhish")
+                    ./Modules/Phishing/Trawler/gophish.sh
+                    ;;
+             
+                "SocialFish")
+                    ./Modules/Phishing/Trawler/socialfish.sh
+                    ;;
+
+                "STP")
+                    ./Modules/Phishing/Trawler/stp.sh
+                    ;;
+
+                "King-Phisher")
+                    ./Modules/Phishing/Trawler/king_phisher.sh
+                    ;;
+
+            esac
+        done
+}
+
+# Start of TigerShark
+echo -e "${ORNG}"
+figlet -f mini "TigerShark"
+echo -e "${NC}"
+PS3='What would you like to do?'
+        options=("Gather" "Phish") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Gather")
+                    gathering_mods
+                    ;;
+
+                "Phish")
+                    phishing_mods
+                    ;;
+                              
+            esac
+        done

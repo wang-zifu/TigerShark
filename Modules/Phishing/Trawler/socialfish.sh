@@ -6,11 +6,10 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/gophish
+cd tools/SocialFish
 echo -e "${ORNG}"
-figlet -f mini "GoPhish"
+figlet -f mini "SocialFish"
 echo -e "${NC}"
-xterm ./gophish 
-xterm firefox http://localhost:3333
+python3 SocialFish.py 
 cd ../..
-./tiger.sh
+./tigershark

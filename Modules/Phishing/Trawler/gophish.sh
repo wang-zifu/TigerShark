@@ -6,10 +6,11 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/HiddenEye
+cd tools/gophish
 echo -e "${ORNG}"
-figlet -f mini "HiddenEye"
+figlet -f mini "GoPhish"
 echo -e "${NC}"
-python3 HiddenEye.py 
+xterm ./gophish 
+xterm firefox http://localhost:3333
 cd ../..
-./tiger.sh
+./tigershark

@@ -20,12 +20,11 @@ v0.5 (Alfa)
 NOTICE: Still in early development. Still Buggy here and there
 <br>
 <br>
-Incorporating various different phishing tools and address finders in order to launch a fully customizable phishing page/server in
-whatever scripting language needed. 
+Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
+whatever scripting language needed.
 This campaign can be launched against a small group of targets or a mass campaign.
 
 # Tools
-
 - HiddenEye = (https://github.com/DarkSecDevelopers/HiddenEye)
 - PhishX = (https://github.com/rezaaksa/PhishX)
 - WeeMan = (https://github.com/evait-security/weeman)
@@ -36,20 +35,21 @@ This campaign can be launched against a small group of targets or a mass campaig
 - PhishBait = (https://github.com/pan0pt1c0n/PhishBait)
 - CatPhish = (https://github.com/ring0lab/catphish)
 - STP = (https://github.com/PowerScript/STP)
+- PhEmail = (https://github.com/Dionach/PhEmail)
+- DomainHunter = (https://github.com/threatexpress/domainhunter)
+- CredSniper = (https://github.com/ustayready/CredSniper)
 
 # Possible Tools
+- Pupy*
 
-- EvilGinx2
-- DomainHunter*
+
+
 - FiercePhish
 - BlackEye
 - Phishing-Frenzy
 - StalkPhish
-- CredSniper*
-- ShellPhish*
 - Social_Attacker
 - Phisher-Man
-- PhEmail*
-- TackleBox*
-- PhishPoll
-- Pupy*
+
+
+## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**

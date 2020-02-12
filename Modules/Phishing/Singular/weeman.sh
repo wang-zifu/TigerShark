@@ -6,10 +6,10 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/PhishX
+cd tools/weeman
 echo -e "${ORNG}"
-figlet -f mini "PhishX"
+figlet -f mini "WeeMan"
 echo -e "${NC}"
-python3 PhishX.py 
+python weeman.py 
 cd ../..
-./tiger.sh
+./tigershark

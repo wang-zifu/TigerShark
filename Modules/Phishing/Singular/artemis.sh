@@ -17,4 +17,4 @@ sleep 1
 ./builder.py '${DOM}'
 
 cd ../..
-./tiger.sh
+./tigershark
