@@ -6,11 +6,13 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 python3 python3-pip python3-dev
+sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 python3 python3-pip python3-dev python3 virtualenv gnupg certbot
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
 echo -e "If this is okay, hit enter - otherwise Ctrl + c to cancel${NC}"
 read ACCEPT
 echo -e "${LP}================================================================================${NC}"
+chmod +x tigershark
+# Toolinstallations
 if [[ -d 'tools' ]]; then
 	echo ""
 else
@@ -28,7 +30,7 @@ else
 	echo -e "${W}CatPhish Installed${NC}"
 fi
 
-#Gophish
+#Gophish (done)
 if [[ -d 'gophish' ]]; then
 	echo ""
 else
@@ -117,6 +119,34 @@ else
 	sudo pip3 install requests
 	echo -e "${W}HiddenEye Installed${NC}"
 fi
+
+# PhEmail
+if [[ -d 'PhEmail' ]]; then
+	echo ""
+else
+	git clone https://github.com/Dionach/PhEmail
+fi
+
+# DomainHunter
+if [[ -d 'DomainHunter' ]]; then
+	echo ""
+else
+	git clone https://github.com/threatexpress/domainhunter
+	cd domainhunter
+	sudo python3 -m pip install -r requirements.txt
+fi
+
+# CredSniper
+if [[ -d 'CredSniper' ]]; then
+	echo ""
+else
+	git clone https://github.com/s1l3n7h0s7/CredSniper
+	cd CredSniper
+	sudo python3 -m pip install -r requirements.txt
+	chmod +x install.sh
+	./install.sh
+fi
+
 
 echo -e "${W}Please change SocialFish App Key in 'SocialFish/core/config.py'${NC}"
 echo -e "${W}GoPhish default login is admin:gophish${NC}"

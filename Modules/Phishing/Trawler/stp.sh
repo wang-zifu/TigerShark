@@ -28,4 +28,4 @@ rm config.js
 mv config.js.bak config.js
 sleep 2
 cd ../..
-./tiger.sh
+./tigershark

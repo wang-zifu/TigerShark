@@ -38,4 +38,4 @@ PS3='What would you like to do?'
             esac
         done
 cd ../..
-./tiger.sh
+./tigershark

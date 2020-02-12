@@ -37,5 +37,5 @@ else
 fi
 
 cd ../..
-./tiger.sh
+./tigershark
 

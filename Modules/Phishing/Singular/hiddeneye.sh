@@ -6,10 +6,10 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/SocialFish
+cd tools/HiddenEye
 echo -e "${ORNG}"
-figlet -f mini "SocialFish"
+figlet -f mini "HiddenEye"
 echo -e "${NC}"
-python3 SocialFish.py 
+python3 HiddenEye.py 
 cd ../..
-./tiger.sh
+./tigershark
