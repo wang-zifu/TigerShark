@@ -112,6 +112,7 @@ if [[ -d 'HiddenEye' ]]; then
 	echo ""
 else
 	git clone https://github.com/DarkSecDevelopers/HiddenEye.git
+	cd HiddenEye
 	chmod 777 HiddenEye
 	sudo apt-get install python3-pip
 	cd HiddenEye
