@@ -29,6 +29,9 @@ fi
 cd tools
 
 #Catphish (done)
+echo -e "${ORNG}"
+figlet -f slant "CatPhish"
+echo -e "${NC}"
 if [[ -d 'catphish' ]]; then
 	echo ""
 else
@@ -39,6 +42,9 @@ else
 	cd ..
 fi
 
+echo -e "${ORNG}"
+figlet -f slant "GoPhish"
+echo -e "${NC}"
 #Gophish (done)
 if [[ -d 'gophish' ]]; then
 	echo ""
@@ -54,6 +60,9 @@ else
 fi
 
 #PhishX - Phishing generator with multiple tools (*useful*) (done)
+echo -e "${ORNG}"
+figlet -f slant "PhishX"
+echo -e "${NC}"
 if [[ -d 'PhishX' ]]; then
 	echo ""
 else
@@ -67,6 +76,9 @@ else
 fi
 
 #WeeMan
+echo -e "${ORNG}"
+figlet -f slant "WeeMan"
+echo -e "${NC}"
 if [[ -d 'weeman' ]]; then
 	echo ""
 else
@@ -74,6 +86,9 @@ else
 fi
 
 #SocialFish - Phishing server, can be used with mobile. (done)
+echo -e "${ORNG}"
+figlet -f slant "SocialFish"
+echo -e "${NC}"
 if [[ -d 'SocialFish' ]]; then
 	echo ""
 else
@@ -85,6 +100,9 @@ else
 fi
 
 #Artemis - Phishing page generator (clones a page, and allows your choice of selecter parameters.) (done)
+echo -e "${ORNG}"
+figlet -f slant "Artemis"
+echo -e "${NC}"
 if [[ -d 'Artemis' ]]; then
 	echo ""
 else
@@ -96,6 +114,9 @@ else
 fi
 
 #PhishBait - Email harvester for attacks. (done)
+echo -e "${ORNG}"
+figlet -f slant "PhishBait"
+echo -e "${NC}"
 if [[ -d 'PhishBait' ]]; then
 	echo ""
 else
@@ -104,6 +125,9 @@ else
 fi
 
 #STP - Node based phishing server (done)
+echo -e "${ORNG}"
+figlet -f slant "STP"
+echo -e "${NC}"
 if [[ -d 'STP' ]]; then
 	echo ""
 else
@@ -112,6 +136,9 @@ else
 fi
 
 #King-Phisher
+echo -e "${ORNG}"
+figlet -f slant "King-Phisher"
+echo -e "${NC}"
 if [[ -d '/opt/king-phisher' ]]; then
 	echo ""
 else
@@ -121,6 +148,9 @@ else
 fi
 
 #HiddenEye (done)
+echo -e "${ORNG}"
+figlet -f slant "HiddenEye"
+echo -e "${NC}"
 if [[ -d 'HiddenEye' ]]; then
 	echo ""
 else
@@ -135,6 +165,9 @@ else
 fi
 
 # PhEmail
+echo -e "${ORNG}"
+figlet -f slant "PhEmail"
+echo -e "${NC}"
 if [[ -d 'PhEmail' ]]; then
 	echo ""
 else
@@ -142,6 +175,9 @@ else
 fi
 
 # DomainHunter
+echo -e "${ORNG}"
+figlet -f slant "DomainHunter"
+echo -e "${NC}"
 if [[ -d 'domainhunter' ]]; then
 	echo ""
 else
@@ -153,6 +189,9 @@ else
 fi
 
 # CredSniper
+echo -e "${ORNG}"
+figlet -f slant "CredSniper"
+echo -e "${NC}"
 if [[ -d 'CredSniper' ]]; then
 	echo ""
 else
