@@ -135,7 +135,7 @@ echo -e "${ORNG}"
 figlet -f mini "TigerShark"
 echo -e "${NC}"
 PS3='What would you like to do?'
-        options=("Gather" "Phish") 
+        options=("Gather" "Phish" "Update") 
         select opt in "${options[@]}"
         do
             case $opt in
