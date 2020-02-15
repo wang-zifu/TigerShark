@@ -10,6 +10,10 @@ cd tools/SocialFish
 echo -e "${ORNG}"
 figlet -f mini "SocialFish"
 echo -e "${NC}"
-python3 SocialFish.py 
+echo -e "${W}Please enter a login name for SocialFish Server${NC}"
+read USER
+echo -e "${W}Please enter a password for SocialFish Server${NC}"
+read PASS
+python3 SocialFish.py ${USER} ${PASS}
 cd ../..
 ./tigershark
