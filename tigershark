@@ -157,6 +157,7 @@ PS3='What would you like to do?'
                     echo -e "${ORNG}"
                     figlet -f mini "Checking for updates"
                     echo -e "${NC}"
+                    cd /opt/TigerShark
                     git fetch
                     git pull
                     ./install.sh
