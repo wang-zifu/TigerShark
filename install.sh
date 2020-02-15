@@ -12,11 +12,14 @@ echo -e "If this is okay, hit enter - otherwise Ctrl + c to cancel${NC}"
 read ACCEPT
 echo -e "${LP}========================================================================${NC}"
 chmod +x tigershark
-pwd
-cd ..
-sudo mv TigerShark -t /opt
-cd /opt/TigerShark
-
+WRKDIR=$(pwd)
+if [[ ${WRKDIR} == '/opt/TigerShark' ]]; then
+	echo ""
+else
+	cd ..
+	sudo mv TigerShark -t /opt
+	cd /opt/TigerShark
+fi
 # Toolinstallations
 if [[ -d 'tools' ]]; then
 	echo ""
