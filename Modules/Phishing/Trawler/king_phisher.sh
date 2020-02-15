@@ -10,8 +10,8 @@ cd tools/king-phisher
 echo -e "${ORNG}"
 figlet -f mini "King Phisher"
 echo -e "${NC}"
-xterm ./KingPhisher &
-xterm ./KingPhisherServer
+./KingPhisher &
+./KingPhisherServer
 
 cd ../..
 ./tigershark
