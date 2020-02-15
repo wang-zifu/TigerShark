@@ -139,7 +139,7 @@ fi
 echo -e "${ORNG}"
 figlet -f slant "King-Phisher"
 echo -e "${NC}"
-if [[ -d '/opt/king-phisher' ]]; then
+if [[ -d 'king-phisher' ]]; then
 	echo ""
 else
 	wget -q https://github.com/securestate/king-phisher/raw/master/tools/install.sh && \
