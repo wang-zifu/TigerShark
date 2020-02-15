@@ -14,6 +14,6 @@ echo -e "${W}Please enter a login name for SocialFish Server${NC}"
 read USER
 echo -e "${W}Please enter a password for SocialFish Server${NC}"
 read PASS
-python3 SocialFish.py ${USER} ${PASS}
+sudo python3 SocialFish.py ${USER} ${PASS}
 cd ../..
 ./tigershark
