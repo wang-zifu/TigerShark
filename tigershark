@@ -133,26 +133,9 @@ trawler(){
 
 
 
-echo -e "${LP}                             ,_."
-echo -e "                           ./  |                                          _-"
-echo -e "                         ./    |                                       _-'/"
-echo -e "      ______.,         ./      /                                     .'  ("
-echo -e " _---'___._.  '----___/       (                                    ./  /`'"
-echo -e "(,----,_  G \                  \_.                               ./   :"
-echo -e " \___   '--_                      '--._,                       ./    /"
-echo -e " /^^^^^-__          ,,,,,               '-._       /|         /     /"
-echo -e " `,       -        /////                    '`--__/ (_,    ,_/    ./"
-echo -e "   '-_,           ''''' __,                            `--'      /"
-echo -e "       '-_,             \\ `-_                                  ("
-echo -e "           '-_.          \\   \.                                 \_"
-echo -e "          /    '--__,      \\   \.                       ____.     '-._,"
-echo -e "         /        ./ `---____\\   \.______________,---\ (     \,        '-.,"
-echo -e "        |       ./             \\   \        /\  |     \|       `--______---`"
-echo -e "        |     ./                 \\  \      /_/\_!"
-echo -e "        |   ./                     \\ \"
-echo -e "        |  /     *:TIGER SHARK:*     \_\"
-echo -e "        |_/${NC}"
+
 # Start of TigerShark
+cat .vs/1
 echo -e "${ORNG}"
 figlet -f mini "TigerShark"
 echo -e "${NC}"
