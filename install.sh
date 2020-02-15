@@ -10,16 +10,8 @@ sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 pyth
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
 echo -e "If this is okay, hit enter - otherwise Ctrl + c to cancel${NC}"
 read ACCEPT
-echo -e "${LP}========================================================================${NC}"
+echo -e "${LP}================================================================================${NC}"
 chmod +x tigershark
-WRKDIR=$(pwd)
-if [[ ${WRKDIR} == '/opt/TigerShark' ]]; then
-	echo ""
-else
-	cd ..
-	sudo mv TigerShark -t /opt
-	cd /opt/TigerShark
-fi
 # Toolinstallations
 if [[ -d 'tools' ]]; then
 	echo ""
@@ -29,9 +21,6 @@ fi
 cd tools
 
 #Catphish (done)
-echo -e "${ORNG}"
-figlet -f slant "CatPhish"
-echo -e "${NC}"
 if [[ -d 'catphish' ]]; then
 	echo ""
 else
@@ -42,9 +31,6 @@ else
 	cd ..
 fi
 
-echo -e "${ORNG}"
-figlet -f slant "GoPhish"
-echo -e "${NC}"
 #Gophish (done)
 if [[ -d 'gophish' ]]; then
 	echo ""
@@ -60,9 +46,6 @@ else
 fi
 
 #PhishX - Phishing generator with multiple tools (*useful*) (done)
-echo -e "${ORNG}"
-figlet -f slant "PhishX"
-echo -e "${NC}"
 if [[ -d 'PhishX' ]]; then
 	echo ""
 else
@@ -76,9 +59,6 @@ else
 fi
 
 #WeeMan
-echo -e "${ORNG}"
-figlet -f slant "WeeMan"
-echo -e "${NC}"
 if [[ -d 'weeman' ]]; then
 	echo ""
 else
@@ -86,9 +66,6 @@ else
 fi
 
 #SocialFish - Phishing server, can be used with mobile. (done)
-echo -e "${ORNG}"
-figlet -f slant "SocialFish"
-echo -e "${NC}"
 if [[ -d 'SocialFish' ]]; then
 	echo ""
 else
@@ -100,9 +77,6 @@ else
 fi
 
 #Artemis - Phishing page generator (clones a page, and allows your choice of selecter parameters.) (done)
-echo -e "${ORNG}"
-figlet -f slant "Artemis"
-echo -e "${NC}"
 if [[ -d 'Artemis' ]]; then
 	echo ""
 else
@@ -114,9 +88,6 @@ else
 fi
 
 #PhishBait - Email harvester for attacks. (done)
-echo -e "${ORNG}"
-figlet -f slant "PhishBait"
-echo -e "${NC}"
 if [[ -d 'PhishBait' ]]; then
 	echo ""
 else
@@ -125,9 +96,6 @@ else
 fi
 
 #STP - Node based phishing server (done)
-echo -e "${ORNG}"
-figlet -f slant "STP"
-echo -e "${NC}"
 if [[ -d 'STP' ]]; then
 	echo ""
 else
@@ -136,27 +104,20 @@ else
 fi
 
 #King-Phisher
-echo -e "${ORNG}"
-figlet -f slant "King-Phisher"
-echo -e "${NC}"
-if [[ -d 'king-phisher' ]]; then
+if [[ -d '/opt/king-phisher' ]]; then
 	echo ""
 else
-	git clone https://github.com/securestate/king-phisher.git
-	cd king-phisher
 	wget -q https://github.com/securestate/king-phisher/raw/master/tools/install.sh && \
 	sudo bash ./install.sh
 	echo -e "${W}King-Phisher Installed${NC}"
 fi
 
 #HiddenEye (done)
-echo -e "${ORNG}"
-figlet -f slant "HiddenEye"
-echo -e "${NC}"
 if [[ -d 'HiddenEye' ]]; then
 	echo ""
 else
 	git clone https://github.com/DarkSecDevelopers/HiddenEye.git
+	cd HiddenEye
 	chmod 777 HiddenEye
 	sudo apt-get install python3-pip
 	cd HiddenEye
@@ -167,9 +128,6 @@ else
 fi
 
 # PhEmail
-echo -e "${ORNG}"
-figlet -f slant "PhEmail"
-echo -e "${NC}"
 if [[ -d 'PhEmail' ]]; then
 	echo ""
 else
@@ -177,23 +135,16 @@ else
 fi
 
 # DomainHunter
-echo -e "${ORNG}"
-figlet -f slant "DomainHunter"
-echo -e "${NC}"
-if [[ -d 'domainhunter' ]]; then
+if [[ -d 'DomainHunter' ]]; then
 	echo ""
 else
 	git clone https://github.com/threatexpress/domainhunter
 	cd domainhunter
 	sudo python3 -m pip install -r requirements.txt
-	sudo apt-get install python3-pil
 	cd ..
 fi
 
 # CredSniper
-echo -e "${ORNG}"
-figlet -f slant "CredSniper"
-echo -e "${NC}"
 if [[ -d 'CredSniper' ]]; then
 	echo ""
 else
@@ -205,6 +156,25 @@ else
 	cd ..
 fi
 
+echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
+read UPQ
+if [[ $UPQ == "i" ]]; then
+	echo -e "${W}Would you like tigershark to run from anywhere?(y/n)${NC}"
+	read ANY
+	if [[ ${ANY} == "y" ]]; then
+		sudo cp tigershark -t /usr/sbin
+	else
+		echo ""
+	fi
+	echo -e "${W}Please change SocialFish App Key in 'SocialFish/core/config.py'${NC}"
+	echo -e "${W}GoPhish default login is admin:gophish${NC}"
+else
+	if [[ -f /usr/sbin/tigershark ]]; then
+		sudo cp tigershark -t /usr/sbin
+		sudo chown $USER:$USER /usr/sbin/tigershark
+	else
+		echo ""
+	fi
+fi
 
-echo -e "${W}Please change SocialFish App Key in 'SocialFish/core/config.py'${NC}"
-echo -e "${W}GoPhish default login is admin:gophish${NC}"
+
