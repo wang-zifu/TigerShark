@@ -163,6 +163,7 @@ if [[ $UPQ == "i" ]]; then
 	echo -e "${W}Would you like tigershark to run from anywhere?(y/n)${NC}"
 	read ANY
 	if [[ ${ANY} == "y" ]]; then
+		cd /opt/TigerShark
 		sudo cp tigershark -t /usr/sbin
 	else
 		echo ""
