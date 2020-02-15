@@ -104,13 +104,13 @@ else
 fi
 
 #King-Phisher
-if [[ -d '/opt/king-phisher' ]]; then
-	echo ""
-else
-	wget -q https://github.com/securestate/king-phisher/raw/master/tools/install.sh && \
-	sudo bash ./install.sh
-	echo -e "${W}King-Phisher Installed${NC}"
-fi
+#if [[ -d '/opt/king-phisher' ]]; then
+#	echo ""
+#else
+#	wget -q https://github.com/securestate/king-phisher/raw/master/tools/install.sh && \
+#	sudo bash ./install.sh
+#	echo -e "${W}King-Phisher Installed${NC}"
+#fi
 
 #HiddenEye (done)
 if [[ -d 'HiddenEye' ]]; then
