@@ -135,6 +135,7 @@ trawler(){
 
 
 # Start of TigerShark
+echo -e "${LP}"
 cat .vs/1
 echo -e "${ORNG}"
 figlet -f mini "TigerShark"
