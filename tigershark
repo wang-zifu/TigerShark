@@ -146,6 +146,14 @@ PS3='What would you like to do?'
                 "Phish")
                     phishing_mods
                     ;;
-                              
+
+                "Update")
+                    echo -e "${ORNG}"
+                    figlet -f mini "Checking for updates"
+                    echo -e "${NC}"
+                    git fetch
+                    git pull
+                    ./install.sh
+                    ./tigershark           
             esac
         done
