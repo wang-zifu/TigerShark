@@ -142,6 +142,8 @@ echo -e "${NC}"
 if [[ -d 'king-phisher' ]]; then
 	echo ""
 else
+	git clone https://github.com/securestate/king-phisher.git
+	cd king-phisher
 	wget -q https://github.com/securestate/king-phisher/raw/master/tools/install.sh && \
 	sudo bash ./install.sh
 	echo -e "${W}King-Phisher Installed${NC}"
