@@ -20,6 +20,8 @@ v1 (Beta)
 <br>
 NOTICE: Still in early development. Still Buggy here and there
 <br>
+- King-Phisher install not working on Linux
+<br>
 <br>
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
@@ -39,18 +41,5 @@ This campaign can be launched against a small group of targets or a mass campaig
 - PhEmail = (https://github.com/Dionach/PhEmail)
 - DomainHunter = (https://github.com/threatexpress/domainhunter)
 - CredSniper = (https://github.com/ustayready/CredSniper)
-
-# Possible Tools
-- Pupy*
-
-
-
-- FiercePhish
-- BlackEye
-- Phishing-Frenzy
-- StalkPhish
-- Social_Attacker
-- Phisher-Man
-
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
