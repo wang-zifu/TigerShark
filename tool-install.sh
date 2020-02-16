@@ -49,6 +49,9 @@ cd ../CredSniper
 	sudo python3 -m pip install -r requirements.txt
 	chmod +x install.sh
 	./install.sh
-
+# Umbrella
+cd Umbrella
+	chmod +x install.sh
+	sudo ./install.sh
 echo -e "${W}Please change SocialFish App Key in 'SocialFish/core/config.py'${NC}"
 echo -e "${W}GoPhish default login is admin:gophish${NC}"

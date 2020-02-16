@@ -56,11 +56,11 @@ domain_collection(){
         done
 }
 
-# Exploitation Modules 
+# Phishing Modules 
 # Exploitation Module Selector
 phishing_mods(){
     PS3='What would you like to do?'
-        options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign") 
+        options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign" "Create a Dropper") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -71,7 +71,11 @@ phishing_mods(){
                 "Create a Multi-Page/Phishing Campaign")
                     trawler
                     ;;
-                              
+
+                "Create a Dropper")
+                    ./Modules/Phishing/Dropper/umbrella.sh
+                    ;;
+                                 
             esac
         done
 }

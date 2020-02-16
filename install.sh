@@ -157,6 +157,16 @@ else
 	cd ..
 fi
 
+# Umbrella
+if [[ -d 'Umbrella' ]]; then
+	echo ""
+else 
+	git clone https://github.com/4w4k3/Umbrella.git
+	cd Umbrella
+	chmod +x install.sh
+	sudo ./install.sh
+fi
+
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
 read UPQ
 if [[ $UPQ == "i" ]]; then
