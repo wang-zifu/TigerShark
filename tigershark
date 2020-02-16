@@ -165,8 +165,10 @@ PS3='What would you like to do?'
                     git fetch
                     git pull
                     ./install.sh
+                    cd /opt/TigerShark
                     chmod +x Modules --recursive
                     ./tigershark
-		    ;;
+		            ;;
+                    
             esac
         done
