@@ -182,6 +182,7 @@ if [[ $UPQ == "i" ]]; then
 	echo -e "${W}GoPhish default login is admin:gophish${NC}"
 else
 	if [[ -f /usr/sbin/tigershark ]]; then
+		cd /opt/TigerShark
 		sudo cp tigershark -t /usr/sbin
 		sudo chown $USER:$USER /usr/sbin/tigershark
 	else
