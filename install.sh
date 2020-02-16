@@ -135,7 +135,7 @@ else
 fi
 
 # DomainHunter
-if [[ -d 'DomainHunter' ]]; then
+if [[ -d 'domainhunter' ]]; then
 	echo ""
 else
 	git clone https://github.com/threatexpress/domainhunter
