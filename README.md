@@ -14,7 +14,7 @@
 
 
 # TigerShark
-- Mega Phishing tool.
+- Multi-Tooled Phishing Framework
 <br>
 v1 (Beta)
 <br>
