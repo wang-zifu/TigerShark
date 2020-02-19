@@ -5,19 +5,45 @@ W='\033[1;37m'
 LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
-# Gathering Modules
-# Gathering Module Selector
-gathering_mods(){
-    PS3='What would you like to do?'
-        options=("Gather Potential eMails for Campaign" "Gather Potential Domains for Campaign") 
+# Exploitation
+# Metepreter payload
+dropper_mods(){
+    PS3='What payload would you like to create?'
+        options=("Enigma" "html Server Gateway" "Pupy" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
-                "Gather Potential eMails for Campaign")
+                "Enigma")
+                    ./Modules/Droppers/enigma.sh
+                    ;;
+
+                "html Server Gateway(Edge 11 vb RCE)")
+                    ./Modules/Droppers/ie_vb.sh
+                    ;;
+                
+                "Pupy")
+                    ./Modules/Droppers/pupy.sh
+                    ;;
+
+                "Back")
+                    ./tigershark
+                    ;;
+            esac
+        done
+}
+# Recon Modules
+# Gathering Module Selector
+gathering_mods(){
+    PS3='Please define your activity?'
+        options=("Gathering Potential eMail targets for Campaign" "Gathering Potential Domains for Campaign") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Gathering Potential eMail targets for Campaign")
                     email_collection
                     ;;
 
-                "Gather Potential Domains for Campaign")
+                "Gathering Potential Domains for Campaign")
                     domain_collection
                     ;;
                               
@@ -41,7 +67,7 @@ email_collection(){
 # Domain Collection Modules
 domain_collection(){
     PS3='Please select the tool for domain gathering'
-        options=("CatPhish" "DomainHunter") 
+        options=("CatPhish" "DomainHunter" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -51,7 +77,11 @@ domain_collection(){
              
                 "DomainHunter")
                     ./Modules/Gathering/Domain/domainhunter.sh
-		    ;;
+		            ;;
+
+                "Back")
+                    ./tigershark
+                    ;;
             esac
         done
 }
@@ -60,7 +90,7 @@ domain_collection(){
 # Exploitation Module Selector
 phishing_mods(){
     PS3='What would you like to do?'
-        options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign" "Create a Dropper") 
+        options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -71,17 +101,17 @@ phishing_mods(){
                 "Create a Multi-Page/Phishing Campaign")
                     trawler
                     ;;
-
-                "Create a Dropper")
-                    ./Modules/Phishing/Dropper/umbrella.sh
-                    ;;
-                                 
+              
+                "Back")
+                    ./tigershark
+                    ;;                   
             esac
         done
 }
 # Single-Page Tools
 single_pole(){
-    PS3='Please Select Your Tool for Single-Page Phisher Generation'        options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper") 
+    PS3='Please Select Your Tool for Single-Page Phisher Generation'        
+        options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -105,13 +135,17 @@ single_pole(){
                     ./Modules/Phishing/Singular/credsniper.sh
                     ;;
 
+                "Back")
+                    ./tigershark
+                    ;;
+
             esac
         done
 }
 # Multi-Page Tools
 trawler(){
     PS3='Please Select Your Tool for Campaign Phisher Generation'        
-    options=("GoPhish" "SocialFish" "STP") 
+    options=("GoPhish" "SocialFish" "STP" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -127,10 +161,9 @@ trawler(){
                     ./Modules/Phishing/Trawler/stp.sh
                     ;;
 
- #               "King-Phisher")
- #                   ./Modules/Phishing/Trawler/king_phisher.sh
- #                   ;;
-
+                "Back")
+                    ./tigershark
+                    ;;
             esac
         done
 }
@@ -145,16 +178,20 @@ echo -e "${ORNG}"
 figlet -f mini "TigerShark"
 echo -e "${NC}"
 PS3='What would you like to do?'
-        options=("Gather" "Phish" "Update") 
+        options=("Perform Recon" "Deploy Fishing Environment" "Create a Payload" "Update") 
         select opt in "${options[@]}"
         do
             case $opt in
-                "Gather")
+                "Perform Recon")
                     gathering_mods
                     ;;
 
-                "Phish")
+                "Deploy Fishing Environment")
                     phishing_mods
+                    ;;
+
+                "Create a Payload")
+                    dropper_mods
                     ;;
 
                 "Update")

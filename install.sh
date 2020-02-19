@@ -14,7 +14,7 @@ echo -e "${LP}==================================================================
 chmod +x tigershark
 # Toolinstallations
 if [[ -d 'tools' ]]; then
-	echo ""
+	sleep 1
 else
 	mkdir tools
 fi
@@ -22,7 +22,7 @@ cd tools
 
 #Catphish (done)
 if [[ -d 'catphish' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/ring0lab/catphish
 	cd catphish
@@ -33,7 +33,7 @@ fi
 
 #Gophish (done)
 if [[ -d 'gophish' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/gophish/gophish.git
 	cd gophish
@@ -47,7 +47,7 @@ fi
 
 #PhishX - Phishing generator with multiple tools (*useful*) (done)
 if [[ -d 'PhishX' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/rezaaksa/PhishX.git
 	cd PhishX
@@ -60,14 +60,14 @@ fi
 
 #WeeMan
 if [[ -d 'weeman' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/evait-security/weeman.git
 fi
 
 #SocialFish - Phishing server, can be used with mobile. (done)
 if [[ -d 'SocialFish' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/UndeadSec/SocialFish.git
 	cd SocialFish
@@ -78,7 +78,7 @@ fi
 
 #Artemis - Phishing page generator (clones a page, and allows your choice of selecter parameters.) (done)
 if [[ -d 'Artemis' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/sweetsoftware/Artemis.git
 	cd Artemis
@@ -89,7 +89,7 @@ fi
 
 #PhishBait - Email harvester for attacks. (done)
 if [[ -d 'PhishBait' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/pan0pt1c0n/PhishBait.git
 	echo -e "${W}PhishBait Installed${NC}"
@@ -97,24 +97,15 @@ fi
 
 #STP - Node based phishing server (done)
 if [[ -d 'STP' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/PowerScript/STP.git
 	echo -e "${W}STP Installed${NC}"
 fi
 
-#King-Phisher
-#if [[ -d '/opt/king-phisher' ]]; then
-#	echo ""
-#else
-#	wget -q https://github.com/securestate/king-phisher/raw/master/tools/install.sh && \
-#	sudo bash ./install.sh
-#	echo -e "${W}King-Phisher Installed${NC}"
-#fi
-
 #HiddenEye (done)
 if [[ -d 'HiddenEye' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/DarkSecDevelopers/HiddenEye.git
 	cd HiddenEye
@@ -129,14 +120,14 @@ fi
 
 # PhEmail
 if [[ -d 'PhEmail' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/Dionach/PhEmail
 fi
 
 # DomainHunter
 if [[ -d 'domainhunter' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/threatexpress/domainhunter
 	cd domainhunter
@@ -147,7 +138,7 @@ fi
 
 # CredSniper
 if [[ -d 'CredSniper' ]]; then
-	echo ""
+	sleep 1
 else
 	git clone https://github.com/s1l3n7h0s7/CredSniper
 	cd CredSniper
@@ -157,14 +148,29 @@ else
 	cd ..
 fi
 
-# Umbrella
-if [[ -d 'Umbrella' ]]; then
-	echo ""
+# Enigma
+if [[ -d 'Enigma' ]]; then
+	sleep 1
 else 
-	git clone https://github.com/4w4k3/Umbrella.git
-	cd Umbrella
-	chmod +x install.sh
-	sudo ./install.sh
+	git clone https://github.com/UndeadSec/Enigma.git
+fi
+
+# Pupy
+if [[ -d 'pupy' ]]; then
+	sleep 1
+else
+	git clone --recursive https://github.com/n1nj4sec/pupy.git
+	cd pupy
+	python create-workspace.py -DG pupyw
+	sleep 5
+	mv /opt/TigerShark/.vs/pupy.conf.default -t /opt/TigerShark/tools/pupy/pupy
+fi
+
+# ie11 VB Exploit
+if [[ -d 'ie11_vbscript_exploit' ]]; then
+	sleep 1
+else
+	git clone https://github.com/ruthlezs/ie11_vbscript_exploit.git
 fi
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
@@ -176,7 +182,7 @@ if [[ $UPQ == "i" ]]; then
 		cd /opt/TigerShark
 		sudo cp tigershark -t /usr/sbin
 	else
-		echo ""
+		sleep 1
 	fi
 	echo -e "${W}Please change SocialFish App Key in 'SocialFish/core/config.py'${NC}"
 	echo -e "${W}GoPhish default login is admin:gophish${NC}"
@@ -186,7 +192,7 @@ else
 		sudo cp tigershark -t /usr/sbin
 		sudo chown $USER:$USER /usr/sbin/tigershark
 	else
-		echo ""
+		sleep 1
 	fi
 fi
 
