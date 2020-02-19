@@ -14,7 +14,7 @@
 
 
 # TigerShark
-- Multi-Platform Phishing Framework
+- Multi-Tooled Phishing Framework
 <br>
 v1.5 Official Release
 <br>
