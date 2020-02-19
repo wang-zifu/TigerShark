@@ -8,6 +8,11 @@ LBBLUE='\e[104m'
 # Exploitation
 # Metepreter payload
 dropper_mods(){
+    if [[ -d '/opt/TigerShark/Payloads' ]]; then
+        sleep 1
+    else
+        mkdir /opt/TigerShark/Payloads
+    fi
     PS3='What payload would you like to create?'
         options=("Enigma" "html Server Gateway" "Pupy" "Back") 
         select opt in "${options[@]}"

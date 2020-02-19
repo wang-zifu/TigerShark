@@ -176,11 +176,16 @@ fi
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
 read UPQ
 if [[ $UPQ == "i" ]]; then
-	echo -e "${W}Would you like tigershark to run from anywhere?(y/n)${NC}"
+	pwd 
+	cd ..
+	sudo mv TigerShark -t /opt
+	sudo chown $USER:$USER -R /opt/TigerShark
+	echo -e "${W}Would you like tigershark to be able to be run from anywhere?(y/n)${NC}"
 	read ANY
 	if [[ ${ANY} == "y" ]]; then
 		cd /opt/TigerShark
 		sudo cp tigershark -t /usr/sbin
+		sudo chown $USER:$USER /usr/sbin/tigershark
 	else
 		sleep 1
 	fi
