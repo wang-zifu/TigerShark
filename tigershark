@@ -172,6 +172,7 @@ trawler(){
 
 
 # Start of TigerShark
+cd /opt/TigerShark
 echo -e "${LP}"
 cat .vs/1
 echo -e "${ORNG}"
