@@ -7,9 +7,9 @@ YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
 echo -e "${ORNG}"
-figlet -f mini "Umbrella"
+figlet -f mini "Enigma"
 echo -e "${NC}"
-cd tools/Umbrella
-sudo python2 umbrella.py
+cd tools/Enigma
+sudo python2 enigma.py
 cd ../..
 ./tigershark
