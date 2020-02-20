@@ -181,7 +181,7 @@ cd /opt/TigerShark
 echo -e "${LP}"
 cat .vs/1
 echo -e "${ORNG}"
-figlet -f mini "TigerShark"
+figlet -f small "s1l3nt78"
 echo -e "${NC}"
 PS3='What would you like to do?'
         options=("Perform Recon" "Deploy Fishing Environment" "Create a Payload" "Update") 
