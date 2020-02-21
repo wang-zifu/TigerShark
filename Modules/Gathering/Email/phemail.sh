@@ -10,6 +10,11 @@ cd tools/PhEmail
 echo -e "${ORNG}"
 figlet -f mini "PhEmail"
 echo -e "${NC}"
+if [[ -d '/opt/TigerShark/Results/PhEmail' ]]; then
+	sleep 1
+else
+	mkdir /opt/TigerShark/Results/PhEmail
+fi
 echo -e "${W}Please enter term to search on google${NC}"
 read SEARCHTERM
 echo -e "${W}Would you like to search for emails for a specific domain?(y/n)"
@@ -38,10 +43,10 @@ echo -e "${YLW}8- surnamefirstname@example.com"
 echo -e "${YLW}9- firstname_surname@example.com"
 read FORMAT
 if [[ ${DS_ANS} == "y" ]]; then
-	python phemail.py -S ${SEARCHTERM} -d ${DOMAIN} -F ${FORMAT} -p ${PAGES} -v -o ../../Results/${OUTPUT}.txt
+	python phemail.py -S ${SEARCHTERM} -d ${DOMAIN} -F ${FORMAT} -p ${PAGES} -v -o /opt/TigerShark/Results/PhEmail/${OUTPUT}.txt
 else
-	python phemail.py -S ${SEARCHTERM} -F ${FORMAT} -p ${PAGES} -v -o ../../Results/${OUTPUT}.txt
+	python phemail.py -S ${SEARCHTERM} -F ${FORMAT} -p ${PAGES} -v -o /opt/TigerShark/Results/PhEmail/${OUTPUT}.txt
 fi
-echo -e "${W}Results have been save to Results folder${NC}"
+echo -e "${W}Results have been save to 'Results/PhEmail' folder${NC}"
 cd ../..
 ./tigershark

@@ -16,6 +16,11 @@ cd tools/PhishBait
 echo -e "${ORNG}"
 figlet -f mini "PhishBait"
 echo -e "${NC}"
+if [[ -d '/opt/TigerShark/Results/PhishBait' ]]; then
+	sleep 1
+else
+	mkdir /opt/TigerShark/Results/PhishBait
+fi
 echo -e "${W}Options"
 echo -e "1 = [first].[last]@[domain]"
 echo -e "2 = [first][last]@[domain]"
@@ -35,7 +40,8 @@ else
 	python Bing_Scraper.py ${OPTION} ${TARGET} ${OUTPUT}.txt
 	python linkedin_harvest.py ${OUTPUT}.txt ${OPTION} ${TARGET}
 fi
-
+mv ${OUTPUT}.txt -t /opt/TigerShark/Results/PhishBait
+echo -e "${RED}Output has been saved to 'Results/PhishBait' folder${NC}"
 cd ../..
 ./tigershark
 

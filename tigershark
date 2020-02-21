@@ -58,14 +58,25 @@ gathering_mods(){
 # Email Collection Modules
 email_collection(){
    PS3='Please select the tool for email gathering'
-        options=("PhishBait") 
+        options=("PhishBait" "EmailGen" "PhEmail" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
                 "PhishBait")
                     ./Modules/Gathering/Email/phishbait.sh
                     ;;
-             
+
+                "EmailGen")
+                    ./Modules/Gathering/Email/egen.sh
+                    ;;
+
+                "PhEmail")
+                    ./Modules/Gathering/Email/phemail.sh
+                    ;;
+
+                "Back")
+                    ./tigershark
+                    ;;   
             esac
         done 
 }
@@ -95,7 +106,7 @@ domain_collection(){
 # Exploitation Module Selector
 phishing_mods(){
     PS3='What would you like to do?'
-        options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign" "Back") 
+        options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign" "Spam Phishing Mail" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -106,7 +117,11 @@ phishing_mods(){
                 "Create a Multi-Page/Phishing Campaign")
                     trawler
                     ;;
-              
+
+                "Spam Phishing Mail")
+                    spammer
+                    ;;
+
                 "Back")
                     ./tigershark
                     ;;                   
@@ -172,8 +187,27 @@ trawler(){
             esac
         done
 }
+# Phishing Mail Spamming Tools
+spammer(){
+    PS3='Please Select Your Tool for Mail Spamming'        
+    options=("PhEmail" "Neos-Mail Spoofer" "Back") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "PhEmail")
+                    ./Modules/Baiting/phemail.sh
+                    ;;
 
+                "Neos-Mail Spoofer")
+                    ./Modules/Baiting/neos.sh
+                    ;;
 
+                "Back")
+                    ./tigershark
+                    ;;
+            esac
+        done
+}
 
 
 # Start of TigerShark
@@ -183,6 +217,11 @@ cat .vs/1
 echo -e "${ORNG}"
 figlet -f mini "TigerShark"
 echo -e "${NC}"
+if [[ -d '/opt/TigerShark/Results' ]]; then 
+    sleep 1
+else 
+    mkdir /opt/TigerShark/Results
+fi
 PS3='What would you like to do?'
         options=("Perform Recon" "Deploy Fishing Environment" "Create a Payload" "Update") 
         select opt in "${options[@]}"

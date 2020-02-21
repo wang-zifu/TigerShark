@@ -6,7 +6,7 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 python3 python3-pip python3-dev python3 virtualenv gnupg certbot
+sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 python3 python3-pip python3-dev python3 virtualenv gnupg certbot wine wine64
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
 echo -e "If this is okay, hit enter - otherwise Ctrl + c to cancel${NC}"
 read ACCEPT
@@ -171,6 +171,25 @@ if [[ -d 'ie11_vbscript_exploit' ]]; then
 	sleep 1
 else
 	git clone https://github.com/ruthlezs/ie11_vbscript_exploit.git
+fi
+
+# EmailGen
+if [[ -d 'EmailGen' ]]; then
+	sleep 1
+else
+	git clone https://github.com/navisecdelta/EmailGen
+	cd EmailGen
+	sudo gem install bundler:1.16.6
+	bundle install
+fi
+
+# Neos-Mail Spoofer
+if [[ -d 'Neos_Spoofer' ]]; then
+	sleep 1
+else 
+	wget https://github.com/s1l3n7h0s7/Private/blob/master/TigerShark%20Extras/Neos_Spoofer.zip
+	unzip Neos_Spoofer.zip
+	rm Neos_Spoofer.zip
 fi
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
