@@ -192,6 +192,13 @@ else
 	rm Neos_Spoofer.zip
 fi
 
+# CVE-2018-8174
+if [[ -d 'CVE-2018-8174-msf' ]]; then
+	sleep 2
+else
+	git clone https://github.com/Yt1g3r/CVE-2018-8174_EXP.git
+fi
+
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
 read UPQ
 if [[ $UPQ == "i" ]]; then

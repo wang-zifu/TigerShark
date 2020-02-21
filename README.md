@@ -41,5 +41,8 @@ This campaign can be launched against a small group of targets or a mass campaig
 - PhEmail = (https://github.com/Dionach/PhEmail)
 - DomainHunter = (https://github.com/threatexpress/domainhunter)
 - CredSniper = (https://github.com/ustayready/CredSniper)
+- Pupy = (https://github.com/n1nj4sec/pupy)
+- Enigma = (https://github.com/UndeadSec/Enigma)
+- CVE-2018-8174 = https://github.com/Yt1g3r/CVE-2018-8174_EXP)
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**

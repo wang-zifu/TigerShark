@@ -14,7 +14,7 @@ dropper_mods(){
         mkdir /opt/TigerShark/Payloads
     fi
     PS3='What payload would you like to create?'
-        options=("Enigma" "html Server Gateway" "Pupy" "Back") 
+        options=("Enigma" "html Server Gateway" "Pupy" "RCE VBS Exploit" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -28,6 +28,10 @@ dropper_mods(){
                 
                 "Pupy")
                     ./Modules/Droppers/pupy.sh
+                    ;;
+
+                "RCE VBS Exploit")
+                    ./Modules/Droppers/vbs_rce.sh
                     ;;
 
                 "Back")
@@ -215,7 +219,7 @@ cd /opt/TigerShark
 echo -e "${LP}"
 cat .vs/1
 echo -e "${ORNG}"
-figlet -f mini "TigerShark"
+figlet -f small "s1l3nt78"
 echo -e "${NC}"
 if [[ -d '/opt/TigerShark/Results' ]]; then 
     sleep 1
@@ -246,8 +250,8 @@ PS3='What would you like to do?'
                     cd /opt/TigerShark
                     git fetch
                     git pull
-                    chmod +x Modules --recursive
                     ./install.sh
+                    chmod +x Modules --recursive
                     ./tigershark
 		            ;;
 
