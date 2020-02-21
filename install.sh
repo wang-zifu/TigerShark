@@ -140,7 +140,7 @@ fi
 if [[ -d 'CredSniper' ]]; then
 	sleep 1
 else
-	git clone https://github.com/s1l3n7h0s7/CredSniper
+	git clone https://github.com/s1l3nt78/CredSniper
 	cd CredSniper
 	sudo python3 -m pip install -r requirements.txt
 	chmod +x install.sh
