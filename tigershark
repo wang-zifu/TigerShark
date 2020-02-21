@@ -215,7 +215,7 @@ cd /opt/TigerShark
 echo -e "${LP}"
 cat .vs/1
 echo -e "${ORNG}"
-figlet -f mini "TigerShark"
+figlet -f small "s1l3nt78"
 echo -e "${NC}"
 if [[ -d '/opt/TigerShark/Results' ]]; then 
     sleep 1
