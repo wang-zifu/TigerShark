@@ -1,11 +1,11 @@
 <p align="center">
- <img src="https://github.com/s1l3n7h0s7/Private/blob/master/Photos/tigershark-beta.png" alt="" />
+ <img src="https://github.com/s1l3nt78/Private/blob/master/Photos/tigershark-beta.png" alt="" />
 </p>
 
 <p align="center">
- <a href="#"><img align="center" src="https://img.shields.io/github/issues/s1l3n7h0s7/TigerShark" /></a> 
- <a href="#"><img align="center" src="https://img.shields.io/github/forks/s1l3n7h0s7/TigerShark" /></a>
- <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3n7h0s7/TigerShark" /></a>
+ <a href="#"><img align="center" src="https://img.shields.io/github/issues/s1l3nt78/TigerShark" /></a> 
+ <a href="#"><img align="center" src="https://img.shields.io/github/forks/s1l3nt78/TigerShark" /></a>
+ <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark" /></a>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Build-Release-orange"/></a>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Version-1.6.2-yellow"/></a>
  <br>
