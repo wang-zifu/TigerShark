@@ -1,13 +1,13 @@
 <p align="center">
- <img src="https://github.com/s1l3n7h0s7/Private/blob/master/Photos/tigershark-beta.png" alt="" />
+ <img src="https://github.com/s1l3nt78/Private/blob/master/Photos/tigershark-beta.png" alt="" />
 </p>
 
 <p align="center">
- <a href="#"><img align="center" src="https://img.shields.io/github/issues/s1l3n7h0s7/TigerShark" /></a> 
- <a href="#"><img align="center" src="https://img.shields.io/github/forks/s1l3n7h0s7/TigerShark" /></a>
- <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3n7h0s7/TigerShark" /></a>
+ <a href="#"><img align="center" src="https://img.shields.io/github/issues/s1l3nt78/TigerShark" /></a> 
+ <a href="#"><img align="center" src="https://img.shields.io/github/forks/s1l3nt78/TigerShark" /></a>
+ <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark" /></a>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Build-Release-orange"/></a>
- <a href="#"><img align="center" src="https://img.shields.io/badge/Version-1.5-yellow"/></a>
+ <a href="#"><img align="center" src="https://img.shields.io/badge/Version-1.6.2-yellow"/></a>
  <br>
   <a href="#"><img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen"</a>
 </p>
@@ -16,7 +16,7 @@
 # TigerShark
 - Multi-Tooled Phishing Framework
 <br>
-v1.5 Official Release
+v1.6.2 Official Release
 <br>
 NOTICE: Still in early development. Still Buggy here and there
 <br>
@@ -43,6 +43,9 @@ This campaign can be launched against a small group of targets or a mass campaig
 - CredSniper = (https://github.com/ustayready/CredSniper)
 - Pupy = (https://github.com/n1nj4sec/pupy)
 - Enigma = (https://github.com/UndeadSec/Enigma)
+- EmailGen = (https://github.com/navisecdelta/EmailGen)
+- ie11 Broswer Exploit = (https://github.com/ruthlezs/ie11_vbscript_exploit)
+- Neos Email Spoofer
 - CVE-2018-8174 = https://github.com/Yt1g3r/CVE-2018-8174_EXP)
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
