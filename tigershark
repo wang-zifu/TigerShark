@@ -13,7 +13,7 @@ dropper_mods(){
     else
         mkdir /opt/TigerShark/Payloads
     fi
-    PS3='What payload would you like to create?'
+    PS3='How would you like to create your payload?'
         options=("Enigma" "html Server Gateway" "Pupy" "RCE VBS Exploit" "Back") 
         select opt in "${options[@]}"
         do
@@ -30,6 +30,10 @@ dropper_mods(){
                     ./Modules/Droppers/pupy.sh
                     ;;
 
+                "Phantom-Evasion")
+                    ./Modules/Droppers/phantom.sh
+                    ;;
+                    
                 "RCE VBS Exploit")
                     ./Modules/Droppers/vbs_rce.sh
                     ;;

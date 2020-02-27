@@ -199,6 +199,15 @@ else
 	git clone https://github.com/Yt1g3r/CVE-2018-8174_EXP.git
 fi
 
+# Phantom-Evasion
+if [[ -d 'Phantom-Evasion' ]]; then
+	sleep 1
+else 
+	git clone https://github.com/oddcod3/Phantom-Evasion.git
+	cd Phantom-Evasion
+	python3 phantom-evasion.py --setup
+fi
+
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
 read UPQ
 if [[ $UPQ == "i" ]]; then
