@@ -7,7 +7,7 @@
  <a href="#"><img align="center" src="https://img.shields.io/github/forks/s1l3nt78/TigerShark" /></a>
  <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark" /></a>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Build-Release-orange"/></a>
- <a href="#"><img align="center" src="https://img.shields.io/badge/Version-2-yellow"/></a>
+ <a href="#"><img align="center" src="https://img.shields.io/badge/Version-2.2-yellow"/></a>
  <br>
   <a href="#"><img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen"</a>
 </p>
@@ -16,11 +16,7 @@
 # TigerShark
 - Multi-Tooled Phishing Framework
 <br>
-v2 Official Release
-<br>
-NOTICE: Still in early development. Still Buggy here and there
-<br>
-- King-Phisher install not working on Linux
+v2.2 Official Release
 <br>
 <br>
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
@@ -46,6 +42,7 @@ This campaign can be launched against a small group of targets or a mass campaig
 - EmailGen = (https://github.com/navisecdelta/EmailGen)
 - ie11 Broswer Exploit = (https://github.com/ruthlezs/ie11_vbscript_exploit)
 - Neos Email Spoofer
-- CVE-2018-8174 = https://github.com/Yt1g3r/CVE-2018-8174_EXP)
+- CVE-2018-8174 = (https://github.com/Yt1g3r/CVE-2018-8174_EXP)
+- Phantom-Evasion = (https://github.com/oddcod3/Phantom-Evasion)
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
