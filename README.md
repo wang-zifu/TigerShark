@@ -44,5 +44,6 @@ This campaign can be launched against a small group of targets or a mass campaig
 - Neos Email Spoofer
 - CVE-2018-8174 = (https://github.com/Yt1g3r/CVE-2018-8174_EXP)
 - Phantom-Evasion = (https://github.com/oddcod3/Phantom-Evasion)
+- EvilURL = (https://github.com/UnDeadSec/EvilURL.git)
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
