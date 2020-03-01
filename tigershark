@@ -59,6 +59,10 @@ gathering_mods(){
                 "Gathering Potential Domains for Campaign")
                     domain_collection
                     ;;
+
+                "Generate Phishing URL's")
+                    dom_generation
+                    ;;
                               
             esac
         done    
@@ -109,7 +113,23 @@ domain_collection(){
             esac
         done
 }
-
+# Malicious Domain Generation
+dom_generation(){
+    PS3='Please select the tool for domain generation'
+        options=("EvilURL" "Back") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "EvilURL")
+                    ./Modules/Gathering/Generation/evilurl.sh
+                    ;;
+             
+                "Back")
+                    ./tigershark
+                    ;;
+            esac
+        done
+}
 # Phishing Modules 
 # Exploitation Module Selector
 phishing_mods(){

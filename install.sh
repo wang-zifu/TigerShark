@@ -208,6 +208,15 @@ else
 	python3 phantom-evasion.py --setup
 fi
 
+# EvilURL
+if [[ -d 'EvilURL' ]]; then
+	sleep 1
+else 
+	git clone https://github.com/UndeadSec/EvilURL.git
+fi
+
+reset
+
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
 read UPQ
 if [[ $UPQ == "i" ]]; then
