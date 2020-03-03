@@ -215,6 +215,16 @@ else
 	git clone https://github.com/UndeadSec/EvilURL.git
 fi
 
+# Cr3d0v3r
+if [[ -d 'Cr3d0v3r' ]]; then
+	sleep 1
+else
+	git clone https://github.com/D4Vinci/Cr3dOv3r.git
+	cd Cr3dOv3r
+	python3 -m pip install -r requirements.txt
+	python3 Cr3d0v3r.py -h
+fi
+
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"

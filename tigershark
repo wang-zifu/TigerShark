@@ -70,7 +70,7 @@ gathering_mods(){
 # Email Collection Modules
 email_collection(){
    PS3='Please select the tool for email gathering'
-        options=("PhishBait" "EmailGen" "PhEmail" "Back") 
+        options=("PhishBait" "EmailGen" "PhEmail" "Cr3d0v3r" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -84,6 +84,10 @@ email_collection(){
 
                 "PhEmail")
                     ./Modules/Gathering/Email/phemail.sh
+                    ;;
+
+                "Cr3d0v3r")
+                    ./Modules/Gathering/Email/credover.sh
                     ;;
 
                 "Back")
