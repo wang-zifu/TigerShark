@@ -225,6 +225,12 @@ else
 	python3 Cr3d0v3r.py -h
 fi
 
+if [[ =d 'ThunderShell' ]]; then
+	sleep 1
+else
+	git clone https://github.com/Mr-Un1k0d3r/ThunderShell.git
+fi
+
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"

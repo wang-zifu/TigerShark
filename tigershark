@@ -7,6 +7,47 @@ YLW='\033[1;33m'
 LBBLUE='\e[104m'
 # Exploitation
 # Metepreter payload
+attack_opts(){
+    PS3='Would you like to start a CnC server or create a payload?'
+        options=("Start a CnC Server" "Create a Payload" "Back") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Start a CnC Server")
+                    xservers
+                    ;;
+
+                "Create a Payload")
+                    dropper_mods
+                    ;;
+
+                "Back")
+                    ./tigershark
+                    ;;
+
+            esac
+        done
+}
+xservers(){
+    PS3='Please choose your preferred attack server'
+        options=("ThunderShell" "Pupy" "Back") 
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "ThunderShell")
+                    ./Modules/Droppers/thunder.sh
+                    ;;
+
+                "Pupy")
+                    ./Modules/Droppers/pupy.sh
+                    ;;
+
+               "Back")
+                    ./tigershark
+                    ;;
+            esac
+        done
+}
 dropper_mods(){
     if [[ -d '/opt/TigerShark/Payloads' ]]; then
         sleep 1
@@ -18,6 +59,13 @@ dropper_mods(){
         select opt in "${options[@]}"
         do
             case $opt in
+                "ThunderShell")
+                    ./Modules/Droppers/thunder.sh
+                    ;;
+
+                "Pupy")
+                    ./Modules/Droppers/pupy.sh
+                    ;;
                 "Enigma")
                     ./Modules/Droppers/enigma.sh
                     ;;
@@ -26,10 +74,6 @@ dropper_mods(){
                     ./Modules/Droppers/ie_vb.sh
                     ;;
                 
-                "Pupy")
-                    ./Modules/Droppers/pupy.sh
-                    ;;
-
                 "Phantom-Evasion")
                     ./Modules/Droppers/phantom.sh
                     ;;
@@ -255,7 +299,7 @@ else
     mkdir /opt/TigerShark/Results
 fi
 PS3='What would you like to do?'
-        options=("Perform Recon" "Deploy Fishing Environment" "Create a Payload" "Update") 
+        options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -267,8 +311,8 @@ PS3='What would you like to do?'
                     phishing_mods
                     ;;
 
-                "Create a Payload")
-                    dropper_mods
+                "Servers 'n Payloads")
+                    attack_opts
                     ;;
 
                 "Update")
