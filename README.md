@@ -6,6 +6,7 @@
  <a href="#"><img align="center" src="https://img.shields.io/github/issues/s1l3nt78/TigerShark" /></a> 
  <a href="#"><img align="center" src="https://img.shields.io/github/forks/s1l3nt78/TigerShark" /></a>
  <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark" /></a>
+ <br>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Build-Release-orange"/></a>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Version-2.5-yellow"/></a>
  <br>
