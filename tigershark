@@ -55,17 +55,10 @@ dropper_mods(){
         mkdir /opt/TigerShark/Payloads
     fi
     PS3='How would you like to create your payload?'
-        options=("Enigma" "html Server Gateway" "Pupy" "RCE VBS Exploit" "Back") 
+        options=("Enigma" "html Server Gateway(Edge 11 vb RCE)" "Phantom-Evasion" "RCE VBS Exploit" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
-                "ThunderShell")
-                    ./Modules/Droppers/thunder.sh
-                    ;;
-
-                "Pupy")
-                    ./Modules/Droppers/pupy.sh
-                    ;;
                 "Enigma")
                     ./Modules/Droppers/enigma.sh
                     ;;
@@ -284,8 +277,8 @@ spammer(){
             esac
         done
 }
-
-
+#
+#
 # Start of TigerShark
 cd /opt/TigerShark
 echo -e "${LP}"
@@ -299,7 +292,7 @@ else
     mkdir /opt/TigerShark/Results
 fi
 PS3='What would you like to do?'
-        options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update") 
+        options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update" "Quit") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -327,5 +320,8 @@ PS3='What would you like to do?'
                     ./tigershark
 		            ;;
 
+                "Quit")
+                    exit 0
+                    ;;
             esac
         done
