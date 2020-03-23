@@ -48,5 +48,6 @@ This campaign can be launched against a small group of targets or a mass campaig
 - EvilURL = (https://github.com/UnDeadSec/EvilURL.git)
 - Cr3d0v3r = (https://github.com/D4Vinci/Cr3dOv3r)
 - ThunderShell = (https://github.com/Mr-Un1k0d3r/ThunderShell)
+- SpookFlare = (https://github.com/hlldz/SpookFlare)
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
