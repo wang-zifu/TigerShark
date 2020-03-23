@@ -8,7 +8,7 @@
  <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark" /></a>
  <br>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Build-Release-orange"/></a>
- <a href="#"><img align="center" src="https://img.shields.io/badge/Version-2.5-yellow"/></a>
+ <a href="#"><img align="center" src="https://img.shields.io/badge/Version-2.8-red"/></a>
  <br>
   <a href="#"><img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen"</a>
 </p>
@@ -17,7 +17,7 @@
 # TigerShark
 - Multi-Tooled Phishing Framework
 <br>
-v2.5 Official Release
+v2.8 Official Release
 <br>
 <br>
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
