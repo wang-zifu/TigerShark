@@ -55,12 +55,16 @@ dropper_mods(){
         mkdir /opt/TigerShark/Payloads
     fi
     PS3='How would you like to create your payload?'
-        options=("Enigma" "html Server Gateway(Edge 11 vb RCE)" "Phantom-Evasion" "RCE VBS Exploit" "Back") 
+        options=("Enigma" "html Server Gateway(Edge 11 vb RCE)" "SpookFlare" "Phantom-Evasion" "RCE VBS Exploit" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
                 "Enigma")
                     ./Modules/Droppers/enigma.sh
+                    ;;
+
+                "SpookFlare")
+                    ./Modules/Droppers/spooky.sh
                     ;;
 
                 "html Server Gateway(Edge 11 vb RCE)")
