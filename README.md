@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://github.com/s1l3nt78/Private/blob/master/Photos/tigershark-beta.png" alt="" />
+ <img src="https://github.com/s1l3nt78/Private/blob/master/Photos/tigershark-Release.png" alt="" />
 </p>
 
 <p align="center">
