@@ -225,6 +225,16 @@ else
 	python3 Cr3d0v3r.py -h
 fi
 
+# SpookFlare
+if [[ -d 'SpookFlare' ]]; then
+	sleep 1
+else
+	git clone https://github.com/hlldz/SpookFlare.git
+	cd SpookFlare
+	pip install -r requirements.txt
+fi
+
+# ThunderShell
 if [[ -d 'ThunderShell' ]]; then
 	sleep 1
 else
