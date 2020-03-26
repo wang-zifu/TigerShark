@@ -321,14 +321,10 @@ PS3='What would you like to do?'
                     figlet -f mini "Checking for updates"
                     echo -e "${NC}"
                     cd /opt/TigerShark
-                    CHECK=$(git fetch)
-                    if [[ ${CHECK} == 'new tag' ]]; then
-                        git pull
-                        sudo ./install.sh
-                        chmod +x Modules --recursive
-                    else
-                        echo -e "${YLW}TigerShark is up to date${NC}"
-                    fi     
+                    git fetch
+                    git pull
+                    sudo ./install.sh
+                    chmod +x Modules --recursive
                     ./tigershark
 		            ;;
 
