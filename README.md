@@ -49,5 +49,6 @@ This campaign can be launched against a small group of targets or a mass campaig
 - Cr3d0v3r = (https://github.com/D4Vinci/Cr3dOv3r)
 - ThunderShell = (https://github.com/Mr-Un1k0d3r/ThunderShell)
 - SpookFlare = (https://github.com/hlldz/SpookFlare)
+- ADV-Phish = (https://github.com/Ignitetch/AdvPhishing)
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
