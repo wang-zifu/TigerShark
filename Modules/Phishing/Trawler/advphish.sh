@@ -10,7 +10,7 @@ echo -e "${ORNG}"
 figlet -f mini "ADV-Phishing"
 echo -e "${NC}"
 cd tools/AdvPhishing
-./AdvPhishing.sh
+sudo ./AdvPhishing.sh
 sleep 5
 cd ../..
 ./tigershark
