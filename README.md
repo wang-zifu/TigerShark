@@ -17,7 +17,7 @@
 # TigerShark
 - Multi-Tooled Phishing Framework
 <br>
-v2.8 Official Release
+Version 3 Release
 <br>
 <br>
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
