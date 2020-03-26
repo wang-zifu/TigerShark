@@ -241,6 +241,15 @@ else
 	git clone https://github.com/Mr-Un1k0d3r/ThunderShell.git
 fi
 
+# AdvPhishing
+if [[ -d 'AdvPhishing' ]]; then
+	sleep 1
+else
+	git clone https://github.com/Ignitetch/AdvPhishing.git
+	cd AdvPhishing
+	chmod 777 setup.sh
+	sudo ./setup.sh
+fi
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"

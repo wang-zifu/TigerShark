@@ -238,7 +238,7 @@ single_pole(){
 # Multi-Page Tools
 trawler(){
     PS3='Please Select Your Tool for Campaign Phisher Generation'        
-    options=("GoPhish" "SocialFish" "STP" "Back") 
+    options=("GoPhish" "SocialFish" "STP" "ADV-Phishing" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -252,6 +252,10 @@ trawler(){
 
                 "STP")
                     ./Modules/Phishing/Trawler/stp.sh
+                    ;;
+
+                "ADV-Phishing")
+                    ./Modules/Phishing/Trawler/advphish.sh
                     ;;
 
                 "Back")
