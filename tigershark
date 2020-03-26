@@ -55,12 +55,16 @@ dropper_mods(){
         mkdir /opt/TigerShark/Payloads
     fi
     PS3='How would you like to create your payload?'
-        options=("Enigma" "html Server Gateway(Edge 11 vb RCE)" "Phantom-Evasion" "RCE VBS Exploit" "Back") 
+        options=("Enigma" "html Server Gateway(Edge 11 vb RCE)" "SpookFlare" "Phantom-Evasion" "RCE VBS Exploit" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
                 "Enigma")
                     ./Modules/Droppers/enigma.sh
+                    ;;
+
+                "SpookFlare")
+                    ./Modules/Droppers/spooky.sh
                     ;;
 
                 "html Server Gateway(Edge 11 vb RCE)")
@@ -234,7 +238,7 @@ single_pole(){
 # Multi-Page Tools
 trawler(){
     PS3='Please Select Your Tool for Campaign Phisher Generation'        
-    options=("GoPhish" "SocialFish" "STP" "Back") 
+    options=("GoPhish" "SocialFish" "STP" "ADV-Phishing" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -248,6 +252,10 @@ trawler(){
 
                 "STP")
                     ./Modules/Phishing/Trawler/stp.sh
+                    ;;
+
+                "ADV-Phishing")
+                    ./Modules/Phishing/Trawler/advphish.sh
                     ;;
 
                 "Back")
@@ -313,10 +321,14 @@ PS3='What would you like to do?'
                     figlet -f mini "Checking for updates"
                     echo -e "${NC}"
                     cd /opt/TigerShark
-                    git fetch
-                    git pull
-                    ./install.sh
-                    chmod +x Modules --recursive
+                    CHECK=$(git fetch)
+                    if [[ ${CHECK} == 'new tag' ]]; then
+                        git pull
+                        sudo ./install.sh
+                        chmod +x Modules --recursive
+                    else
+                        echo -e "${YLW}TigerShark is up to date${NC}"
+                    fi     
                     ./tigershark
 		            ;;
 

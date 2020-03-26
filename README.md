@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://github.com/s1l3nt78/Private/blob/master/Photos/tigershark-beta.png" alt="" />
+ <img src="https://github.com/s1l3nt78/Private/blob/master/Photos/tigershark-Release.png" alt="" />
 </p>
 
 <p align="center">
@@ -8,7 +8,7 @@
  <a href="#"><img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark" /></a>
  <br>
  <a href="#"><img align="center" src="https://img.shields.io/badge/Build-Release-orange"/></a>
- <a href="#"><img align="center" src="https://img.shields.io/badge/Version-2.5-yellow"/></a>
+ <a href="#"><img align="center" src="https://img.shields.io/badge/Version-2.8-red"/></a>
  <br>
   <a href="#"><img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen"</a>
 </p>
@@ -17,7 +17,7 @@
 # TigerShark
 - Multi-Tooled Phishing Framework
 <br>
-v2.5 Official Release
+v2.8 Official Release
 <br>
 <br>
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
@@ -48,5 +48,6 @@ This campaign can be launched against a small group of targets or a mass campaig
 - EvilURL = (https://github.com/UnDeadSec/EvilURL.git)
 - Cr3d0v3r = (https://github.com/D4Vinci/Cr3dOv3r)
 - ThunderShell = (https://github.com/Mr-Un1k0d3r/ThunderShell)
+- SpookFlare = (https://github.com/hlldz/SpookFlare)
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
