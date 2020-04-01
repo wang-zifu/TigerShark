@@ -33,8 +33,8 @@ This campaign can be launched against a small group of targets or a mass campaig
     $ chmod +x install.sh
     $ sudo ./install.sh
     
-    The install script will allow you the option to use TigerShark from anywhere in your shell
-    or just from the install directory. (/opt/TigerShark)
+    The install script will allow you the option to use TigerShark from anywhere 
+    in your shell or just from the install directory. (/opt/TigerShark)
 
 # Tools
 - HiddenEye = (https://github.com/DarkSecDevelopers/HiddenEye)
