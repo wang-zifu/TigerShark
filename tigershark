@@ -317,16 +317,22 @@ PS3='What would you like to do?'
                     ;;
 
                 "Update")
+                    cd /opt/TigerShark
                     echo -e "${ORNG}"
                     figlet -f mini "Checking for updates"
                     echo -e "${NC}"
-                    cd /opt/TigerShark
                     git fetch
-                    git pull
-                    sudo ./install.sh
-                    chmod +x Modules --recursive
-                    ./tigershark
-		            ;;
+                    VER=$(git pull)
+                    if [[ ${VER} == "Already up to date." ]]; then
+                        echo -e "${LP}"
+                        figlet -f mini "Up to date."
+                        echo -e "${NC}"
+                    else
+                        sudo ./install.sh
+                        chmod +x Modules --recursive
+                        ./tigershark
+		            fi
+                    ;;
 
                 "Quit")
                     exit 0
