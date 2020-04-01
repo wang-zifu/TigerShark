@@ -37,30 +37,54 @@ This campaign can be launched against a small group of targets or a mass campaig
     in your shell or just from the install directory. (/opt/TigerShark)
 
 # Tools
-<a href="https://github.com/DarkSecDevelopers/HiddenEye">HiddenEye</a>
-<a href="https://github.com/rezaaksa/PhishX">PhishX</a>
-<a href="https://github.com/evait-security/weeman">WeeMan</a>
-<a href="https://github.com/securestate/king-phisher">King-Phisher</a>
-<a href="https://github.com/UndeadSec/SocialFish">SocialPhish</a>
-<a href="https://github.com/gophish/gophish">Gophish</a>
-<a href="https://github.com/sweetsoftware/Artemis">Artemis</a>
-<a href="https://github.com/pan0pt1c0n/PhishBait">PhishBait</a>
-<a href="https://github.com/ring0lab/catphish">CatPhish</a>
-<a href="https://github.com/PowerScript/STPv">STP</a>
-<a href="https://github.com/Dionach/PhEmail">PhEmail</a>
-<a href="https://github.com/threatexpress/domainhunter">DomainHunter</a>
-<a href="https://github.com/ustayready/CredSniper">CredSniper</a>
-<a href="https://github.com/n1nj4sec/pupy">Pupy</a>
-<a href="https://github.com/UndeadSec/Enigma">Enigma</a>
-<a href="https://github.com/navisecdelta/EmailGen">EmailGen</a>
-<a href="https://github.com/ruthlezs/ie11_vbscript_exploit">ie11 Broswer Exploit</a>
-- Neos Email Spoofer
-<a href="https://github.com/Yt1g3r/CVE-2018-8174_EXP">CVE-2018-8174</a>
-<a href="https://github.com/oddcod3/Phantom-Evasion">Phantom-Evasion</a>
-<a href="https://github.com/UnDeadSec/EvilURL">EvilURL</a>
-<a href="https://github.com/D4Vinci/Cr3dOv3r">Cr3d0v3r</a>
-<a href="https://github.com/Mr-Un1k0d3r/ThunderShell">ThunderShell</a>
-<a href="https://github.com/hlldz/SpookFlare">SpookFlare</a>
-<a href="https://github.com/Ignitetch/AdvPhishing">ADV-Phish</a>
+- <a href="https://github.com/DarkSecDevelopers/HiddenEye">HiddenEye</a>
+<br>
+- <a href="https://github.com/rezaaksa/PhishX">PhishX</a>
+<br>
+- <a href="https://github.com/evait-security/weeman">WeeMan</a>
+<br>
+- <a href="https://github.com/securestate/king-phisher">King-Phisher</a>
+<br>
+- <a href="https://github.com/UndeadSec/SocialFish">SocialPhish</a>
+<br>
+- <a href="https://github.com/gophish/gophish">Gophish</a>
+<br>
+- <a href="https://github.com/sweetsoftware/Artemis">Artemis</a>
+<br>
+- <a href="https://github.com/pan0pt1c0n/PhishBait">PhishBait</a>
+<br>
+- <a href="https://github.com/ring0lab/catphish">CatPhish</a>
+<br>
+- <a href="https://github.com/PowerScript/STPv">STP</a>
+<br>
+- <a href="https://github.com/Dionach/PhEmail">PhEmail</a>
+<br>
+- <a href="https://github.com/threatexpress/domainhunter">DomainHunter</a>
+<br>
+- <a href="https://github.com/ustayready/CredSniper">CredSniper</a>
+<br>
+- <a href="https://github.com/n1nj4sec/pupy">Pupy</a>
+<br>
+- <a href="https://github.com/UndeadSec/Enigma">Enigma</a>
+<br>
+- <a href="https://github.com/navisecdelta/EmailGen">EmailGen</a>
+<br>
+- <a href="https://github.com/ruthlezs/ie11_vbscript_exploit">ie11 Broswer Exploit</a>
+<br>
+ - Neos Email Spoofer
+<br>
+- <a href="https://github.com/Yt1g3r/CVE-2018-8174_EXP">CVE-2018-8174</a>
+<br>
+- <a href="https://github.com/oddcod3/Phantom-Evasion">Phantom-Evasion</a>
+<br>
+- <a href="https://github.com/UnDeadSec/EvilURL">EvilURL</a>
+<br>
+- <a href="https://github.com/D4Vinci/Cr3dOv3r">Cr3d0v3r</a>
+<br>
+- <a href="https://github.com/Mr-Un1k0d3r/ThunderShell">ThunderShell</a>
+<br>
+- <a href="https://github.com/hlldz/SpookFlare">SpookFlare</a>
+<br>
+ - <a href="https://github.com/Ignitetch/AdvPhishing">ADV-Phish</a>
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
