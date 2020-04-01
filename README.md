@@ -37,30 +37,30 @@ This campaign can be launched against a small group of targets or a mass campaig
     in your shell or just from the install directory. (/opt/TigerShark)
 
 # Tools
-- HiddenEye = (https://github.com/DarkSecDevelopers/HiddenEye)
-- PhishX = (https://github.com/rezaaksa/PhishX)
-- WeeMan = (https://github.com/evait-security/weeman)
-- King-Phisher = (https://github.com/securestate/king-phisher)
-- SocialPhish = (https://github.com/UndeadSec/SocialFish)
-- Gophish = (https://github.com/gophish/gophish)
-- Artemis = (https://github.com/sweetsoftware/Artemis)
-- PhishBait = (https://github.com/pan0pt1c0n/PhishBait)
-- CatPhish = (https://github.com/ring0lab/catphish)
-- STP = (https://github.com/PowerScript/STP)
-- PhEmail = (https://github.com/Dionach/PhEmail)
-- DomainHunter = (https://github.com/threatexpress/domainhunter)
-- CredSniper = (https://github.com/ustayready/CredSniper)
-- Pupy = (https://github.com/n1nj4sec/pupy)
-- Enigma = (https://github.com/UndeadSec/Enigma)
-- EmailGen = (https://github.com/navisecdelta/EmailGen)
-- ie11 Broswer Exploit = (https://github.com/ruthlezs/ie11_vbscript_exploit)
+<a href="https://github.com/DarkSecDevelopers/HiddenEye">HiddenEye</a>
+<a href="https://github.com/rezaaksa/PhishX">PhishX</a>
+<a href="https://github.com/evait-security/weeman">WeeMan</a>
+<a href="https://github.com/securestate/king-phisher">King-Phisher</a>
+<a href="https://github.com/UndeadSec/SocialFish">SocialPhish</a>
+<a href="https://github.com/gophish/gophish">Gophish</a>
+<a href="https://github.com/sweetsoftware/Artemis">Artemis</a>
+<a href="https://github.com/pan0pt1c0n/PhishBait">PhishBait</a>
+<a href="https://github.com/ring0lab/catphish">CatPhish</a>
+<a href="https://github.com/PowerScript/STPv">STP</a>
+<a href="https://github.com/Dionach/PhEmail">PhEmail</a>
+<a href="https://github.com/threatexpress/domainhunter">DomainHunter</a>
+<a href="https://github.com/ustayready/CredSniper">CredSniper</a>
+<a href="https://github.com/n1nj4sec/pupy">Pupy</a>
+<a href="https://github.com/UndeadSec/Enigma">Enigma</a>
+<a href="https://github.com/navisecdelta/EmailGen">EmailGen</a>
+<a href="https://github.com/ruthlezs/ie11_vbscript_exploit">ie11 Broswer Exploit</a>
 - Neos Email Spoofer
-- CVE-2018-8174 = (https://github.com/Yt1g3r/CVE-2018-8174_EXP)
-- Phantom-Evasion = (https://github.com/oddcod3/Phantom-Evasion)
-- EvilURL = (https://github.com/UnDeadSec/EvilURL.git)
-- Cr3d0v3r = (https://github.com/D4Vinci/Cr3dOv3r)
-- ThunderShell = (https://github.com/Mr-Un1k0d3r/ThunderShell)
-- SpookFlare = (https://github.com/hlldz/SpookFlare)
-- ADV-Phish = (https://github.com/Ignitetch/AdvPhishing)
+<a href="https://github.com/Yt1g3r/CVE-2018-8174_EXP">CVE-2018-8174</a>
+<a href="https://github.com/oddcod3/Phantom-Evasion">Phantom-Evasion</a>
+<a href="https://github.com/UnDeadSec/EvilURL">EvilURL</a>
+<a href="https://github.com/D4Vinci/Cr3dOv3r">Cr3d0v3r</a>
+<a href="https://github.com/Mr-Un1k0d3r/ThunderShell">ThunderShell</a>
+<a href="https://github.com/hlldz/SpookFlare">SpookFlare</a>
+<a href="https://github.com/Ignitetch/AdvPhishing">ADV-Phish</a>
 
 ## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
