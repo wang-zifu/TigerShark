@@ -26,6 +26,16 @@ Incorporating various different phishing tools, domain gatherers and mail spamme
 whatever scripting language needed.
 This campaign can be launched against a small group of targets or a mass campaign.
 
+# Installation
+
+    $ git clone https://github.com/s1l3nt78/TigerShark.git
+    $ cd TigerShark
+    $ chmod +x install.sh
+    $ sudo ./install.sh
+    
+    The install script will allow you the option to use TigerShark from anywhere in your shell
+    or just from the install directory. (/opt/TigerShark)
+
 # Tools
 - HiddenEye = (https://github.com/DarkSecDevelopers/HiddenEye)
 - PhishX = (https://github.com/rezaaksa/PhishX)
