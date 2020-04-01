@@ -9,7 +9,7 @@
  <img align="center" src="https://img.shields.io/github/forks/s1l3nt78/TigerShark">
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br>
- <img align="center" src="https://img.shields.io/badge/Build-Release-orange>
+ <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
  <img align="center" src="https://img.shields.io/badge/Version-3-red">
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen">
