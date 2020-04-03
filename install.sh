@@ -10,7 +10,12 @@ sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 pyth
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
 echo -e "If this is okay, hit enter - otherwise Ctrl + c to cancel${NC}"
 read ACCEPT
+pwd
+cd .. 
+sudo mv TigerShark -t /opt
+sudo chown $USER:$USER -R /opt/TigerShark
 echo -e "${LP}================================================================================${NC}"
+cd /opt/TigerShark
 chmod +x tigershark
 # Toolinstallations
 if [[ -d 'tools' ]]; then
@@ -18,7 +23,7 @@ if [[ -d 'tools' ]]; then
 else
 	mkdir tools
 fi
-cd tools
+cd /opt/TigerShark/tools
 
 #Catphish (done)
 if [[ -d 'catphish' ]]; then
@@ -31,6 +36,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 #Gophish (done)
 if [[ -d 'gophish' ]]; then
 	sleep 1
@@ -45,6 +51,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 #PhishX - Phishing generator with multiple tools (*useful*) (done)
 if [[ -d 'PhishX' ]]; then
 	sleep 1
@@ -58,6 +65,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 #WeeMan
 if [[ -d 'weeman' ]]; then
 	sleep 1
@@ -65,6 +73,7 @@ else
 	git clone https://github.com/evait-security/weeman.git
 fi
 
+cd /opt/TigerShark/tools
 #SocialFish - Phishing server, can be used with mobile. (done)
 if [[ -d 'SocialFish' ]]; then
 	sleep 1
@@ -76,6 +85,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 #Artemis - Phishing page generator (clones a page, and allows your choice of selecter parameters.) (done)
 if [[ -d 'Artemis' ]]; then
 	sleep 1
@@ -87,6 +97,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 #PhishBait - Email harvester for attacks. (done)
 if [[ -d 'PhishBait' ]]; then
 	sleep 1
@@ -95,6 +106,7 @@ else
 	echo -e "${W}PhishBait Installed${NC}"
 fi
 
+cd /opt/TigerShark/tools
 #STP - Node based phishing server (done)
 if [[ -d 'STP' ]]; then
 	sleep 1
@@ -103,6 +115,7 @@ else
 	echo -e "${W}STP Installed${NC}"
 fi
 
+cd /opt/TigerShark/tools
 #HiddenEye (done)
 if [[ -d 'HiddenEye' ]]; then
 	sleep 1
@@ -118,6 +131,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 # PhEmail
 if [[ -d 'PhEmail' ]]; then
 	sleep 1
@@ -125,6 +139,7 @@ else
 	git clone https://github.com/Dionach/PhEmail
 fi
 
+cd /opt/TigerShark/tools
 # DomainHunter
 if [[ -d 'domainhunter' ]]; then
 	sleep 1
@@ -136,6 +151,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 # CredSniper
 if [[ -d 'CredSniper' ]]; then
 	sleep 1
@@ -148,6 +164,7 @@ else
 	cd ..
 fi
 
+cd /opt/TigerShark/tools
 # Enigma
 if [[ -d 'Enigma' ]]; then
 	sleep 1
@@ -155,6 +172,7 @@ else
 	git clone https://github.com/UndeadSec/Enigma.git
 fi
 
+cd /opt/TigerShark/tools
 # Pupy
 if [[ -d 'pupy' ]]; then
 	sleep 1
@@ -166,6 +184,7 @@ else
 	mv /opt/TigerShark/.vs/pupy.conf.default -t /opt/TigerShark/tools/pupy/pupy
 fi
 
+cd /opt/TigerShark/tools
 # ie11 VB Exploit
 if [[ -d 'ie11_vbscript_exploit' ]]; then
 	sleep 1
@@ -173,6 +192,7 @@ else
 	git clone https://github.com/ruthlezs/ie11_vbscript_exploit.git
 fi
 
+cd /opt/TigerShark/tools
 # EmailGen
 if [[ -d 'EmailGen' ]]; then
 	sleep 1
@@ -183,6 +203,7 @@ else
 	bundle install
 fi
 
+cd /opt/TigerShark/tools
 # Neos-Mail Spoofer
 if [[ -d 'Neos_Spoofer' ]]; then
 	sleep 1
@@ -192,6 +213,7 @@ else
 	rm Neos_Spoofer.zip
 fi
 
+cd /opt/TigerShark/tools
 # CVE-2018-8174
 if [[ -d 'CVE-2018-8174-msf' ]]; then
 	sleep 2
@@ -199,6 +221,7 @@ else
 	git clone https://github.com/Yt1g3r/CVE-2018-8174_EXP.git
 fi
 
+cd /opt/TigerShark/tools
 # Phantom-Evasion
 if [[ -d 'Phantom-Evasion' ]]; then
 	sleep 1
@@ -208,6 +231,7 @@ else
 	python3 phantom-evasion.py --setup
 fi
 
+cd /opt/TigerShark/tools
 # EvilURL
 if [[ -d 'EvilURL' ]]; then
 	sleep 1
@@ -215,6 +239,7 @@ else
 	git clone https://github.com/UndeadSec/EvilURL.git
 fi
 
+cd /opt/TigerShark/tools
 # Cr3d0v3r
 if [[ -d 'Cr3d0v3r' ]]; then
 	sleep 1
@@ -225,6 +250,7 @@ else
 	python3 Cr3d0v3r.py -h
 fi
 
+cd /opt/TigerShark/tools
 # SpookFlare
 if [[ -d 'SpookFlare' ]]; then
 	sleep 1
@@ -234,6 +260,7 @@ else
 	pip install -r requirements.txt
 fi
 
+cd /opt/TigerShark/tools
 # ThunderShell
 if [[ -d 'ThunderShell' ]]; then
 	sleep 1
@@ -241,6 +268,7 @@ else
 	git clone https://github.com/Mr-Un1k0d3r/ThunderShell.git
 fi
 
+cd /opt/TigerShark/tools
 # AdvPhishing
 if [[ -d 'AdvPhishing' ]]; then
 	sleep 1
@@ -256,8 +284,7 @@ echo -e "${RED}Is this the first time install tigershark or are you updating?(i/
 read UPQ
 if [[ $UPQ == "i" ]]; then
 	pwd 
-	cd ..
-	sudo mv TigerShark -t /opt
+	cd /opt
 	sudo chown $USER:$USER -R /opt/TigerShark
 	echo -e "${W}Would you like tigershark to be able to be run from anywhere?(y/n)${NC}"
 	read ANY
