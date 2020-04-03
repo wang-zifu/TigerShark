@@ -333,7 +333,7 @@ PS3='What would you like to do?'
 	                    read UANS
 	                    if [[ ${UANS} == "y" ]]; then
 		                    echo -e "${W}Please enter the conflicting files (seperated by a space)${NC}"
-		                    read FILES
+		                    read "FILES"
 		                    rm "${FILES}"
 		                    git pull
 	                    else
