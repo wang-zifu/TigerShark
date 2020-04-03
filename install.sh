@@ -187,7 +187,7 @@ fi
 if [[ -d 'Neos_Spoofer' ]]; then
 	sleep 1
 else 
-	wget https://github.com/s1l3nt78/Private/raw/master/TigerShark%20Extras/Neos_Spoofer.zip
+	mv /opt/TigerShark/.vs/Neos_Spoofer.zip -t .
 	unzip Neos_Spoofer.zip
 	rm Neos_Spoofer.zip
 fi
