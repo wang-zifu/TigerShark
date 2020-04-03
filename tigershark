@@ -328,9 +328,20 @@ PS3='What would you like to do?'
                         figlet -f mini "Up to date."
                         echo -e "${NC}"
                     else
-                        sudo ./install.sh
-                        chmod +x Modules --recursive
-                        ./tigershark
+	                    sleep 5
+	                    echo -e "${W}Are there pull conflicts with files?(y/n)${NC}"
+	                    read UANS
+	                    if [[ ${UANS} == "y" ]]; then
+		                    echo -e "${W}Please enter the conflicting files (seperated by a space)${NC}"
+		                    read FILES
+		                    rm "${FILES}"
+		                    git pull
+	                    else
+                            sleep 1
+                        fi
+		                    sudo ./install.sh
+                            chmod +x Modules --recursive
+                            ./tigershark
 		            fi
                     ;;
 
