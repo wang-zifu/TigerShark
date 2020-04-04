@@ -285,68 +285,86 @@ spammer(){
             esac
         done
 }
+update(){
+    cd /opt/TigerShark
+        echo -e "${ORNG}"
+        figlet -f mini "Checking for updates"
+        echo -e "${NC}"
+        git fetch
+        VER=$(git pull)
+        if [[ ${VER} == "Already up to date." ]]; then
+            echo -e "${LP}"
+            figlet -f mini "Up to date."
+            echo -e "${NC}"
+        else
+            sleep 5
+            echo -e "${W}Are there pull conflicts with files?(y/n)${NC}"
+            read UANS
+            if [[ ${UANS} == "y" ]]; then
+                echo -e "${W}Please enter the conflicting files (seperated by a space)${NC}"
+                read "FILES"
+                rm "${FILES}"
+                git pull
+            else
+                sleep 1
+            fi
+                sudo ./install.sh
+                chmod +x Modules --recursive
+                ./tigershark
+        fi
+}
 #
 #
 # Start of TigerShark
+StartTiger(){
+    cd /opt/TigerShark
+    echo -e "${LP}"
+    cat .vs/1
+    echo -e "${ORNG}"
+    figlet -f small "s1l3nt78"
+    echo -e "${NC}"
+    if [[ -d '/opt/TigerShark/Results' ]]; then 
+        sleep 1
+    else 
+        mkdir /opt/TigerShark/Results
+    fi
+    PS3='What would you like to do?'
+            options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update" "Quit") 
+            select opt in "${options[@]}"
+            do
+                case $opt in
+                    "Perform Recon")
+                        gathering_mods
+                        ;;
+
+                    "Deploy Fishing Environment")
+                        phishing_mods
+                        ;;
+
+                    "Servers 'n Payloads")
+                        attack_opts
+                        ;;
+
+                    "Update")
+                        update
+                        ;;
+
+                    "Quit")
+                        exit 0
+                        ;;
+                esac
+            done
+}
 cd /opt/TigerShark
-echo -e "${LP}"
-cat .vs/1
-echo -e "${ORNG}"
-figlet -f small "s1l3nt78"
-echo -e "${NC}"
-if [[ -d '/opt/TigerShark/Results' ]]; then 
-    sleep 1
-else 
-    mkdir /opt/TigerShark/Results
+while getopts "u" options; do            	# Loop: Get the next option;
+	case "${options}" in                                	# use silent error checking;
+                                                        # option a takes 1 arguments.
+		u)
+            update
+            ;;
+	esac
+done
+if [[ $OPTIND == 1 ]]; then				# if no option is passed
+	StartTiger		  	                    # default command is run
 fi
-PS3='What would you like to do?'
-        options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update" "Quit") 
-        select opt in "${options[@]}"
-        do
-            case $opt in
-                "Perform Recon")
-                    gathering_mods
-                    ;;
-
-                "Deploy Fishing Environment")
-                    phishing_mods
-                    ;;
-
-                "Servers 'n Payloads")
-                    attack_opts
-                    ;;
-
-                "Update")
-                    cd /opt/TigerShark
-                    echo -e "${ORNG}"
-                    figlet -f mini "Checking for updates"
-                    echo -e "${NC}"
-                    git fetch
-                    VER=$(git pull)
-                    if [[ ${VER} == "Already up to date." ]]; then
-                        echo -e "${LP}"
-                        figlet -f mini "Up to date."
-                        echo -e "${NC}"
-                    else
-	                    sleep 5
-	                    echo -e "${W}Are there pull conflicts with files?(y/n)${NC}"
-	                    read UANS
-	                    if [[ ${UANS} == "y" ]]; then
-		                    echo -e "${W}Please enter the conflicting files (seperated by a space)${NC}"
-		                    read "FILES"
-		                    rm "${FILES}"
-		                    git pull
-	                    else
-                            sleep 1
-                        fi
-		                    sudo ./install.sh
-                            chmod +x Modules --recursive
-                            ./tigershark
-		            fi
-                    ;;
-
-                "Quit")
-                    exit 0
-                    ;;
-            esac
-        done
+exit 0
