@@ -22,6 +22,7 @@ attack_opts(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
 
@@ -43,6 +44,7 @@ xservers(){
                     ;;
 
                "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
@@ -89,7 +91,7 @@ dropper_mods(){
 # Gathering Module Selector
 gathering_mods(){
     PS3='Please define your activity?'
-        options=("Gathering Potential eMail targets for Campaign" "Gathering Potential Domains for Campaign") 
+        options=("Gathering Potential eMail targets for Campaign" "Gathering Potential Domains for Campaign" "Generate Phishing URL's" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -104,6 +106,10 @@ gathering_mods(){
                 "Generate Phishing URL's")
                     dom_generation
                     ;;
+
+                "Back")
+                    cd /opt/TigerShark
+                    ./tigershark
                               
             esac
         done    
@@ -132,6 +138,7 @@ email_collection(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;   
             esac
@@ -153,6 +160,7 @@ domain_collection(){
 		            ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
@@ -170,6 +178,7 @@ dom_generation(){
                     ;;
              
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
@@ -196,6 +205,7 @@ phishing_mods(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;                   
             esac
@@ -229,6 +239,7 @@ single_pole(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
 
@@ -259,6 +270,7 @@ trawler(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
@@ -280,6 +292,7 @@ spammer(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
@@ -356,15 +369,15 @@ StartTiger(){
             done
 }
 cd /opt/TigerShark
-while getopts "u" options; do            	# Loop: Get the next option;
-	case "${options}" in                                	# use silent error checking;
+while getopts "u" options; do            	            # Loop: Get the next option;
+	case "${options}" in                                # use silent error checking;
                                                         # option a takes 1 arguments.
 		u)
             update
             ;;
 	esac
 done
-if [[ $OPTIND == 1 ]]; then				# if no option is passed
-	StartTiger		  	                    # default command is run
+if [[ $OPTIND == 1 ]]; then				                # if no option is passed
+	StartTiger		  	                                # default command is run
 fi
 exit 0
