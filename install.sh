@@ -219,7 +219,7 @@ fi
 
 cd /opt/TigerShark/tools
 # CVE-2018-8174
-if [[ -d 'CVE-2018-8174-msf' ]]; then
+if [[ -d 'CVE-2018-8174_EXP' ]]; then
 	sleep 2
 else
 	git clone https://github.com/Yt1g3r/CVE-2018-8174_EXP.git
@@ -245,7 +245,7 @@ fi
 
 cd /opt/TigerShark/tools
 # Cr3d0v3r
-if [[ -d 'Cr3d0v3r' ]]; then
+if [[ -d 'Cr3dOv3r' ]]; then
 	sleep 1
 else
 	git clone https://github.com/D4Vinci/Cr3dOv3r.git
