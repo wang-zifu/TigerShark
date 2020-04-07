@@ -8,6 +8,7 @@ LBBLUE='\e[104m'
 # Exploitation
 # Metepreter payload
 attack_opts(){
+    echo -e "${ORNG}"
     PS3='Would you like to start a CnC server or create a payload?'
         options=("Start a CnC Server" "Create a Payload" "Back") 
         select opt in "${options[@]}"
@@ -22,13 +23,16 @@ attack_opts(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
 
             esac
         done
+    echo -e "${NC}"
 }
 xservers(){
+    echo -e "${YLW}"
     PS3='Please choose your preferred attack server'
         options=("ThunderShell" "Pupy" "Back") 
         select opt in "${options[@]}"
@@ -43,10 +47,12 @@ xservers(){
                     ;;
 
                "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
         done
+    echo -e "${NC}"
 }
 dropper_mods(){
     if [[ -d '/opt/TigerShark/Payloads' ]]; then
@@ -54,6 +60,7 @@ dropper_mods(){
     else
         mkdir /opt/TigerShark/Payloads
     fi
+    echo -e "${W}"
     PS3='How would you like to create your payload?'
         options=("Enigma" "html Server Gateway(Edge 11 vb RCE)" "SpookFlare" "Phantom-Evasion" "RCE VBS Exploit" "Back") 
         select opt in "${options[@]}"
@@ -84,12 +91,14 @@ dropper_mods(){
                     ;;
             esac
         done
+    echo -e "${NC}"
 }
 # Recon Modules
 # Gathering Module Selector
 gathering_mods(){
+    echo -e "${RED}"
     PS3='Please define your activity?'
-        options=("Gathering Potential eMail targets for Campaign" "Gathering Potential Domains for Campaign") 
+        options=("Gathering Potential eMail targets for Campaign" "Gathering Potential Domains for Campaign" "Generate Phishing URL's" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -104,12 +113,18 @@ gathering_mods(){
                 "Generate Phishing URL's")
                     dom_generation
                     ;;
+
+                "Back")
+                    cd /opt/TigerShark
+                    ./tigershark
                               
             esac
-        done    
+        done
+    echo -e "${NC}"
 }
 # Email Collection Modules
 email_collection(){
+    echo -e "${LP}"
    PS3='Please select the tool for email gathering'
         options=("PhishBait" "EmailGen" "PhEmail" "Cr3d0v3r" "Back") 
         select opt in "${options[@]}"
@@ -132,13 +147,16 @@ email_collection(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;   
             esac
         done 
+    echo -e "${NC}"
 }
 # Domain Collection Modules
 domain_collection(){
+    echo -e "${LGRY}"
     PS3='Please select the tool for domain gathering'
         options=("CatPhish" "DomainHunter" "Back") 
         select opt in "${options[@]}"
@@ -153,13 +171,16 @@ domain_collection(){
 		            ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
         done
+    echo -e "${NC}"
 }
 # Malicious Domain Generation
 dom_generation(){
+    echo -e "${LBLUE}"
     PS3='Please select the tool for domain generation'
         options=("EvilURL" "Back") 
         select opt in "${options[@]}"
@@ -170,14 +191,17 @@ dom_generation(){
                     ;;
              
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
         done
+    echo -e "${NC}"
 }
 # Phishing Modules 
 # Exploitation Module Selector
 phishing_mods(){
+    echo -e "${ORNG}"
     PS3='What would you like to do?'
         options=("Create a Single-Page Phishing Site" "Create a Multi-Page/Phishing Campaign" "Spam Phishing Mail" "Back") 
         select opt in "${options[@]}"
@@ -196,13 +220,16 @@ phishing_mods(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;                   
             esac
         done
+    echo -e "${NC}"
 }
 # Single-Page Tools
 single_pole(){
+    echo -e "${YLW}"
     PS3='Please Select Your Tool for Single-Page Phisher Generation'        
         options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper" "Back") 
         select opt in "${options[@]}"
@@ -229,14 +256,17 @@ single_pole(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
 
             esac
         done
+    echo -e "${NC}"
 }
 # Multi-Page Tools
 trawler(){
+    echo -e "${LP}"
     PS3='Please Select Your Tool for Campaign Phisher Generation'        
     options=("GoPhish" "SocialFish" "STP" "ADV-Phishing" "Back") 
         select opt in "${options[@]}"
@@ -259,13 +289,16 @@ trawler(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
         done
+    echo -e "${NC}"
 }
 # Phishing Mail Spamming Tools
 spammer(){
+    echo -e "${W}"
     PS3='Please Select Your Tool for Mail Spamming'        
     options=("PhEmail" "Neos-Mail Spoofer" "Back") 
         select opt in "${options[@]}"
@@ -280,10 +313,12 @@ spammer(){
                     ;;
 
                 "Back")
+                    cd /opt/TigerShark
                     ./tigershark
                     ;;
             esac
         done
+    echo -e "${NC}"
 }
 update(){
     cd /opt/TigerShark
@@ -329,8 +364,10 @@ StartTiger(){
     else 
         mkdir /opt/TigerShark/Results
     fi
+    echo -e "${W}"
     PS3='What would you like to do?'
             options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update" "Quit") 
+            echo -e "${ORNG}"
             select opt in "${options[@]}"
             do
                 case $opt in
@@ -351,21 +388,22 @@ StartTiger(){
                         ;;
 
                     "Quit")
-                        exit 0
+                        exit 1
                         ;;
                 esac
             done
+    echo -e "${NC}"
 }
 cd /opt/TigerShark
-while getopts "u" options; do            	# Loop: Get the next option;
-	case "${options}" in                                	# use silent error checking;
+while getopts "u" options; do            	            # Loop: Get the next option;
+	case "${options}" in                                # use silent error checking;
                                                         # option a takes 1 arguments.
 		u)
             update
             ;;
 	esac
 done
-if [[ $OPTIND == 1 ]]; then				# if no option is passed
-	StartTiger		  	                    # default command is run
+if [[ $OPTIND == 1 ]]; then				                # if no option is passed
+	StartTiger		  	                                # default command is run
 fi
 exit 0

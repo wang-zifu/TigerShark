@@ -10,10 +10,14 @@ sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 pyth
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
 echo -e "If this is okay, hit enter - otherwise Ctrl + c to cancel${NC}"
 read ACCEPT
-pwd
-cd .. 
-sudo mv TigerShark -t /opt
-sudo chown $USER:$USER -R /opt/TigerShark
+if [[ -d '/opt/TigerShark' ]]; then
+	sleep 1
+else
+	pwd
+	cd .. 
+	sudo mv TigerShark -t /opt
+	sudo chown $USER:$USER -R /opt/TigerShark
+fi
 echo -e "${LP}================================================================================${NC}"
 cd /opt/TigerShark
 chmod +x tigershark
