@@ -74,7 +74,8 @@ dropper_mods(){
                     ./Modules/Droppers/spooky.sh
                     ;;
 
-                "html Server Gateway(Edge 11 vb RCE)")
+                "Edge 11 vb RCE")
+                    echo -e "${LP}This creates an index.html file to be delivered via an infected/self-hosted server${NC}"
                     ./Modules/Droppers/ie_vb.sh
                     ;;
                 
