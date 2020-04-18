@@ -282,6 +282,21 @@ else
 	chmod 777 setup.sh
 	sudo ./setup.sh
 fi
+
+cd /opt/TigerShark/tools
+#Macro_Pack
+if [[ -d 'macro_pack' ]]; then
+	sleep 1
+else 
+	git clone https://github.com/sevagas/macro_pack.git
+	cd macro_pack
+	python3 -m pip install -r requirements.txt
+	python3 -m pip install pyinstaller
+	mkdir bin
+	cd bin
+	wget https://github.com/sevagas/macro_pack/releases/download/v1.7/macro_pack.exe
+fi
+
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
