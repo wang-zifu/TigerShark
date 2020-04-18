@@ -62,7 +62,60 @@ dropper_mods(){
     fi
     echo -e "${W}"
     PS3='How would you like to create your payload?'
-        options=("Enigma" "html Server Gateway(Edge 11 vb RCE)" "SpookFlare" "Phantom-Evasion" "RCE VBS Exploit" "Back") 
+        options=("Meterpreter payloads" "VB RCE's" "Back") # "Macros"
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Meterpreter payloads")
+                    meters
+                    ;;
+
+                "VB RCE's")
+                    vbs
+                    ;;
+                
+ #               "Macros")
+ #                   macros
+ #                   ;;
+
+                "Back")
+                    ./tigershark
+                    ;;
+            esac
+        done
+    echo -e "${NC}"
+}
+# Macros
+#macros(){
+#    ./Modules/Droppers/macros.sh
+#}
+# VB Payloads
+vbs(){
+     PS3='How would you like to create your payload?'
+        options=("Edge 11 vb RCE" "RCE VBS Exploit" "Back")
+        select opt in "${options[@]}"
+        do
+            case $opt in                
+                "Edge 11 vb RCE")
+                    echo -e "${LP}This creates an index.html file to be delivered via an infected/self-hosted server${NC}"
+                    ./Modules/Droppers/ie_vb.sh
+                    ;;
+
+                 "RCE VBS Exploit")
+                    ./Modules/Droppers/vbs_rce.sh
+                    ;;
+
+                "Back")
+                    dropper_mods
+                    ;;
+            esac
+        done
+    echo -e "${NC}"               
+}
+# Meterpreter Payloads
+meters(){
+    PS3='How would you like to create your payload?'
+        options=("Enigma"  "SpookFlare" "Phantom-Evasion" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -74,21 +127,12 @@ dropper_mods(){
                     ./Modules/Droppers/spooky.sh
                     ;;
 
-                "Edge 11 vb RCE")
-                    echo -e "${LP}This creates an index.html file to be delivered via an infected/self-hosted server${NC}"
-                    ./Modules/Droppers/ie_vb.sh
-                    ;;
-                
                 "Phantom-Evasion")
                     ./Modules/Droppers/phantom.sh
                     ;;
                     
-                "RCE VBS Exploit")
-                    ./Modules/Droppers/vbs_rce.sh
-                    ;;
-
                 "Back")
-                    ./tigershark
+                    dropper_mods
                     ;;
             esac
         done
