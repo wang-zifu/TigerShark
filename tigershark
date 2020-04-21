@@ -9,7 +9,7 @@ LBBLUE='\e[104m'
 # Metepreter payload
 attack_opts(){
     echo -e "${W}"
-    PS3='Would you like to start a CnC server or create a payload?'
+    PS3='What would you like to do?'
         options=("Start a CnC Server" "Create a Payload" "Obfuscate Payload" "Back") 
         select opt in "${options[@]}"
         do
