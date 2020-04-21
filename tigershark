@@ -64,7 +64,7 @@ dropper_mods(){
     else
         mkdir /opt/TigerShark/Payloads
     fi
-    echo -e "${W}"
+    echo -e "${LP}"
     PS3='How would you like to create your payload?'
         options=("Meterpreter payloads" "VB RCE's" "Back") # "Macros"
         select opt in "${options[@]}"
@@ -91,6 +91,7 @@ dropper_mods(){
 }
 # Obfuscation
 obs(){
+echo -e "${RED}"
     PS3='How would you like to obfuscate your payload?'
         options=("Graffiti" "Back")
         select opt in "${options[@]}"
