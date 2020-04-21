@@ -297,6 +297,16 @@ else
 	wget https://github.com/sevagas/macro_pack/releases/download/v1.7/macro_pack.exe
 fi
 
+cd /opt/TigerShark/tools
+# Graffiti
+if [[ -d 'Graffiti' ]]; then
+	sleep 1
+else 
+	git clone https://github.com/Ekultek/Graffiti.git
+	cd Graffiti
+	chmod +x install.sh
+	sudo ./install.sh
+fi
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"

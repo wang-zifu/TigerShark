@@ -10,7 +10,7 @@ LBBLUE='\e[104m'
 attack_opts(){
     echo -e "${ORNG}"
     PS3='Would you like to start a CnC server or create a payload?'
-        options=("Start a CnC Server" "Create a Payload" "Back") 
+        options=("Start a CnC Server" "Create a Payload" "Obfuscate Payload" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -20,6 +20,10 @@ attack_opts(){
 
                 "Create a Payload")
                     dropper_mods
+                    ;;
+
+                "Obfuscate Payload")
+                    obs
                     ;;
 
                 "Back")
@@ -39,11 +43,11 @@ xservers(){
         do
             case $opt in
                 "ThunderShell")
-                    ./Modules/Droppers/thunder.sh
+                    ./Modules/CnC/thunder.sh
                     ;;
 
                 "Pupy")
-                    ./Modules/Droppers/pupy.sh
+                    ./Modules/CnC/pupy.sh
                     ;;
 
                "Back")
@@ -85,11 +89,26 @@ dropper_mods(){
         done
     echo -e "${NC}"
 }
-# Macros
-#macros(){
-#    ./Modules/Droppers/macros.sh
-#}
-# VB Payloads
+# Obfuscation
+obs(){
+    PS3='How would you like to obfuscate your payload?'
+        options=("Graffiti" "Back")
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Graffiti")
+                    ./Modules/Droppers/Obs/graffiti.sh
+                    ;;
+
+                "Back")
+                    dropper_mods
+                    ;;
+
+            esac
+        done
+    echo -e "${NC}"
+}
+# VBS
 vbs(){
      PS3='How would you like to create your payload?'
         options=("Edge 11 vb RCE" "RCE VBS Exploit" "Back")
@@ -98,11 +117,11 @@ vbs(){
             case $opt in                
                 "Edge 11 vb RCE")
                     echo -e "${LP}This creates an index.html file to be delivered via an infected/self-hosted server${NC}"
-                    ./Modules/Droppers/ie_vb.sh
+                    ./Modules/Droppers/VB/ie_vb.sh
                     ;;
 
                  "RCE VBS Exploit")
-                    ./Modules/Droppers/vbs_rce.sh
+                    ./Modules/Droppers/VB/vbs_rce.sh
                     ;;
 
                 "Back")
@@ -120,15 +139,15 @@ meters(){
         do
             case $opt in
                 "Enigma")
-                    ./Modules/Droppers/enigma.sh
+                    ./Modules/Droppers/Meter/enigma.sh
                     ;;
 
                 "SpookFlare")
-                    ./Modules/Droppers/spooky.sh
+                    ./Modules/Droppers/Meter/spooky.sh
                     ;;
 
                 "Phantom-Evasion")
-                    ./Modules/Droppers/phantom.sh
+                    ./Modules/Droppers/Meter/phantom.sh
                     ;;
                     
                 "Back")
