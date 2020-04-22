@@ -160,7 +160,7 @@ cd /opt/TigerShark/tools
 if [[ -d 'CredSniper' ]]; then
 	sleep 1
 else
-	git clone https://github.com/s1l3nt78/CredSniper
+	git clone https://github.com/s1l3nt78/CredSniper.git
 	cd CredSniper
 	sudo python3 -m pip install -r requirements.txt
 	chmod +x install.sh
