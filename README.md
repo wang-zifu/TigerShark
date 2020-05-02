@@ -92,5 +92,33 @@ This campaign can be launched against a small group of targets or a mass campaig
 - <a href="https://github.com/hlldz/SpookFlare">SpookFlare</a>
 <br>
  - <a href="https://github.com/Ignitetch/AdvPhishing">ADV-Phish</a>
-
-## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
+ <br />
+ <br />
+# USER LICENCE
+<br />
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+THIS TOOL WAS MADE FOR EDUCATIONAL PURPOSES. ALL DAMAGE CAUSED BY ANY ACTIVITIES 
+ILLEGAL OR OTHERWISE, FALLS SOLELY ON THE RESPONSIBILY OF THE USER.
+<br />
+<br />
+# Other Projects
+<br />
+All information on projects in development can be found <a href="https://s1l3nt78.github.io">here</a>. 
+<br />
+For any requests or ideas on current projects please submit an issue request to the corresponding tool.
+<br />
+For ideas or collaboration requests on future projects., contact details can be found on the page.
+<br />
+<br />
+*GitHub Pages can be found here.
+<br />
+-<a href="https://github.com/s1l3nt78/sifter">Sifter</a> = Osint, Recon and Vuln Scanner
+<br />
+-<a href="https://github.com/s1l3nt78/MkCheck">MkCheck</a> = MikroTik Router Exploitation Tool
+<br />
