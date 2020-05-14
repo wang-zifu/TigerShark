@@ -283,6 +283,14 @@ else
 	sudo ./setup.sh
 fi
 
+# CuteIt
+cd /opt/TigerShark/tools
+if [[ -d 'Cuteit' ]]; then
+	sleep 1
+else
+	git clone https://github.com/D4Vinci/Cuteit.git
+fi
+
 cd /opt/TigerShark/tools
 #Macro_Pack
 if [[ -d 'macro_pack' ]]; then
