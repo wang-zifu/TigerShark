@@ -84,6 +84,8 @@ This campaign can be launched against a small group of targets or a mass campaig
 - <a href="https://github.com/ruthlezs/ie11_vbscript_exploit">ie11 Broswer Exploit</a>
 <br>
  - Neos Email Spoofer
+ <br>
+ - <a href="https://github.com/D4Vinci/Cuteit">CuteIt</a>
 <br>
 - <a href="https://github.com/Yt1g3r/CVE-2018-8174_EXP">CVE-2018-8174</a>
 <br>
