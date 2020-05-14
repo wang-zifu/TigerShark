@@ -87,6 +87,8 @@ This campaign can be launched against a small group of targets or a mass campaig
 <br>
 - <a href="https://github.com/D4Vinci/Cr3dOv3r">Cr3d0v3r</a>
 <br>
+- <a href="https://github.com/D4Vinci/Cuteit">CuteIt</a>
+<br>
 - <a href="https://github.com/Mr-Un1k0d3r/ThunderShell">ThunderShell</a>
 <br>
 - <a href="https://github.com/hlldz/SpookFlare">SpookFlare</a>
