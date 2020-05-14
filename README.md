@@ -18,13 +18,22 @@
 
 # TigerShark
 - Multi-Tooled Phishing Framework
-<br>
-Version 3.8 Release
-<br>
-<br>
+
+# Version 3.9 Release
+
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
 This campaign can be launched against a small group of targets or a mass campaign.
+<br>
+<br>
+
+# IMPORTANT
+
+This software should not be used within any system or
+network for which you do not have permission, nor should
+it be used for any illegal or illicit purposes. The author
+takes no responsibility for any damages that may be caused
+by the software in this repository.
 
 # Installation
 
