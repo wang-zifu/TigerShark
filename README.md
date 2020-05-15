@@ -129,7 +129,7 @@ For ideas or collaboration requests on future projects., contact details can be 
 
 # GitHub Pages can be found here.
 
--<a href="https://github.com/s1l3nt78/sifter">Sifter</a> = Osint, Recon and Vuln Scanner
+-<a href="https://s1l3nt78.github.io/sifter">Sifter</a> = Osint, Recon and Vuln Scanner
 <br />
--<a href="https://github.com/s1l3nt78/MkCheck">MkCheck</a> = MikroTik Router Exploitation Tool
+-<a href="https://s1l3nt78.github.io/MkCheck">MkCheck</a> = MikroTik Router Exploitation Tool
 <br />
