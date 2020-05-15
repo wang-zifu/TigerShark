@@ -18,13 +18,22 @@
 
 # TigerShark
 - Multi-Tooled Phishing Framework
-<br>
-Version 3.8 Release
-<br>
-<br>
+
+# Version 3.9 Release
+
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
 This campaign can be launched against a small group of targets or a mass campaign.
+<br>
+<br>
+
+# IMPORTANT
+
+This software should not be used within any system or
+network for which you do not have permission, nor should
+it be used for any illegal or illicit purposes. The author
+takes no responsibility for any damages that may be caused
+by the software in this repository.
 
 # Installation
 
@@ -37,12 +46,6 @@ This campaign can be launched against a small group of targets or a mass campaig
     in your shell or just from the install directory. (/opt/TigerShark)
 
 <p align="center">
-		<img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/1.PNG">
-        <br>
-	<br>
-        <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/2.PNG">
-        <br>
-	<br>
         <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/3.PNG">
 </p>
 
@@ -84,8 +87,6 @@ This campaign can be launched against a small group of targets or a mass campaig
 - <a href="https://github.com/ruthlezs/ie11_vbscript_exploit">ie11 Broswer Exploit</a>
 <br>
  - Neos Email Spoofer
- <br>
- - <a href="https://github.com/D4Vinci/Cuteit">CuteIt</a>
 <br>
 - <a href="https://github.com/Yt1g3r/CVE-2018-8174_EXP">CVE-2018-8174</a>
 <br>
@@ -95,10 +96,40 @@ This campaign can be launched against a small group of targets or a mass campaig
 <br>
 - <a href="https://github.com/D4Vinci/Cr3dOv3r">Cr3d0v3r</a>
 <br>
+- <a href="https://github.com/D4Vinci/Cuteit">CuteIt</a>
+<br>
 - <a href="https://github.com/Mr-Un1k0d3r/ThunderShell">ThunderShell</a>
 <br>
 - <a href="https://github.com/hlldz/SpookFlare">SpookFlare</a>
 <br>
  - <a href="https://github.com/Ignitetch/AdvPhishing">ADV-Phish</a>
+ <br />
 
-## !! PLEASE NOTE, THIS TOOL IS ONLY FOR EDUCATIONAL PURPOSES!!**
+# USER LICENCE
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+THIS TOOL WAS MADE FOR EDUCATIONAL PURPOSES. ALL DAMAGE CAUSED BY ANY ACTIVITIES 
+ILLEGAL OR OTHERWISE, FALLS SOLELY ON THE RESPONSIBILY OF THE USER.
+<br />
+
+# Other Projects
+
+All information on projects in development can be found <a href="https://s1l3nt78.github.io">here</a>. 
+<br />
+For any requests or ideas on current projects please submit an issue request to the corresponding tool.
+<br />
+For ideas or collaboration requests on future projects., contact details can be found on the page.
+<br />
+
+# GitHub Pages can be found here.
+
+-<a href="https://s1l3nt78.github.io/sifter">Sifter</a> = Osint, Recon and Vuln Scanner
+<br />
+-<a href="https://s1l3nt78.github.io/MkCheck">MkCheck</a> = MikroTik Router Exploitation Tool
+<br />
