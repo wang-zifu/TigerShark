@@ -10,7 +10,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-3.9-red">
+ <img align="center" src="https://img.shields.io/badge/Version-4-red">
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen">
 </p>
@@ -19,7 +19,10 @@
 # TigerShark
 - Multi-Tooled Phishing Framework
 
-# Version 3.9 Release
+# Version 4 Release
+
+-Merlin Added for Command n Control Server
+-Pupy & Thundershell used main for lateral movement and exploitation.
 
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
