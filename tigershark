@@ -11,12 +11,12 @@ LBBLUE='\e[104m'
 attack_opts(){
     echo -e "${W}"
     PS3='What would you like to do?'
-        options=("Start a CnC Server" "Create a Payload" "Obfuscate Payload" "Back") 
+        options=("CnC Modules" "Create a Payload" "Obfuscate Payload" "Back") 
         select opt in "${options[@]}"
         do
             case $opt in
-                "Start a CnC Server")
-                    xservers
+                "CnC Modules")
+                    cmods
                     ;;
 
                 "Create a Payload")
@@ -36,9 +36,35 @@ attack_opts(){
         done
     echo -e "${NC}"
 }
-xservers(){
+# CnC Modules
+cmods(){
     echo -e "${YLW}"
-    PS3='Please choose your preferred attack server'
+    PS3='Would you like to start a Command n Control Server or work with an explotation framework?'
+        options=("Command n Control" "Explotation Framework" "Back")]
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Command n Control")
+                    ./Modules/CnC/merlin.sh
+                    ;;
+                
+                "Explotation Framework")
+                    xframe
+                    ;;
+
+                "Back")
+                    cd /opt/TigerShark
+                    ./tigershark
+                    ;;
+                
+            esac
+        done
+    echo -e "${NC}"
+}
+# Exploitative Frameworks
+xframe(){
+    echo -e "${YLW}"
+    PS3='Please choose your preferred framework'
         options=("ThunderShell" "Pupy" "Back") 
         select opt in "${options[@]}"
         do
@@ -59,6 +85,7 @@ xservers(){
         done
     echo -e "${NC}"
 }
+# Payload Generation
 dropper_mods(){
     if [[ -d '/opt/TigerShark/Payloads' ]]; then
         sleep 1
