@@ -283,7 +283,7 @@ dom_generation(){
                     ./Modules/Gathering/Generation/evilurl.sh
                     ;;
              
-	        "CuteIt"
+	        "CuteIt")
 		    ./Modules/Gathering/Generation/cuteit.sh
 		    ;;
 		    
