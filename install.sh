@@ -315,6 +315,23 @@ else
 	chmod +x install.sh
 	sudo ./install.sh
 fi
+
+# Merlin
+if [[ -d 'merlin' ]]; then
+	sleep 1
+else
+	mkdir merlin
+	cd merlin
+	wget https://github.com/Ne0nd0g/merlin/releases/download/v0.8.0/merlinServer-Linux-x64-v0.8.0.BETA.7z
+	wget https://github.com/Ne0nd0g/merlin/releases/download/v0.8.0/merlinAgent-Windows-x64-v0.8.0.BETA.7z
+	wget https://github.com/Ne0nd0g/merlin/releases/download/v0.8.0/merlinAgent-Linux-x64-v0.8.0.BETA.7z
+	wget https://github.com/Ne0nd0g/merlin/releases/download/v0.8.0/merlinAgent-Darwin-x64-v0.8.0.BETA.7z
+	wget https://github.com/Ne0nd0g/merlin/releases/download/v0.8.0/merlinAgent-DLL-v0.8.0.BETA.7z
+	mkdir zips && mv *.7z -t zips
+	echo -e "${RED}Will unzip necessary files for merlin."
+	echo -e "when prompted for a password, enter ${LP}merlin${NC}"
+	7z x zips/*.7z
+fi
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
