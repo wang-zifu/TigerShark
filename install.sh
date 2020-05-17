@@ -316,6 +316,7 @@ else
 	sudo ./install.sh
 fi
 
+cd /opt/TigerShark/tools
 # Merlin
 if [[ -d 'merlin' ]]; then
 	sleep 1
