@@ -15,5 +15,5 @@ read USER
 echo -e "${W}Please enter a password for SocialFish Server${NC}"
 read PASS
 sudo python3 SocialFish.py ${USER} ${PASS}
-cd ../..
+cd /opt/TigerShark
 ./tigershark
