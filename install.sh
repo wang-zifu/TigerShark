@@ -344,6 +344,7 @@ if [[ $UPQ == "i" ]]; then
 	read ANY
 	if [[ ${ANY} == "y" ]]; then
 		cd /opt/TigerShark
+		chmod +x tigershark
 		sudo cp tigershark -t /usr/sbin
 		sudo chown $USER:$USER /usr/sbin/tigershark
 	else
@@ -354,6 +355,7 @@ if [[ $UPQ == "i" ]]; then
 else
 	if [[ -f /usr/sbin/tigershark ]]; then
 		cd /opt/TigerShark
+		chmod +x tigershark
 		sudo cp tigershark -t /usr/sbin
 		sudo chown $USER:$USER /usr/sbin/tigershark
 	else
