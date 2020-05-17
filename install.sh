@@ -331,7 +331,11 @@ else
 	mkdir zips && mv *.7z -t zips
 	echo -e "${RED}Will unzip necessary files for merlin."
 	echo -e "when prompted for a password, enter ${LP}merlin${NC}"
-	7z x zips/*.7z
+	7z x zips/merlinServer-Linux-x64-v0.8.0.BETA.7z
+	7z x zips/merlinAgent-Windows-x64-v0.8.0.BETA.7z
+	7z x zips/merlinAgent-Linux-x64-v0.8.0.BETA.7z
+	7z x zips/merlinAgent-Darwin-x64-v0.8.0.BETA.7z
+	7z x zips/merlinAgent-DLL-v0.8.0.BETA.7z
 fi
 reset
 
