@@ -459,7 +459,7 @@ StartTiger(){
     if [[ -d '/opt/TigerShark/Results' ]]; then 
         sleep 1
     else 
-        mkdir /opt/TigerShark/Results
+        sudo mkdir /opt/TigerShark/Results
     fi
     echo -e "${W}"
     PS3='What would you like to do?'
