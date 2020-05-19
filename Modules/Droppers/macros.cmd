@@ -1,4 +1,8 @@
 #!/bin/bash
+# This script is not used within TigerShark
+# TigerShark was made to run on a linux system
+# This script however, to utilize its full potential, needs to be used
+# on a windows machine with Microsoft Office 16 installed
 ORNG='\033[0;33m'
 NC='\033[0m'
 W='\033[1;37m'
