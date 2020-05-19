@@ -31,6 +31,8 @@ This campaign can be launched against a small group of targets or a mass campaig
 <br>
 <br>
 
+*Developed for Linux Devices only
+
 # IMPORTANT
 
 This software should not be used within any system or
