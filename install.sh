@@ -367,5 +367,5 @@ else
 		sleep 1
 	fi
 fi
-
+sudo chown $USER:$USER -R /opt/TigerShark
 
