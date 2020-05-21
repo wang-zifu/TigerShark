@@ -442,6 +442,7 @@ update(){
                 sleep 1
             fi
                 sudo ./install.sh
+                sudo chown $USER:$USER -R /opt/TigerShark
                 chmod +x Modules --recursive
                 ./tigershark
         fi
@@ -450,6 +451,8 @@ update(){
 #
 # Start of TigerShark
 StartTiger(){
+    sudo chown $USER:$USER -R /opt/TigerShark
+    chmod +x /opt/TigerShark --recursive
     cd /opt/TigerShark
     echo -e "${LP}"
     cat .vs/1
@@ -459,7 +462,7 @@ StartTiger(){
     if [[ -d '/opt/TigerShark/Results' ]]; then 
         sleep 1
     else 
-        sudo mkdir /opt/TigerShark/Results
+        mkdir /opt/TigerShark/Results
     fi
     PS3='What would you like to do?'
             options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update" "Quit") 
