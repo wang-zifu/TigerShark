@@ -5,7 +5,7 @@ W='\033[1;37m'
 LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
-
+RED='\033[0;31m'
 sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 python3 python3-pip python3-dev python3 virtualenv gnupg certbot wine wine64
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
 echo -e "If this is okay, hit ${LP}enter${YLW} - otherwise ${RED}Ctrl${W} + ${RED}c ${YLW}to cancel${NC}"

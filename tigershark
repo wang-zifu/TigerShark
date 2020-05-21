@@ -461,10 +461,9 @@ StartTiger(){
     else 
         sudo mkdir /opt/TigerShark/Results
     fi
-    echo -e "${W}"
     PS3='What would you like to do?'
             options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update" "Quit") 
-            echo -e "${ORNG}"
+            echo -e "${YLW}"
             select opt in "${options[@]}"
             do
                 case $opt in
