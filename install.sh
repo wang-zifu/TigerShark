@@ -8,7 +8,7 @@ LBBLUE='\e[104m'
 
 sudo apt-get install golang-1.11 golang-1.11-go golang-1.11-src git python2 python3 python3-pip python3-dev python3 virtualenv gnupg certbot wine wine64
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
-echo -e "If this is okay, hit enter - otherwise Ctrl + c to cancel${NC}"
+echo -e "If this is okay, hit ${LP}enter${YLW} - otherwise ${RED}Ctrl${W} + ${RED}c ${YLW}to cancel${NC}"
 read ACCEPT
 if [[ -d '/opt/TigerShark' ]]; then
 	sleep 1
