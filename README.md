@@ -37,6 +37,7 @@ This campaign can be launched against a small group of targets or a mass campaig
 
 
 *Developed for Linux only
+*Windows creates too many errors leaving this essentially useless
 
 
 # IMPORTANT
