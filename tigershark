@@ -52,9 +52,33 @@ cmods(){
                     xframe
                     ;;
 
+                "Delivery Methods")
+                    dmeth
+                    ;;
+
                 "Back")
                     cd /opt/TigerShark
                     ./tigershark
+                    ;;
+
+            esac
+        done
+    echo -e "${NC}"
+}
+# Delivery Methods
+dmeth(){
+    echo -e "${YLW}"
+    PS3='Please choose your preferred method'
+        options=("JS_DriveBy" "Back")
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "JS-DriveBy")
+                    ./Modules/CnC/js_db.sh
+                    ;;
+
+                "Back")
+                    cmods
                     ;;
 
             esac

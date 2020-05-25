@@ -112,6 +112,10 @@ by the software in this repository.
 <br>
  - <a href="https://github.com/Ignitetch/AdvPhishing">ADV-Phish</a>
  <br />
+ - <a href="https://github.com/MRGEffitas/Ironsquirrel">IronSquirrel</a>
+ <br />
+ - <a href="https://github.com/NYAN-x-CAT/JS-Downloader">NYAN-x-CAT JS Downloader</a>
+ <br />
 
 # USER LICENCE
 

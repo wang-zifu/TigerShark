@@ -337,6 +337,18 @@ else
 	7z x zips/merlinAgent-Darwin-x64-v0.8.0.BETA.7z
 	7z x zips/merlinAgent-DLL-v0.8.0.BETA.7z
 fi
+
+cd /opt/TigerShark/tools
+# JS_DriveBy
+if [[ -d 'JS_DriveBy' ]]; then
+	sleep 1
+else
+	git clone https://github.com/MRGEffitas/Ironsquirrel.git JS_DriveBy
+	cd JS_DriveBy
+	wget https://raw.githubusercontent.com/NYAN-x-CAT/JS-Downloader/master/Downloader.js
+	sudo apt-get install ruby-dev
+	bundle install
+fi
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
