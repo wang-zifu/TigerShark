@@ -17,6 +17,12 @@
 
 
 # TigerShark
+<strong><em>s1l3nt78</strong>
+ <br>
+ Because phishing is relaxing</em>
+<br>
+<br>
+
 - Multi-Tooled Phishing Framework
 
 # Version 4 Release
@@ -33,6 +39,7 @@ This campaign can be launched against a small group of targets or a mass campaig
 
 
 *Developed for Linux only
+*Windows creates too many errors leaving this essentially useless
 
 
 # IMPORTANT
