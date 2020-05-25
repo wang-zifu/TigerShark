@@ -11,12 +11,19 @@
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
  <img align="center" src="https://img.shields.io/badge/Version-4-red">
+ <img align="center" src="https://img.shields.io/badge/Revision-1-red">
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen">
 </p>
 
 
 # TigerShark
+<strong><em>s1l3nt78</strong>
+ <br>
+ Because phishing is relaxing</em>
+<br>
+<br>
+
 - Multi-Tooled Phishing Framework
 
 # Version 4 Release
@@ -33,6 +40,7 @@ This campaign can be launched against a small group of targets or a mass campaig
 
 
 *Developed for Linux only
+*Windows creates too many errors leaving this essentially useless
 
 
 # IMPORTANT
