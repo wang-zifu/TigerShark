@@ -11,7 +11,7 @@
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
  <img align="center" src="https://img.shields.io/badge/Version-4-red">
- <img align="center" src="https://img.shields.io/badge/Revision-1-red">
+ <img align="center" src="https://img.shields.io/badge/Revision-1-green">
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-yellowgreen">
 </p>
