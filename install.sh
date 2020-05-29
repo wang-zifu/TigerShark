@@ -122,13 +122,16 @@ fi
 cd /opt/TigerShark/tools
 #HiddenEye (done)
 if [[ -d 'HiddenEye' ]]; then
+	rm -rf HiddenEye
+	git clone https://github.com/Soldie/HiddenEye-DarkSecDevelopers
+	cd HiddenEye-DarkSecDevelopers
+	pip3 install -r requirements.txt
+fi
+if [[ -d 'HiddenEye-DarkSecDevelopers' ]]; then
 	sleep 1
 else
-	git clone https://github.com/DarkSecDevelopers/HiddenEye.git
-	cd HiddenEye
-	chmod 777 HiddenEye
-	sudo apt-get install python3-pip
-	cd HiddenEye
+	git clone https://github.com/Soldie/HiddenEye-DarkSecDevelopers
+	cd HiddenEye-DarkSecDevelopers
 	sudo pip3 install -r requirements.txt
 	sudo pip3 install requests
 	echo -e "${W}HiddenEye Installed${NC}"
