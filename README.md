@@ -69,7 +69,7 @@ by the software in this repository.
 
 # Tools
 <br>
- - <a href="https://github.com/DarkSecDevelopers/HiddenEye">HiddenEye</a>
+ - <a href="https://github.com/Soldie/HiddenEye-DarkSecDevelopers">HiddenEye</a>
 <br>
 - <a href="https://github.com/rezaaksa/PhishX">PhishX</a>
 <br>
