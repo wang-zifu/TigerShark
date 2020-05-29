@@ -6,7 +6,7 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/HiddenEye
+cd tools/HiddenEye-DarkSecDevelopers
 echo -e "${ORNG}"
 figlet -f mini "HiddenEye"
 echo -e "${NC}"
