@@ -117,6 +117,7 @@ dropper_mods(){
         mkdir /opt/TigerShark/Payloads
     fi
     echo -e "${LP}"
+    echo -e "${RED}NOTE: ${LBBLUE}Crypting your payloads is encouraged${NC} \n${LBBLUE}for best results and low detection rates${NC}"
     PS3='How would you like to create your payload?'
         options=("Meterpreter payloads" "VB RCE's" "Back") # "Macros"
         select opt in "${options[@]}"
