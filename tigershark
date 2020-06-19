@@ -481,7 +481,7 @@ StartTiger(){
     echo -e "${LP}"
     cat .vs/1
     echo -e "${ORNG}"
-    figlet -f small "._._s1l3nt78_._."
+     python3 .vs/ban.py
     echo -e "${NC}"
     if [[ -d '/opt/TigerShark/Results' ]]; then
         sleep 1
