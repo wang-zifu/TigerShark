@@ -11,7 +11,7 @@ LBBLUE='\e[104m'
 attack_opts(){
     echo -e "${W}"
     PS3='What would you like to do?'
-        options=("CnC Modules" "Create a Payload" "Obfuscate Payload" "Back")
+        options=("CnC Modules" "Create a Payload" "Obfuscate Payload" "Post Attack Options" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -27,9 +27,61 @@ attack_opts(){
                     obs
                     ;;
 
+                "Post Attack Options")
+                    postopt
+                    ;;
+
                 "Back")
                     cd /opt/TigerShark
                     ./tigershark
+                    ;;
+
+            esac
+        done
+    echo -e "${NC}"
+}
+# Post Attack Options
+postopt(){
+    echo -e "${W}"
+    PS3='What would you like to do?'
+        options=("Persistence" "Back")
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Persistence")
+                    persist
+                    ;;
+
+                "Back")
+                    cd /opt/TigerShark
+                    attack_opts
+                    ;;
+
+            esac
+        done
+    echo -e "${NC}"
+}
+# Persistence
+persist(){
+    echo -e "${W}"
+    PS3='What would you like to do?'
+        options=("EvilReg" "Back")
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "EvilReg")
+                    echo -e "${W}This module creates persistence through a registery key\nThis requires target to reboot before payload calls back${NC}"
+                    echo -e "${YLW}Would you like to continue?(y/n)${NC}"
+                    read REG
+                    if [[ ${REG} == 'y' ]]; then
+                        bash tools/evilreg/evilreg.sh
+                    else
+                        persist
+                    fi
+                    ;;
+
+                "Back")
+                    postopt
                     ;;
 
             esac
@@ -144,23 +196,23 @@ dropper_mods(){
 }
 # Obfuscation
 obs(){
-echo -e "${RED}"
-    PS3='How would you like to obfuscate your payload?'
-        options=("Graffiti" "Back")
-        select opt in "${options[@]}"
-        do
-            case $opt in
-                "Graffiti")
-                    ./Modules/Droppers/Obs/graffiti.sh
-                    ;;
+    echo -e "${RED}"
+        PS3='How would you like to obfuscate your payload?'
+            options=("Graffiti" "Back")
+            select opt in "${options[@]}"
+            do
+                case $opt in
+                    "Graffiti")
+                        ./Modules/Droppers/Obs/graffiti.sh
+                        ;;
 
-                "Back")
-                    dropper_mods
-                    ;;
+                    "Back")
+                        dropper_mods
+                        ;;
 
-            esac
-        done
-    echo -e "${NC}"
+                esac
+            done
+        echo -e "${NC}"
 }
 # VBS
 vbs(){

@@ -352,6 +352,12 @@ else
 	sudo apt-get install ruby-dev
 	bundle install
 fi
+
+#EvilReg
+cd /opt/TigerShark/tools
+if [[ ! -d 'evilreg' ]]; then
+	git clone https://github.com/thelinuxchoice/evilreg
+fi
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
