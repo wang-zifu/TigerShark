@@ -11,12 +11,12 @@ LBBLUE='\e[104m'
 attack_opts(){
     echo -e "${W}"
     PS3='What would you like to do?'
-        options=("CnC Modules" "Create a Payload" "Obfuscate Payload" "Post Attack Options" "Back")
+        options=("Frameworks" "Create a Payload" "Obfuscate Payload" "Post Attack Options" "Delivery Methods" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
-                "CnC Modules")
-                    cmods
+                "Frameworks")
+                    fwork
                     ;;
 
                 "Create a Payload")
@@ -25,6 +25,10 @@ attack_opts(){
 
                 "Obfuscate Payload")
                     obs
+                    ;;
+
+                "Delivery Methods")
+                    dmeth
                     ;;
 
                 "Post Attack Options")
@@ -88,24 +92,20 @@ persist(){
         done
     echo -e "${NC}"
 }
-# CnC Modules
-cmods(){
+# Frameworks
+fwork(){
     echo -e "${YLW}"
-    PS3='Would you like to start a Command n Control Server or work with an explotation framework?'
-        options=("Command n Control" "Explotation Framework" "Back")]
+    PS3='Which Framework would you like to work?'
+        options=("C2 Frameworks" "Explotation Frameworks" "Back")]
         select opt in "${options[@]}"
         do
             case $opt in
-                "Command n Control")
+                "C2 Frameworks")
                     ./Modules/CnC/merlin.sh
                     ;;
 
-                "Explotation Framework")
+                "Explotation Frameworks")
                     xframe
-                    ;;
-
-                "Delivery Methods")
-                    dmeth
                     ;;
 
                 "Back")
@@ -121,13 +121,17 @@ cmods(){
 dmeth(){
     echo -e "${YLW}"
     PS3='Please choose your preferred method'
-        options=("JS_DriveBy" "Back")
+        options=("JS_DriveBy" "Back") #"FlashLogger" 
         select opt in "${options[@]}"
         do
             case $opt in
                 "JS-DriveBy")
                     ./Modules/CnC/js_db.sh
                     ;;
+
+#                "FlashLogger")
+ #                   ./Modules/CnC/flashlog.sh
+ #                   ;;
 
                 "Back")
                     cmods
@@ -474,7 +478,7 @@ trawler(){
 spammer(){
     echo -e "${W}"
     PS3='Please Select Your Tool for Mail Spamming'
-    options=("PhEmail" "Neos-Mail Spoofer" "Back")
+    options=("PhEmail" "Neos-Mail Spoofer" "FakeMailer" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -484,6 +488,10 @@ spammer(){
 
                 "Neos-Mail Spoofer")
                     ./Modules/Baiting/neos.sh
+                    ;;
+
+                "FakeMailer")
+                    ./Modules/Baiting/fakemailer.sh
                     ;;
 
                 "Back")
@@ -541,7 +549,7 @@ StartTiger(){
         mkdir /opt/TigerShark/Results
     fi
     PS3='What would you like to do?'
-            options=("Perform Recon" "Deploy Fishing Environment" "Servers 'n Payloads" "Update" "Quit")
+            options=("Perform Recon" "Phishing Options" "Servers 'n Payloads" "Update" "Quit")
             echo -e "${YLW}"
             select opt in "${options[@]}"
             do
@@ -550,7 +558,7 @@ StartTiger(){
                         gathering_mods
                         ;;
 
-                    "Deploy Fishing Environment")
+                    "Phishing Options")
                         phishing_mods
                         ;;
 

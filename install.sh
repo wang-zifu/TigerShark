@@ -18,7 +18,7 @@ else
 	sudo mv TigerShark -t /opt
 	sudo chown $USER:$USER -R /opt/TigerShark
 fi
-echo -e "${LP}================================================================================${NC}"
+echo -e "${LP}==========================================================================${NC}"
 cd /opt/TigerShark
 chmod +x tigershark
 # Toolinstallations
@@ -357,6 +357,12 @@ fi
 cd /opt/TigerShark/tools
 if [[ ! -d 'evilreg' ]]; then
 	git clone https://github.com/thelinuxchoice/evilreg
+fi
+
+#FakeMailer
+cd /opt/TigerShark/tools
+if [[ ! -d 'fakemailer' ]]; then
+	git clone https://github.com/Technowlogy-Pushpender/fakemailer.git
 fi
 reset
 
