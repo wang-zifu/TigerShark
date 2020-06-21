@@ -10,7 +10,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-4-red">
+ <img align="center" src="https://img.shields.io/badge/Version-4.1-red">
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
@@ -96,6 +96,7 @@ by the software in this repository.
 - <a href="https://github.com/Ignitetch/AdvPhishing">ADV-Phish</a>
 - <a href="https://github.com/MRGEffitas/Ironsquirrel">IronSquirrel</a>
 - <a href="https://github.com/NYAN-x-CAT/JS-Downloader">NYAN-x-CAT JS Downloader</a>
+- <a href="https://github.com/thelinuxchoice/evilreg">EvilReg</a>
 
 # USER LICENCE
 
