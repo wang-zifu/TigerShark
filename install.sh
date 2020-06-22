@@ -334,22 +334,12 @@ else
 	mkdir zips && mv *.7z -t zips
 	echo -e "${RED}Will unzip necessary files for merlin."
 	echo -e "when prompted for a password, enter ${LP}merlin${NC}"
-	7z x zips/merlinServer-Linux-x64-v0.8.0.BETA.7z
-	7z x zips/merlinAgent-Windows-x64-v0.8.0.BETA.7z
-	7z x zips/merlinAgent-Linux-x64-v0.8.0.BETA.7z
-	7z x zips/merlinAgent-Darwin-x64-v0.8.0.BETA.7z
-	7z x zips/merlinAgent-DLL-v0.8.0.BETA.7z
-fi
-
-cd /opt/TigerShark/tools
-# JS_DriveBy
-if [[ -d 'JS_DriveBy' ]]; then
-	sleep 1
+	7z x zips/merlinServer-Linux-x64-v0.8.0.BETA.7z -y
+	7z x zips/merlinAgent-Windows-x64-v0.8.0.BETA.7z -y
+	7z x zips/merlinAgent-Linux-x64-v0.8.0.BETA.7z -y
+	7z x zips/merlinAgent-Darwin-x64-v0.8.0.BETA.7z -y
 else
-	git clone https://github.com/MRGEffitas/Ironsquirrel.git JS_DriveBy
-	cd JS_DriveBy
-	wget https://raw.githubusercontent.com/NYAN-x-CAT/JS-Downloader/master/Downloader.js
-	sudo apt-get install ruby-dev
+	git clone https://github.com/MRGEffitas/
 	bundle install
 fi
 
@@ -368,8 +358,7 @@ reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
 read UPQ
-if [[ $UPQ == "i" ]]; then
-	pwd 
+if [[ $UPQ == "i" ]]; then 
 	cd /opt
 	sudo chown $USER:$USER -R /opt/TigerShark
 	echo -e "${W}Would you like tigershark to be able to be run from anywhere?(y/n)${NC}"
@@ -383,7 +372,7 @@ if [[ $UPQ == "i" ]]; then
 		sleep 1
 	fi
 	echo -e "${W}Please change SocialFish App Key in 'SocialFish/core/config.py'${NC}"
-	echo -e "${W}GoPhish default login is admin:gophish${NC}"
+	echo -e "${W}GoPhish default login is ${RED}admin${W}:${RED}gophish${NC}"
 else
 	if [[ -f /usr/sbin/tigershark ]]; then
 		cd /opt/TigerShark
