@@ -186,7 +186,8 @@ if [[ -d 'pupy' ]]; then
 else
 	git clone --recursive https://github.com/n1nj4sec/pupy.git
 	cd pupy
-	python create-workspace.py -DG pupyw
+	sudo python2 -m pip install virtualenv
+	sudo python create-workspace.py pupyw
 	sleep 5
 	mv /opt/TigerShark/.vs/pupy.conf.default -t /opt/TigerShark/tools/pupy/pupy
 fi
