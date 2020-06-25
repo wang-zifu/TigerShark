@@ -37,6 +37,12 @@ This campaign can be launched against a small group of targets or a mass campaig
 <br>
 <br>
 
+# Note
+
+    If you have any issues with a specific tool, 
+    just remove it from /opt/TigerShark/tools directory
+    and run the install script again.
+
 # Question
 
     So whoever takes the time and reads this.
