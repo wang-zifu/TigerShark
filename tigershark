@@ -506,7 +506,7 @@ trawler(){
 spammer(){
     echo -e "${W}"
     PS3='Please Select Your Tool for Mail Spamming'
-    options=("PhEmail" "Neos-Mail Spoofer" "FakeMailer" "Back")
+    options=("PhEmail" "Neos-Mail Spoofer" "FakeMailer" "PhishMailer" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -520,6 +520,10 @@ spammer(){
 
                 "FakeMailer")
                     ./Modules/Baiting/fakemailer.sh
+                    ;;
+
+                "PhishMailer")
+                    ./Modules/Baiting/phishmail.sh
                     ;;
 
                 "Back")

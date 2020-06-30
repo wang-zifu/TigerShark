@@ -365,8 +365,16 @@ if [[ ! -d 'getdroid' ]]; then
 fi
 
 #apkinfector
+cd /opt/TigerShark/tools
 if [[ ! -d 'apkinfector' ]]; then
 	git clone https://github.com/Technowlogy-Pushpender/apkinfector.git
+fi
+
+#PhishMailer
+cd /opt/TigerShark/tools
+if [[ ! -d 'PhishMailer' ]]; then
+	git clone https://www.github.com/BiZken/PhishMailer.git
+	chmod +x PhishMailer.py
 fi
 reset
 
