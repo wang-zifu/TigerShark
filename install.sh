@@ -355,6 +355,19 @@ cd /opt/TigerShark/tools
 if [[ ! -d 'fakemailer' ]]; then
 	git clone https://github.com/Technowlogy-Pushpender/fakemailer.git
 fi
+
+#GetDroid
+cd /opt/TigerShark/tools
+if [[ ! -d 'getdroid' ]]; then
+	git clone https://github.com/khawabkashyap/getdroid.git
+	sudo apt-get install openjdk-11-source
+	chmod +x getdroid.sh
+fi
+
+#apkinfector
+if [[ ! -d 'apkinfector' ]]; then
+	git clone https://github.com/Technowlogy-Pushpender/apkinfector.git
+fi
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"

@@ -10,7 +10,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-4.2-red">
+ <img align="center" src="https://img.shields.io/badge/Version-4.4-red">
  <!--<img align="center" src="https://img.shields.io/badge/Revision-1-green">-->
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
@@ -26,10 +26,12 @@
 
 - Multi-Tooled Phishing Framework
 
-# Version 4.2 Release
+# Version 4.4 Release
 
 - EvilReg added for payload persistence
 - FakeMailer added for spamming & delivery
+- GetDroid - Android payload creation
+- apkinfector - infect legitimate apks with meterpreter shells
 
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
@@ -103,6 +105,8 @@ by the software in this repository.
 - <a href="https://github.com/NYAN-x-CAT/JS-Downloader">NYAN-x-CAT JS Downloader</a>
 - <a href="https://github.com/thelinuxchoice/evilreg">EvilReg</a>
 - <a href="https://github.com/Technowlogy-Pushpender/fakemailer">FakeMailer</a>
+- <a href="https://github.com/khawabkashyap/getdroid">GetDroid</a>
+- <a href="https://github.com/Technowlogy-Pushpender/apkinfector">apkinfector</a>
 
 # USER LICENCE
 
