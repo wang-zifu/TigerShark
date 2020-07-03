@@ -376,6 +376,13 @@ if [[ ! -d 'PhishMailer' ]]; then
 	git clone https://www.github.com/BiZken/PhishMailer.git
 	chmod +x PhishMailer.py
 fi
+
+#apkWash
+cd /opt/TigerShark/tools
+if [[ ! -d 'apkwash' ]]; then
+	git clone https://github.com/jbreed/apkwash.git
+	chmod +x apkwash
+fi
 reset
 
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
