@@ -27,7 +27,7 @@
 - Multi-Tooled Phishing Framework
 
 # Version 4.5 Release
-@ Revision 2
+<em>@ Revision 2</em>
 
 - EvilReg added for payload persistence
 - FakeMailer added for spamming & delivery
