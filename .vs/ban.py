@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+CVIOLET = '\33[35m'
 CRED = '\033[91m'
 CEND = '\033[0m'
 
