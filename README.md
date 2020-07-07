@@ -28,6 +28,10 @@
 
 # Version 4.6 Release
 <!--<em>@ Revision 2</em>-->
+TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail spammers <br>
+to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
+with customizable payloads, in multiple different scripting languages.
+
 
 @ Additions
 - EvilReg added for payload persistence
@@ -41,11 +45,6 @@
 - 2018-15982
 - 2019-0768
 
-Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
-whatever scripting language needed.
-This campaign can be launched against a small group of targets or a mass campaign.
-<br>
-<br>
 
 # Note
 
