@@ -405,12 +405,12 @@ fi
 ##  Final TigerShark Setup   ##
 ###############################
 reset
-echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
+echo -e "${ORNG}Is this the first time ${RED}i${ORNG}nstall tigershark or are you ${RED}u${ORNG}pdating?(${RED}i${ORNG}/${RED}u${ORNG})${NC}"
 read UPQ
 if [[ $UPQ == "i" ]]; then 
 	cd /opt
 	sudo chown $USER:$USER -R /opt/TigerShark
-	echo -e "${W}Would you like tigershark to be able to be run from anywhere?(y/n)${NC}"
+	echo -e "${YLW}Would you like tigershark to be able to be run from anywhere?(${RED}y${YLW}/${RED}n${YLW})${NC}"
 	read ANY
 	if [[ ${ANY} == "y" ]]; then
 		cd /opt/TigerShark
