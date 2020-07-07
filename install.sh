@@ -356,7 +356,7 @@ fi
 #EvilReg
 cd /opt/TigerShark/tools
 if [[ ! -d 'evilreg' ]]; then
-	git clone https://github.com/thelinuxchoice/evilreg
+	git clone https://github.com/8L4NK/evilreg.git
 fi
 
 #FakeMailer
