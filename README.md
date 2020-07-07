@@ -28,8 +28,8 @@
 
 # Version 4.6 Release
 <!--<em>@ Revision 2</em>-->
-TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail spammers <br>
-to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
+TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail <br>
+spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
 with customizable payloads, in multiple different scripting languages.
 
 
