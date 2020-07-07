@@ -10,9 +10,9 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-4.5-red">
- <img align="center" src="https://img.shields.io/badge/Revision-2-green">
- <br>
+ <img align="center" src="https://img.shields.io/badge/Version-4.6-red">
+<!-- <img align="center" src="https://img.shields.io/badge/Revision-2-green">
+ --><br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
 </p>
 
@@ -26,14 +26,20 @@
 
 - Phishing Kit
 
-# Version 4.5 Release
-<em>@ Revision 2</em>
+# Version 4.6 Release
+<!--<em>@ Revision 2</em>-->
 
+@ Additions
 - EvilReg added for payload persistence
 - FakeMailer added for spamming & delivery
 - GetDroid - Android payload creation
 - apkinfector - infect legitimate apks with meterpreter shells
 - PhishMailer - Email Spamming for different services
+
+@ CVE's
+- 2018-8174
+- 2018-15982
+- 2019-0768
 
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
