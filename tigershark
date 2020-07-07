@@ -561,10 +561,10 @@ update(){
             echo -e "${NC}"
         else
             sleep 5
-            echo -e "${W}Are there pull conflicts with files?(y/n)${NC}"
+            echo -e "${YLW}Are there pull conflicts with files?(y/n)${NC}"
             read UANS
             if [[ ${UANS} == "y" ]]; then
-                echo -e "${W}Please enter the conflicting files (seperated by a space)${NC}"
+                echo -e "${ORNG}Please enter the conflicting files (seperated by a space)${NC}"
                 read "FILES"
                 rm "${FILES}"
                 git pull
