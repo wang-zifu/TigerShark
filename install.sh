@@ -383,8 +383,19 @@ if [[ ! -d 'apkwash' ]]; then
 	git clone https://github.com/jbreed/apkwash.git
 	chmod +x apkwash
 fi
-reset
 
+# CVE-2018-15982 ShockWave Exploit
+cd /opt/TigerShark/tools
+if [[ ! -d 'adobe-flash-cve2018-15982' ]]; then
+	git clone https://github.com/kphongagsorn/adobe-flash-cve2018-15982.git
+fi
+
+
+###################################################################################################################################################
+###############################
+##  Final TigerShark Setup   ##
+###############################
+reset
 echo -e "${RED}Is this the first time install tigershark or are you updating?(i/u)${NC}"
 read UPQ
 if [[ $UPQ == "i" ]]; then 

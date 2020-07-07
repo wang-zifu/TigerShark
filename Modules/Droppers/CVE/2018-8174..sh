@@ -4,6 +4,7 @@ NC='\033[0m'
 W='\033[1;37m'
 LP='\033[1;35m'
 YLW='\033[1;33m'
+RED='\033[0;31m'
 LBBLUE='\e[104m'
 
 if [[ -d '/opt/TigerShark/Payloads/CVE-2018-8174' ]]; then
@@ -14,7 +15,7 @@ fi
 cd tools/CVE-2018-8174_EXP
 echo -e "${ORNG}"
 figlet -f mini "RCE_VBS Vuln Generator"
-echo -e "${NC}"
+echo -e "${RED}CVE-2018-8174${NC}"
 echo -e "${YLW}A remote code execution vulnerability exists in the way that the VBScript engine handles objects in memory,"
 echo -e "aka Windows VBScript Engine Remote Code Execution Vulnerability. This affects Windows 7, Windows Server 2012 R2,"
 echo -e "Windows RT 8.1, Windows Server 2008, Windows Server 2012, Windows 8.1, Windows Server 2016, Windows Server 2008 R2,"

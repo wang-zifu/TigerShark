@@ -180,7 +180,7 @@ dropper_mods(){
     echo -e "${LP}"
     echo -e "${RED}NOTE: ${LBBLUE}Crypting your payloads is encouraged${NC} \n${LBBLUE}for best results and low detection rates${NC}"
     PS3='How would you like to create your payload?'
-        options=("Meterpreter payloads" "VB RCE's" "Droid Payloads" "Back") # "Macros"
+        options=("Meterpreter payloads" "CVE's" "Droid Payloads" "Back") # "Macros"
         select opt in "${options[@]}"
         do
             case $opt in
@@ -188,8 +188,8 @@ dropper_mods(){
                     meters
                     ;;
 
-                "VB RCE's")
-                    vbs
+                "CVE's")
+                    cve
                     ;;
                 
                 "Droid Payloads")
@@ -255,20 +255,24 @@ obs(){
             done
         echo -e "${NC}"
 }
-# VBS
-vbs(){
+# CVE
+cve(){
      PS3='How would you like to create your payload?'
-        options=("Edge 11 vb RCE" "RCE VBS Exploit" "Back")
+        options=("CVE-2019-0768 (VBScript RCE)" "CVE-2018-8174 (IE11 RCE)" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
-                "Edge 11 vb RCE")
+                "CVE-2019-0768 (VBScript RCE)")
                     echo -e "${LP}This creates an index.html file to be delivered via an infected/self-hosted server${NC}"
-                    ./Modules/Droppers/VB/ie_vb.sh
+                    ./Modules/Droppers/VB/2019-0768.sh
                     ;;
 
-                 "RCE VBS Exploit")
-                    ./Modules/Droppers/VB/vbs_rce.sh
+                 "CVE-2018-8174 (IE11 RCE)")
+                    ./Modules/Droppers/VB/2018-8174.sh
+                    ;;
+
+                "CVE-2018-15982 (Shockwave Exploit)")
+                    ./Modules/Droppers/CVE/2018-15982.sh
                     ;;
 
                 "Back")

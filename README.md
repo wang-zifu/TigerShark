@@ -24,7 +24,7 @@
 <br>
 <br>
 
-- Multi-Tooled Phishing Framework
+- Phishing Kit
 
 # Version 4.5 Release
 <em>@ Revision 2</em>
@@ -123,6 +123,7 @@ by the software in this repository.
 - <a href="https://github.com/khawabkashyap/getdroid">GetDroid</a>
 - <a href="https://github.com/Technowlogy-Pushpender/apkinfector">apkinfector</a>
 - <a href="https://github.com/BiZken/PhishMailer">PhishMailer</a>
+- <a href="https://github.com/kphongagsorn/adobe-flash-cve2018-15982">Adove Flash CVE-2018-15985</a>
 
 # USER LICENCE
 
