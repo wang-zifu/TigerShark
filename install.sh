@@ -399,7 +399,12 @@ if [[ ! -d 'adobe-flash-cve2018-15982' ]]; then
 	git clone https://github.com/kphongagsorn/adobe-flash-cve2018-15982.git
 fi
 
-
+# DNS-Persist
+cd /opt/TigerShark/tools
+if [[ ! -d 'DNS-Persist' ]]; then
+	pip install dnslib
+	git clone https://github.com/0x09AL/DNS-Persist
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##

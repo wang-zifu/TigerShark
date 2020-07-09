@@ -150,7 +150,7 @@ dmeth(){
 xframe(){
     echo -e "${YLW}"
     PS3='Please choose your preferred framework'
-        options=("ThunderShell" "Pupy" "Back")
+        options=("ThunderShell" "Pupy" "DNS-Persist" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -162,7 +162,11 @@ xframe(){
                     ./Modules/CnC/pupy.sh
                     ;;
 
-               "Back")
+                "DNS-Persist")
+                    ./Modules/Cnc/dnspers.sh
+                    ;;
+
+                "Back")
                     cd /opt/TigerShark
                     ./tigershark
                     ;;
