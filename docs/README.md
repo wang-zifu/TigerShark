@@ -10,7 +10,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-4.5-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5-red">
  <img align="center" src="https://img.shields.io/badge/Revision-2-green">
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
@@ -26,7 +26,7 @@
 
 - Multi-Tooled Phishing Framework
 
-# Version 4.5 Release
+# Version 5 Release
 <em>@ Revision 2</em>
 
 - EvilReg added for payload persistence
