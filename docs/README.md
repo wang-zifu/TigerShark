@@ -110,6 +110,9 @@ by the software in this repository.
 - <a href="https://github.com/khawabkashyap/getdroid">GetDroid</a>
 - <a href="https://github.com/Technowlogy-Pushpender/apkinfector">apkinfector</a>
 - <a href="https://github.com/BiZken/PhishMailer">PhishMailer</a>
+- <a href="https://github.com/kphongagsorn/adobe-flash-cve2018-15982">Adove Flash CVE-2018-15985</a>
+- <a href="https://github.com/0x09AL/DNS-Persist">DNS-Persist</a>
+- <a href="https://github.com/entynetproject/ghost">Ghost</a>
 
 # USER LICENCE
 

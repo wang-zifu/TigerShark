@@ -405,6 +405,14 @@ if [[ ! -d 'DNS-Persist' ]]; then
 	pip install dnslib
 	git clone https://github.com/0x09AL/DNS-Persist
 fi
+
+# GhostFramework
+cd /opt/TigerShark/tools
+if [[ ! -d 'ghost' ]]; then
+	git clone https://github.com/entynetproject/ghost.git
+	./install.sh
+	chmod +x ghost
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##
