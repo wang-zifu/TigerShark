@@ -10,7 +10,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-4.6-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5-red">
 <!-- <img align="center" src="https://img.shields.io/badge/Revision-2-green">
  --><br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
@@ -26,7 +26,7 @@
 
 - Phishing Kit
 
-# Version 4.6 Release
+# Version 5 Release
 <!--<em>@ Revision 2</em>-->
 TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail <br>
 spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
