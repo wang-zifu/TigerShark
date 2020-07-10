@@ -150,7 +150,7 @@ dmeth(){
 xframe(){
     echo -e "${YLW}"
     PS3='Please choose your preferred framework'
-        options=("ThunderShell" "Pupy" "DNS-Persist" "Back")
+        options=("ThunderShell" "Pupy" "DNS-Persist" "Mouse (Mac iOS)" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -163,7 +163,11 @@ xframe(){
                     ;;
 
                 "DNS-Persist")
-                    ./Modules/Cnc/dnspers.sh
+                    ./Modules/CnC/dnspers.sh
+                    ;;
+
+                "Mouse (Mac iOS)")
+                    ./Modules/CnC/mouse.sh
                     ;;
 
                 "Back")
@@ -458,7 +462,7 @@ phishing_mods(){
 single_pole(){
     echo -e "${YLW}"
     PS3='Please Select Your Tool for Single-Page Phisher Generation'
-        options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper" "Back")
+        options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper" "LockPhish" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -480,6 +484,10 @@ single_pole(){
 
                 "CredSniper")
                     ./Modules/Phishing/Singular/credsniper.sh
+                    ;;
+
+                "LockPhish")
+                    ./Modules/Phishing/Singular/lockphish.sh
                     ;;
 
                 "Back")

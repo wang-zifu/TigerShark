@@ -39,6 +39,8 @@ with customizable payloads, in multiple different scripting languages.
 - GetDroid - Android payload creation
 - apkinfector - infect legitimate apks with meterpreter shells
 - PhishMailer - Email Spamming for different services
+- Mouse - Mac & iOS Post Exploitation Tool
+- LockPhish - Lockphish is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
 
 @ CVE's
 - 2018-8174
@@ -131,6 +133,8 @@ by the software in this repository.
 - <a href="https://github.com/kphongagsorn/adobe-flash-cve2018-15982">Adove Flash CVE-2018-15985</a>
 - <a href="https://github.com/0x09AL/DNS-Persist">DNS-Persist</a>
 - <a href="https://github.com/entynetproject/ghost">Ghost</a>
+- <a href="https://github.com/entynetproject/mouse">Mouse</a>
+- <a href="https://github.com/JasonJerry/lockphish">LockPhish</a>
 
 
 # USER LICENCE

@@ -413,6 +413,21 @@ if [[ ! -d 'ghost' ]]; then
 	./install.sh
 	chmod +x ghost
 fi
+
+# Mouse
+cd /opt/TigerShark/tools
+if [[ ! -d 'mouse' ]]; then
+	git clone https://github.com/entynetproject/mouse
+	cd mouse
+	chmod +x install.sh
+	./install.sh
+fi
+
+# LockPhish
+cd /opt/TigerShark/tools
+if [[ ! -d 'lockphish' ]]; then
+	git clone https://github.com/JasonJerry/lockphish
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##
