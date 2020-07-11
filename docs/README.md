@@ -18,8 +18,9 @@
 
 
 # TigerShark
+<h1>
 <strong><em>s1l3nt78</strong>
- <br>
+ </h1><br>
  Because phishing is relaxing</em>
 <br>
 <br>
@@ -29,13 +30,15 @@
 # Version 5 Release
 <em>@ Revision 2</em>
 
-- EvilReg added for payload persistence
-- FakeMailer added for spamming & delivery
-- GetDroid - Android payload creation
-- apkinfector - infect legitimate apks with meterpreter shells
-- PhishMailer - Email Spamming for different services
-- Mouse - Mac & iOS Post Exploitation Tool
-- LockPhish - Lockphish is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
+<p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
+- <a style="color: #729e1b" href="#">FakeMailer</a> - added for spamming & delivery.<br />
+- <a style="color: #729e1b" href="#">GetDroid</a> - Android payload creation.<br />
+- <a style="color: #729e1b" href="#">apkinfector</a> - infect legitimate apks with meterpreter shells.<br />
+- <a style="color: #729e1b" href="#">PhishMailer</a> - Email Spamming for different services.<br />
+- <a style="color: #729e1b" href="#">Mouse</a> - Mac & iOS Post Exploitation Tool.<br />
+- <a style="color: #729e1b" href="#">LockPhish</a> - This tool is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.<br />
+</em>
+ </p>
 
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
