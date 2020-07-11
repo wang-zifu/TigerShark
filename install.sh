@@ -410,8 +410,8 @@ fi
 cd /opt/TigerShark/tools
 if [[ ! -d 'ghost' ]]; then
 	git clone https://github.com/entynetproject/ghost.git
+	chmod +x ghost install.sh
 	./install.sh
-	chmod +x ghost
 fi
 
 # Mouse
