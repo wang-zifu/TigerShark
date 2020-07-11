@@ -16,20 +16,16 @@
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
 </p>
 
-
-# TigerShark
-<h1>
-<strong><em>s1l3nt78</strong>
- </h1><br>
- Because phishing is relaxing</em>
+# *TigerShark*
+<strong><em>s1l3nt78</em></strong>
+<br>
+*Because phishing is a grand past-time*
 <br>
 <br>
 
 - Multi-Tooled Phishing Framework
 
 # Version 5 Release
-<em>@ Revision 2</em>
-
 <p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
 - <a style="color: #729e1b" href="#">FakeMailer</a> - added for spamming & delivery.<br />
 - <a style="color: #729e1b" href="#">GetDroid</a> - Android payload creation.<br />
