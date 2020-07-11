@@ -11,8 +11,8 @@
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
  <img align="center" src="https://img.shields.io/badge/Version-5-red">
-<!-- <img align="center" src="https://img.shields.io/badge/Revision-2-green">
- --><br>
+ <img align="center" src="https://img.shields.io/badge/Revision-1-green">
+<br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
 </p>
 
@@ -27,25 +27,27 @@
 - Phishing Kit
 
 # Version 5 Release
-<!--<em>@ Revision 2</em>-->
+<strong><em>@</em> Revision 1</strong>
+
 TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail <br>
 spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
 with customizable payloads, in multiple different scripting languages.
 
 
 @ Additions
-- EvilReg added for payload persistence
-- FakeMailer added for spamming & delivery
-- GetDroid - Android payload creation
-- apkinfector - infect legitimate apks with meterpreter shells
-- PhishMailer - Email Spamming for different services
-- Mouse - Mac & iOS Post Exploitation Tool
-- LockPhish - Lockphish is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
+- <strong>EvilReg</strong> - For payload persistence
+- <strong>FakeMailer</strong> - Spamming & delivery
+- <strong>GetDroid</strong> - Android payload creation
+- <strong>apkinfector</strong> - infect legitimate apks with meterpreter shells
+- <strong>PhishMailer</strong> - Email Spamming for different services
+- <strong>Mouse</strong> - Mac & iOS Post Exploitation Tool
+- <strong>LockPhish</strong> - Lockphish is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
+- <strong>WhatPhish</strong> - Tool for whatsapp phishing with OTP options provided 
 
 @ CVE's
-- 2018-8174
-- 2018-15982
-- 2019-0768
+- <strong>2018-8174</strong>
+- <strong>2018-15982</strong>
+- <strong>2019-0768</strong>
 
 
 # Note
@@ -135,7 +137,7 @@ by the software in this repository.
 - <a href="https://github.com/entynetproject/ghost">Ghost</a>
 - <a href="https://github.com/entynetproject/mouse">Mouse</a>
 - <a href="https://github.com/JasonJerry/lockphish">LockPhish</a>
-
+- <a href="https://github.com/Ignitetch/whatsapp-phishing">WhatPhish</a>
 
 # USER LICENCE
 

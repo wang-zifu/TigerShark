@@ -428,6 +428,18 @@ cd /opt/TigerShark/tools
 if [[ ! -d 'lockphish' ]]; then
 	git clone https://github.com/JasonJerry/lockphish
 fi
+
+# WhatPhish
+cd /opt/TigerShark/tools
+if [[ ! -d 'whatsapp-phishing' ]]; then
+	git clone https://github.com/Ignitetch/whatsapp-phishing.git
+	cd whatsapp-phishing
+	chmod 777 Whatsapp.sh
+fi
+
+#
+#cd /opt/TigerShark/tools
+
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##

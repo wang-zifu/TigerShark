@@ -11,25 +11,24 @@
  <br>
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
  <img align="center" src="https://img.shields.io/badge/Version-5-red">
- <img align="center" src="https://img.shields.io/badge/Revision-2-green">
+ <img align="center" src="https://img.shields.io/badge/Revision-1-green">
  <br>
  <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
 </p>
 
-
-# TigerShark
-<h1>
-<strong><em>s1l3nt78</strong>
- </h1><br>
- Because phishing is relaxing</em>
+# *TigerShark*
+<strong><em>s1l3nt78</em></strong>
+<br>
+*Because phishing is a grand past-time*
 <br>
 <br>
 
 - Multi-Tooled Phishing Framework
 
 # Version 5 Release
-<em>@ Revision 2</em>
+<strong><em>@</em> Revision 1</strong>
 
+<h1>Additions</h1>
 <p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
 - <a style="color: #729e1b" href="#">FakeMailer</a> - added for spamming & delivery.<br />
 - <a style="color: #729e1b" href="#">GetDroid</a> - Android payload creation.<br />
@@ -37,8 +36,16 @@
 - <a style="color: #729e1b" href="#">PhishMailer</a> - Email Spamming for different services.<br />
 - <a style="color: #729e1b" href="#">Mouse</a> - Mac & iOS Post Exploitation Tool.<br />
 - <a style="color: #729e1b" href="#">LockPhish</a> - This tool is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.<br />
+- <a style="color: #729e1b" href="#">WhatPhish</a> - Tool for whatsapp phishing with OTP options provided 
 </em>
  </p>
+
+<h1>CVE's</h1>
+<p style="color: #ff00ff"><em>- <a style="color: #729e1b" href="#">2018-8174</a><br />
+- <a style="color: #ff00ff" href="#">2018-15982</a> <br />
+- <a style="color: #ff00ff" href="#">2019-0768</a> <br />
+</p>
+
 
 Incorporating various different phishing tools, domain gatherers and mail spammers in order to launch a fully customizable phishing page/server in
 whatever scripting language needed.
@@ -120,6 +127,7 @@ by the software in this repository.
 - <a href="https://github.com/entynetproject/ghost">Ghost</a>
 - <a href="https://github.com/entynetproject/mouse">Mouse</a>
 - <a href="https://github.com/JasonJerry/lockphish">LockPhish</a>
+- <a href="https://github.com/Ignitetch/whatsapp-phishing">WhatPhish</a>
 
 
 # USER LICENCE
