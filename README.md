@@ -93,7 +93,7 @@ by the software in this repository.
     in your shell or just from the install directory. (/opt/TigerShark)
 
 <p align="center">
-        <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/menu.PNG">
+        <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/3.PNG">
 </p>
 
 
