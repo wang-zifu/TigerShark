@@ -41,7 +41,7 @@ with customizable payloads, in multiple different scripting languages.
 - <strong>apkinfector</strong> - infect legitimate apks with meterpreter shells
 - <strong>PhishMailer</strong> - Email Spamming for different services
 - <strong>Mouse</strong> - Mac & iOS Post Exploitation Tool
-- <strong>LockPhish</strong> - Lockphish is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
+- <strong>LockPhish</strong> - Designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
 - <strong>WhatPhish</strong> - Tool for whatsapp phishing with OTP options provided 
 
 @ CVE's
