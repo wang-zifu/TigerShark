@@ -43,7 +43,7 @@
 <h1>CVE's</h1>
 <p style="color: #ff00ff"><em>- <a style="color: #729e1b" href="#">2018-8174</a><br />
 - <a style="color: #ff00ff" href="#">2018-15982</a> <br />
-- <a style="color: #ff00ff" href="#">2019-0768</a> <br />
+- <a style="color: #ff00ff" href="#">2019-0768</a></em> <br />
 </p>
 
 
