@@ -20,7 +20,7 @@
 # TigerShark
 <strong><em>s1l3nt78</strong>
  <br>
- Because phishing is relaxing</em>
+ Because phishing is a great way to pass the time.</em>
 <br>
 <br>
 
