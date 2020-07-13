@@ -44,7 +44,7 @@ with customizable payloads, in multiple different scripting languages.
 - <strong>LockPhish</strong> - Designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
 - <strong>WhatPhish</strong> - Tool for whatsapp phishing with OTP options provided 
 - <strong>GoSmish</strong> - SMS Payload delivery using GoPhish framework & campaign data (Through Twilio)<br />
-&emsp;<strong><em>'-->&emsp;&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.
+&emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.
 
 @ CVE's
 - <strong>2018-8174</strong>
