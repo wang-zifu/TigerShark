@@ -94,9 +94,11 @@ by the software in this repository.
     The install script will allow you the option to use TigerShark from anywhere 
     in your shell or just from the install directory. (/opt/TigerShark)
 
+# Youtube
 - <a href="https://www.youtube.com/watch?v=wuKsn2752UY&t=317s">Setup Video</a> can be found here<br />
 <strong>NOTE:</strong><em>It is in spanish i think? But gives a visual idea.<br />
- 
+<br /></em>
+
 <p align="center">
         <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/3.PNG">
 </p>
