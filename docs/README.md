@@ -1,34 +1,33 @@
-<p align="center">
-
-</p>
-
+<img align="left" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
+ <img align="right" src="https://www.codefactor.io/repository/github/s1l3nt78/TigerShark/badge" alt="CodeFactor">
+<br />
 <p align="center">
  <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/s1l3nt78.github.io/master/TigerShark/tigershark-Release.PNG">
  <br>
  <img align="center" src="https://img.shields.io/github/issues/s1l3nt78/TigerShark">
  <img align="center" src="https://img.shields.io/github/forks/s1l3nt78/TigerShark">
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
- <br>
+ <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://www.codefactor.io/repository/github/s1l3nt78/sifter/badge" alt="CodeFactor">
- <br>
  <img align="center" src="https://img.shields.io/badge/Version-5-red">
- <img align="center" src="https://img.shields.io/badge/Revision-1-green">
  <br>
- <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
+ <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 </p>
 
-# *TigerShark*
-<strong><em>s1l3nt78</em></strong>
-<br>
-*Because phishing is a great way to pass the time.*
+
+# TigerShark
+<strong><em>s1l3nt78</strong>
+ <br>
+ Because phishing is a great way to pass the time.</em>
 <br>
 <br>
 
-- Multi-Tooled Phishing Framework
+- Phishing Kit
 
-# Version 5 Release
-<strong><em>@</em> Revision 1</strong>
+# Version 5 
+<strong><em>@Release
+ <br />
+@</em> Revision 1</strong>
 
 <h1>Additions</h1>
 <p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
