@@ -36,7 +36,7 @@
 - <a style="color: #729e1b" href="#">apkinfector</a> - infect legitimate apks with meterpreter shells.<br />
 - <a style="color: #729e1b" href="#">PhishMailer</a> - Email Spamming for different services.<br />
 - <a style="color: #729e1b" href="#">Mouse</a> - Mac & iOS Post Exploitation Tool.<br />
-- <a style="color: #729e1b" href="#">LockPhish</a> - This tool is designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.<br />
+- <a style="color: #729e1b" href="#">LockPhish</a> - This tool is designed to grab Windows credentials, Android PIN and iPhone Passcode using &emsp;&ensp;&ensp; an https link.<br />
 - <a style="color: #729e1b" href="#">WhatPhish</a> - Tool for whatsapp phishing with OTP options provided <br />
 - <a style="color: #729e1b" href="#">GoSmish</a> - SMS Payload delivery using GoPhish framework & campaign data (Through Twilio)<br />
 &emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.
