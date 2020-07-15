@@ -27,7 +27,7 @@
 # Version 5 
 <strong><em>@Release
  <br />
-@</em> Revision 1</strong>
+@Revision 1</em></strong>
 
 <h1>Additions</h1>
 <p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
