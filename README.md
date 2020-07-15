@@ -1,5 +1,4 @@
-
- <img align="left" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
+<img align="left" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
  <img align="right" src="https://www.codefactor.io/repository/github/s1l3nt78/TigerShark/badge" alt="CodeFactor">
 <br />
 <p align="center">
@@ -25,8 +24,10 @@
 
 - Phishing Kit
 
-# Version 5 Release
-<strong><em>@</em> Revision 1</strong>
+# Version 5 
+<strong><em>@Release
+ <br />
+@</em> Revision 1</strong>
 
 TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail <br>
 spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
