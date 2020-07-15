@@ -1,4 +1,6 @@
-<img align="right" src="https://www.codefactor.io/repository/github/s1l3nt78/TigerShark/badge" alt="CodeFactor">
+
+ <img align="left" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
+ <img align="right" src="https://www.codefactor.io/repository/github/s1l3nt78/TigerShark/badge" alt="CodeFactor">
 <br />
 <p align="center">
  <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/s1l3nt78.github.io/master/TigerShark/tigershark-Release.PNG">
@@ -11,8 +13,6 @@
  <img align="center" src="https://img.shields.io/badge/Version-5-red">
  <br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
- <br>
- <img align="center" src="https://img.shields.io/badge/Author-s1l3nt78-blueviolet">
 </p>
 
 
