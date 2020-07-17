@@ -9,10 +9,10 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5-red">
- <br>
+ <img align="center" src="https://img.shields.io/badge/Version-5.1-red">
+ <!--<br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
-</p>
+--></p>
 
 
 # TigerShark
@@ -24,10 +24,10 @@
 
 - Phishing Kit
 
-# Version 5 
+# Version 5.1
 <strong><em>@Release
- <br />
-@</em> Revision 1</strong>
+<!-- <br />
+@</em> Revision 1</strong>-->
 
 TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail <br>
 spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
@@ -36,7 +36,7 @@ with customizable payloads, in multiple different scripting languages.
 
 @ Additions
 - <strong>EvilReg</strong> - For payload persistence
-- <strong>FakeMailer</strong> - Spamming & delivery
+- <strong>WBruter</strong> - Bruteforce Android Lock pin (<strong>USB Debugging must be enable but root is not needed</strong>)
 - <strong>GetDroid</strong> - Android payload creation
 - <strong>apkinfector</strong> - infect legitimate apks with meterpreter shells
 - <strong>PhishMailer</strong> - Email Spamming for different services

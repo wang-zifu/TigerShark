@@ -437,8 +437,13 @@ if [[ ! -d 'whatsapp-phishing' ]]; then
 	chmod 777 Whatsapp.sh
 fi
 
-#
-#cd /opt/TigerShark/tools
+
+cd /opt/TigerShark/tools
+if [[ ! -d 'WBRUTER' ]]; then
+	git clone https://github.com/wuseman/WBRUTER.git
+	cd WBRUTER
+	sudo chmod +x wbruter
+fi
 
 ###################################################################################################################################################
 ###############################

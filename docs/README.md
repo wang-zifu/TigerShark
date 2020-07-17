@@ -9,10 +9,10 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5-red">
- <br>
+ <img align="center" src="https://img.shields.io/badge/Version-5.1-red">
+<!-- <br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
-</p>
+--></p>
 
 
 # TigerShark
@@ -24,14 +24,14 @@
 
 - Phishing Kit
 
-# Version 5 
+# Version 5.1
 <strong><em>@Release
- <br />
+ <!--<br />
 @Revision 1</em></strong>
-
+-->
 <h1>Additions</h1>
 <p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
-- <a style="color: #729e1b" href="#">FakeMailer</a> - added for spamming & delivery.<br />
+- <a style="color: #729e1b" href="#">WBruter</a> - Bruteforce Android Lock pin (<strong>USB Debugging must be enable but root is not needed</strong>)<br />
 - <a style="color: #729e1b" href="#">GetDroid</a> - Android payload creation.<br />
 - <a style="color: #729e1b" href="#">apkinfector</a> - infect legitimate apks with meterpreter shells.<br />
 - <a style="color: #729e1b" href="#">PhishMailer</a> - Email Spamming for different services.<br />
