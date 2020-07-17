@@ -27,7 +27,7 @@
 # Version 5.1
 <strong><em>@Release
 <!-- <br />
-@</em> Revision 1</strong>-->
+@</em> Revision 1--></strong>
 
 TigerShark incorporates various different phishing tools, frameworks, domain gathering/generation tools and mail <br>
 spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit allows you to create small to large phishing campaigns, <br>
