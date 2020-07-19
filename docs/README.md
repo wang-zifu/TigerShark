@@ -27,10 +27,10 @@
 - Phishing Kit
 
 # Version 5.1
-<strong><em>@Release
+<strong><em>@Release</em></strong>
  <!--<br />
-@Revision 1</strong>
---></em>
+@Revision 1
+-->
 <h1>Additions</h1>
 <p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
 - <a style="color: #729e1b" href="#">WBruter</a> - Bruteforce Android Lock pin (<strong>USB Debugging must be enable but root is not needed</strong>)<br />
