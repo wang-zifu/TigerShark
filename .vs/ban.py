@@ -6,7 +6,7 @@ CBLUE = '\33[94m'
 CYELLOW = '\33[33m'
 CEND = '\033[0m'
 UGREEN = '\33[92m'
-
+#+ CRED + " | " + UGREEN + "Rev: " + CBLUE + "1"
 
 def showbanner():
         print(CVIOLET + '''
@@ -15,7 +15,7 @@ def showbanner():
   ______  /  ___/|   |  |   _(__  < /    \   __\  /    />      <   ______
  /_____/  \___ \ |   |  |__/       \   |  \  |   /    //   --   \ /_____/
          /____  >|___|____/______  /___|  /__|  /____/ \______  /
-              \/    ''' + CRED + "TigerShark" + CVIOLET + '''   \/     \/  ''' + UGREEN + "Ver: " + CBLUE + "5" + CRED + " | " + UGREEN + "Rev: " + CBLUE + "1" + CVIOLET + '''   \/    ''' + CEND)
+              \/    ''' + CRED + "TigerShark" + CVIOLET + '''   \/     \/     ''' + UGREEN + "Ver: " + CBLUE + "5.2"  + CVIOLET + '''      \/    ''' + CEND)
 
         exit
 
