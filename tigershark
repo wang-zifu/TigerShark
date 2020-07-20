@@ -520,7 +520,7 @@ single_pole(){
 trawler(){
     echo -e "${LP}"
     PS3='Please Select Your Tool for Campaign Phisher Generation'
-    options=("GoPhish" "SocialFish" "STP" "ADV-Phishing" "Back")
+    options=("GoPhish" "SocialFish" "STP" "ADV-Phishing" "SPF" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -538,6 +538,10 @@ trawler(){
 
                 "ADV-Phishing")
                     ./Modules/Phishing/Trawler/advphish.sh
+                    ;;
+
+                "SPF")
+                    ./Modules/Phishing/Trawler/spf.sh
                     ;;
 
                 "Back")

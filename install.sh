@@ -445,6 +445,18 @@ if [[ ! -d 'WBRUTER' ]]; then
 	sudo chmod +x wbruter
 fi
 
+cd /opt/TigerShark/tools
+if [[ ! -d 'SPF' ]]; then
+	git clone https://github.com/tatanus/SPF
+	cd SPF
+	sudo apt-get update
+	sudo apt-get upgrade -y
+	sudo apt-get install git build-essential python-dev python-pip phantomjs -y
+	sudo apt install python3-twisted
+	sudo apt install python3-dnspython
+	python3 -m pip install -r requirements.txt
+fi
+
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##
