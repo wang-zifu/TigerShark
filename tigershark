@@ -613,6 +613,11 @@ update(){
                 sudo chmod +x Modules --recursive
                 ./tigershark
         fi
+        echo -e "${ORNG}Would you like to update tools as well?(y/n)${NC}"
+        read TOOLUP
+        if [[ ${TOOLUP} == "y" ]]; then
+            bash Modules/tool-update.sh
+        fi
 }
 #
 #
