@@ -12,6 +12,6 @@ figlet -f mini "GoPhish"
 echo -e "${NC}"
 xterm -e sudo ./gophish &
 sleep 15
-xterm -e firefox http://localhost:3333 &
+xterm -e firefox https://127.0.0.1:3333 &
 cd /opt/TigerShark
 ./tigershark
