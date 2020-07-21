@@ -101,7 +101,7 @@ persist(){
 fwork(){
     echo -e "${YLW}"
     PS3='Which Framework would you like to work?'
-        options=("C2 Frameworks" "Explotation Frameworks" "Back")]
+        options=("C2 Frameworks" "Explotation Frameworks" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
