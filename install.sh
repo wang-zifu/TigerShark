@@ -494,6 +494,12 @@ else
 		sudo chown $USER:$USER /usr/sbin/tigershark
 	else
 		sleep 1
+	fi}
+	echo -e "${RED}Would you like to update tools as well?(y/n)${NC}"
+	read TOOLUP
+	if [[ ${TOOLUP} == "y" ]]; then
+		chmod +x Modules/tool-update.sh
+		bash Modules/tool-update.sh
 	fi
 fi
 sudo chown $USER:$USER -R /opt/TigerShark
