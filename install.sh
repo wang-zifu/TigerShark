@@ -162,8 +162,14 @@ cd /opt/TigerShark/tools
 # CredSniper
 if [[ -d 'CredSniper' ]]; then
 	sleep 1
+	sudo rm -rf CredSniper
+	git clone https://github.com/ustayready/CredSniper.git
+	sudo python3 -m pip install -r requirements.txt
+	chmod +x install.sh
+	./install.sh
+	cd ..
 else
-	git clone https://github.com/s1l3nt78/CredSniper.git
+	git clone https://github.com/ustayready/CredSniper.git
 	cd CredSniper
 	sudo python3 -m pip install -r requirements.txt
 	chmod +x install.sh
