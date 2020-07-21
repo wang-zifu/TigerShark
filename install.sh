@@ -494,7 +494,7 @@ else
 		sudo chown $USER:$USER /usr/sbin/tigershark
 	else
 		sleep 1
-	fi}
+	fi
 	echo -e "${RED}Would you like to update tools as well?(y/n)${NC}"
 	read TOOLUP
 	if [[ ${TOOLUP} == "y" ]]; then
