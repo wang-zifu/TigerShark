@@ -11,6 +11,7 @@ echo -e "${ORNG}"
 figlet -f mini "GoPhish"
 echo -e "${NC}"
 xterm -e sudo ./gophish &
-xterm firefox http://localhost:3333
+sleep 15
+xterm -e firefox http://localhost:3333
 cd /opt/TigerShark
 ./tigershark
