@@ -15,7 +15,7 @@ cd catphish
 git fetch && git pull &>/dev/null
 cd ../gophish
 git fetch && git pull &>/dev/null
-go get github.com/gophish/gophish
+go get github.com/gophish/gophish -u
 cd ../PhishX
 git fetch && git pull &>/dev/null
 cd ../weeman
