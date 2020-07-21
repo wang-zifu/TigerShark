@@ -454,7 +454,7 @@ fi
 
 cd /opt/TigerShark/tools
 if [[ ! -d 'SPF' ]]; then
-	git clone https://github.com/tatanus/SPF
+	git clone --recursive https://github.com/tatanus/SPF
 	cd SPF
 	sudo apt-get update
 	sudo apt-get upgrade -y
