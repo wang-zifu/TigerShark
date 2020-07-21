@@ -485,7 +485,7 @@ if [[ $UPQ == "i" ]]; then
 		sleep 1
 	fi
 	echo -e "${W}Please change SocialFish App Key in 'SocialFish/core/config.py'${NC}"
-	echo -e "${W}GoPhish default login is ${RED}admin${W}:${RED}gophish${NC}"
+	echo -e "${W}GoPhish default login is ${RED}will be generated upon first use${NC}"
 else
 	if [[ -f /usr/sbin/tigershark ]]; then
 		cd /opt/TigerShark
