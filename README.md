@@ -38,11 +38,7 @@ with customizable payloads, in multiple different scripting languages.
 
 
 @ Additions
-- <strong>EvilReg</strong> - For payload persistence
-- <strong>WBruter</strong> - Bruteforce Android Lock pin (<strong>USB Debugging must be enable but root is not needed</strong>)
-- <strong>GetDroid</strong> - Android payload creation
-- <strong>apkinfector</strong> - infect legitimate apks with meterpreter shells
-- <strong>PhishMailer</strong> - Email Spamming for different services
+- <string>DKMC</strong> - 'Don't Kill My Cat' Payload Delivery using a PowerShell OneLiner
 - <strong>Mouse</strong> - Mac & iOS Post Exploitation Tool
 - <strong>LockPhish</strong> - Designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
 - <strong>WhatPhish</strong> - Tool for whatsapp phishing with OTP options provided 
