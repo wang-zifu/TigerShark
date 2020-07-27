@@ -444,7 +444,7 @@ if [[ ! -d 'whatsapp-phishing' ]]; then
 	chmod 777 Whatsapp.sh
 fi
 
-
+#WBRUTER
 cd /opt/TigerShark/tools
 if [[ ! -d 'WBRUTER' ]]; then
 	git clone https://github.com/wuseman/WBRUTER.git
@@ -452,6 +452,7 @@ if [[ ! -d 'WBRUTER' ]]; then
 	sudo chmod +x wbruter
 fi
 
+# SPF
 cd /opt/TigerShark/tools
 if [[ ! -d 'SPF' ]]; then
 	git clone --recursive https://github.com/tatanus/SPF
@@ -463,6 +464,15 @@ if [[ ! -d 'SPF' ]]; then
 	sudo apt install python3-dnspython
 	python3 -m pip install -r requirements.txt
 fi
+
+# DKMC
+cd /opt/TigerShark/tools
+if [[ ! -d 'DKMC' ]]; then
+	git clone https://github.com/Mr-Un1k0d3r/DKMC.git
+	cd DKMC
+	mkdir output
+fi
+
 
 ###################################################################################################################################################
 ###############################

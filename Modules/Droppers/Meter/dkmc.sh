@@ -7,12 +7,12 @@ YLW='\033[1;33m'
 LBBLUE='\e[104m'
 RED='\033[0;31m'
 
-cd /opt/TigerShark/tools/WBRUTER
+cd /opt/TigerShark/tools/DKMC
 echo -e "${RED}"
-figlet -f mini "WBruter"
+figlet -f mini "Don't Kill My Cat"
 echo -e "${NC}"
-xterm -e sudo bash wbruter
-sleep 30 
+sudo python dkmc.py
+
 echo -e "	============================================"
 cd /opt/TigerShark
 ./tigershark

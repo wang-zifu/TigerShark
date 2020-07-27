@@ -126,7 +126,7 @@ fwork(){
 dmeth(){
     echo -e "${YLW}"
     PS3='Please choose your preferred method'
-        options=("JS_DriveBy" "GoSmish" "Back") #"FlashLogger" 
+        options=("JS_DriveBy" "GoSmish" "PowerShell OneLiner" "Back") #"FlashLogger" 
         select opt in "${options[@]}"
         do
             case $opt in
@@ -141,6 +141,10 @@ dmeth(){
                     echo -e "${W}Enter you are done please hit ${ORNG}enter${NC}"
                     read JTIM
                     sudo python3 /opt/TigerShark/Modules/Phishing/Trawler/gosmish.py
+                    ;;
+
+                "PowerShell OneLiner")
+                    ./Modules/Droppers/Meter/dkmc.sh
                     ;;
 
 #                "FlashLogger")

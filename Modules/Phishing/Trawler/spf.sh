@@ -7,7 +7,7 @@ YLW='\033[1;33m'
 LBBLUE='\e[104m'
 RED='\033[0;31m'
 
-cd /opt/SPF/spf
+cd /opt/TigerShark/tools/spf
 echo -e "${RED}"
 figlet -f mini "SPF"
 echo -e "${NC}"
@@ -30,7 +30,7 @@ sleep 1
 python3 spf.py --all -d ${DOMAIN} -c ${COMPANY} --ip ${SERVER} -f ${TARGETS} -v ${PER}
 sleep 30 
 echo -e "	============================================"
-cd /opt/sifter
-./sifter -m
+cd /opt/TigerShark
+./tigershark
 
 ##########################______________ czFsM250NzggX18gUmFiYjE3J3MgRGVu ______________##########################

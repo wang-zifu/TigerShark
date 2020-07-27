@@ -8,7 +8,7 @@ LBBLUE='\e[104m'
 RED='\033[0;31m'
 
 echo -e "${RED}"
-figlet -f mini "Checking For Updates"
+figlet -f mini "Checking For External Tool Updates"
 echo -e "${NC}"
 cd /opt/TigerShark/tools
 cd catphish
@@ -78,6 +78,9 @@ git fetch && git pull &>/dev/null
 cd ../SPF
 git fetch && git pull &>/dev/null
 python3 -m pip install -r requirements.txt
+cd ../DKMC
+git fetch && git pull &>/dev/null
+
 sleep 5
 echo -e "${ORNG}================================+${NC}"
 cd /opt/TigerShark
