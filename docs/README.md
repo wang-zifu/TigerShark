@@ -11,7 +11,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5.1-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5.3-red">
 <!-- <br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 --></p>
@@ -26,22 +26,19 @@
 
 - Phishing Kit
 
-# Version 5.1
+# Version 5.3
 <strong><em>@Release</em></strong>
  <!--<br />
 @Revision 1
 -->
 <h1>Additions</h1>
 <p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
-- <a style="color: #729e1b" href="#">WBruter</a> - Bruteforce Android Lock pin (<strong>USB Debugging must be enable but root is not needed</strong>)<br />
-- <a style="color: #729e1b" href="#">GetDroid</a> - Android payload creation.<br />
-- <a style="color: #729e1b" href="#">apkinfector</a> - infect legitimate apks with meterpreter shells.<br />
-- <a style="color: #729e1b" href="#">PhishMailer</a> - Email Spamming for different services.<br />
 - <a style="color: #729e1b" href="#">Mouse</a> - Mac & iOS Post Exploitation Tool.<br />
 - <a style="color: #729e1b" href="#">LockPhish</a> - This tool is designed to grab Windows credentials, Android PIN and iPhone Passcode using &emsp;&ensp;&ensp; an https link.<br />
 - <a style="color: #729e1b" href="#">WhatPhish</a> - Tool for whatsapp phishing with OTP options provided <br />
 - <a style="color: #729e1b" href="#">GoSmish</a> - SMS Payload delivery using GoPhish framework & campaign data (Through Twilio)<br />
-&emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.
+&emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.<br />
+- <a style="color: #729e1b" href="#">DKMC</a> - Payload delivery using PowerShell OneLiner<br />
 </em>
  </p>
 
