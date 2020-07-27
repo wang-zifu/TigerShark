@@ -38,7 +38,7 @@ with customizable payloads, in multiple different scripting languages.
 
 
 @ Additions
-- <string>DKMC</strong> - 'Don't Kill My Cat' Payload Delivery using a PowerShell OneLiner
+- <strong>DKMC</strong> - 'Don't Kill My Cat' Payload Delivery using a PowerShell OneLiner
 - <strong>Mouse</strong> - Mac & iOS Post Exploitation Tool
 - <strong>LockPhish</strong> - Designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
 - <strong>WhatPhish</strong> - Tool for whatsapp phishing with OTP options provided 
