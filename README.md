@@ -22,7 +22,7 @@
  <br>
 <strong><em>~The Dead Bunny Club~</em></strong>
  <br>
- <em>Because phishing is a great way to pass the time.</em>
+ Because phishing is a great way to pass the time.</em>
 <br>
 <br>
 
