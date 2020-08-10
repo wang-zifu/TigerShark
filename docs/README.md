@@ -11,7 +11,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5.3-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5.4-red">
 <!-- <br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 --></p>
@@ -26,13 +26,13 @@
 
 - Phishing Kit
 
-# Version 5.3
+# Version 5.4
 <strong><em>@Release</em></strong>
  <!--<br />
 @Revision 1
 -->
 <h1>Additions</h1>
-<p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">EvilReg</a> - added for payload persistence.<br />
+<p style="color: #bf8d30"><em>- <a style="color: #729e1b" href="#">Nero-Phishing-Server</a> - Used for WebSite Cloning.<br />
 - <a style="color: #729e1b" href="#">Mouse</a> - Mac & iOS Post Exploitation Tool.<br />
 - <a style="color: #729e1b" href="#">LockPhish</a> - This tool is designed to grab Windows credentials, Android PIN and iPhone Passcode using &emsp;&ensp;&ensp; an https link.<br />
 - <a style="color: #729e1b" href="#">WhatPhish</a> - Tool for whatsapp phishing with OTP options provided <br />

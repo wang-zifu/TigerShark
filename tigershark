@@ -342,7 +342,7 @@ meters(){
 gathering_mods(){
     echo -e "${RED}"
     PS3='Please define your activity?'
-        options=("Gathering Potential eMail targets for Campaign" "Gathering Potential Domains for Campaign" "Generate Phishing URL's" "Back")
+        options=("Gathering Potential eMail targets for Campaign" "Gathering Potential Domains for Campaign" "Generate Phishing URL's" "WebCloning" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -356,6 +356,10 @@ gathering_mods(){
 
                 "Generate Phishing URL's")
                     dom_generation
+                    ;;
+
+                "WebCloning")
+                    webclone
                     ;;
 
                 "Back")
@@ -439,8 +443,26 @@ dom_generation(){
 		    ;;
 
                 "Back")
-                    cd /opt/TigerShark
-                    ./tigershark
+                    gathering_mods
+                    ;;
+            esac
+        done
+    echo -e "${NC}"
+}
+# Website Cloning
+webclone(){
+    echo -e "${LBLUE}"
+    PS3='Please select the tool for Web Cloning'
+        options=("Nero" "Back")
+        select opt in "${options[@]}"
+        do
+            case $opt in
+                "Nero")
+                    ./Modules/Gathering/Cloning/nero.sh
+                    ;;
+
+                "Back")
+                    domain_collection
                     ;;
             esac
         done

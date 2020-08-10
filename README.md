@@ -11,7 +11,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5.3-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5.4-red">
  <!--<br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 --></p>
@@ -28,7 +28,7 @@
 
 - Phishing Kit
 
-# Version 5.3
+# Version 5.4
 <strong><em>@Release
 <!-- <br />
 @ Revision 1-->
@@ -40,6 +40,7 @@ with customizable payloads, in multiple different scripting languages.
 
 
 @ Additions
+- <strong>Nero-Phishing-Server</strong> - Webcloning for phishing scenarios
 - <strong>DKMC</strong> - 'Don't Kill My Cat' Payload Delivery using a PowerShell OneLiner
 - <strong>Mouse</strong> - Mac & iOS Post Exploitation Tool
 - <strong>LockPhish</strong> - Designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.
