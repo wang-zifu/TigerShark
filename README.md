@@ -60,19 +60,6 @@ with customizable payloads, in multiple different scripting languages.
     just remove it from /opt/TigerShark/tools directory
     and run the install script again.
 
-# Question
-
-    So whoever takes the time and reads this.
-    I have been contemplating replacing merlin with Covenant and main C2, this is mainly just
-    as I prefer Covenant.
-
-    If this is something you guys would like, let me know. 
-    Either through a pull-request with like a text file saying yes or through an issue.
-    Otherwise I'll leave it Merlin
-    Thanks,
-    #s1l3nt78
-
-
 <em>Developed for Linux only</em>
 <br />
 <em>Windows creates too many errors leaving this essentially useless</em>
