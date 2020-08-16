@@ -11,7 +11,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5.4-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5.5-red">
 <!-- <br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 --></p>
@@ -26,7 +26,7 @@
 
 - Phishing Kit
 
-# Version 5.4
+# Version 5.5
 <strong><em>@Release</em></strong>
  <!--<br />
 @Revision 1

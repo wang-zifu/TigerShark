@@ -30,7 +30,6 @@ sleep 1
 python3 spf.py --all -d ${DOMAIN} -c ${COMPANY} --ip ${SERVER} -f ${TARGETS} -v ${PER}
 sleep 30 
 echo -e "	============================================"
-cd /opt/TigerShark
-./tigershark
+
 
 ##########################______________ czFsM250NzggX18gUmFiYjE3J3MgRGVu ______________##########################

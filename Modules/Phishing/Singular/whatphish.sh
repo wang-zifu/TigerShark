@@ -12,5 +12,3 @@ figlet -f mini WhatPhish
 echo -e "${NC}"
 sudo ./Whatsapp.sh
 sleep 3
-cd /opt/TigerShark
-./tigershark

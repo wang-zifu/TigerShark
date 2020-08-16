@@ -12,5 +12,3 @@ echo -e "${NC}"
 cd tools/AdvPhishing
 sudo ./AdvPhishing.sh
 sleep 5
-cd ../..
-./tigershark
