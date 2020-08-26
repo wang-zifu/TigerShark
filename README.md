@@ -18,7 +18,7 @@
 # TigerShark
 <strong><em>s1l3nt78</strong>
  <br>
-<strong><em>~The Dead Bunny Club~</em></strong>
+<strong><em>~The Dead Bunny Collective~</em></strong>
  <br>
  Because phishing is a great way to pass the time.</em>
 <br>
