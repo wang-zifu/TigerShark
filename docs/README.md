@@ -11,7 +11,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5.5-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5.6-red">
 <!-- <br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 --></p>
@@ -39,6 +39,7 @@
 - <a style="color: #729e1b" href="#">GoSmish</a> - SMS Payload delivery using GoPhish framework & campaign data (Through Twilio)<br />
 &emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.<br />
 - <a style="color: #729e1b" href="#">DKMC</a> - Payload delivery using PowerShell OneLiner<br />
+- <a style="color: #729e1b" href="#">MashPhish</a> - Masking Phishing URL's<br />
 </em>
  </p>
 

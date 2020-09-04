@@ -473,7 +473,11 @@ if [[ ! -d 'DKMC' ]]; then
 	mkdir output
 fi
 
-
+# MaskPhish
+cd /opt/TigerShark/tools
+if [[ ! -d 'maskphish' ]]; then
+	git clone https://github.com/jaykali/maskphish
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##
