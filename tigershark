@@ -430,7 +430,7 @@ domain_collection(){
 dom_generation(){
     echo -e "${LBLUE}"
     PS3='Please select the tool for domain generation'
-        options=("EvilURL" "CuteIt" "Back")
+        options=("EvilURL" "CuteIt" "MaskPhish" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -440,6 +440,10 @@ dom_generation(){
 
 	        "CuteIt")
 		    ./Modules/Gathering/Generation/cuteit.sh
+		    ;;
+		    
+		"MaskPhish")
+		    ./Modules/Gathering/Generation/maskphish.sh
 		    ;;
 
                 "Back")
