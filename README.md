@@ -2,7 +2,7 @@
 <p align="center"><img align="center" src="https://img.shields.io/badge/-The_Dead_Bunny_Collective-green"></p>
 <br />
 <p align="center">
- <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/s1l3nt78.github.io/master/TigerShark/tigershark-Release.PNG">
+ <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/s1l3nt78.github.io/master/TigerShark/tigershark-Release.png">
  <br>
  <img align="center" src="https://img.shields.io/github/issues/s1l3nt78/TigerShark">
  <img align="center" src="https://img.shields.io/github/forks/s1l3nt78/TigerShark">
@@ -88,7 +88,7 @@ by the software in this repository.
 <br /></em>
 
 <p align="center">
-        <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/3.PNG">
+        <img align="center" src="https://raw.githubusercontent.com/s1l3nt78/TigerShark/master/docs/3.png">
 </p>
 
 
