@@ -478,6 +478,13 @@ cd /opt/TigerShark/tools
 if [[ ! -d 'maskphish' ]]; then
 	git clone https://github.com/jaykali/maskphish
 fi
+
+# URLCADIZ
+cd /opt/TigerShark/tools
+if [[ ! -d "URLCADIZ" ]]; then
+	git clone https://github.com/PerezMascato/URLCADIZ.git
+	python3 -m pip install -r requirements.txt
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##

@@ -80,6 +80,10 @@ git fetch && git pull &>/dev/null
 python3 -m pip install -r requirements.txt
 cd ../DKMC
 git fetch && git pull &>/dev/null
+cd ../URLCADIZ
+git fetch && git pull
+python3 -m pip install -r requirements.txt
+
 
 sleep 5
 echo -e "${ORNG}================================+${NC}"
