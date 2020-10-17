@@ -64,7 +64,7 @@ with customizable payloads, in multiple different scripting languages.
 <em>Windows creates too many errors leaving this essentially useless</em>
 
 
-# IMPORTANT
+# PSA
 
 This framework was made for educational purposes, as well
 as for use by cyber security professionals <em>with signed 
