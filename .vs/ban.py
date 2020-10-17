@@ -15,7 +15,7 @@ def showbanner():
   ______  /  ___/|   |  |   _(__  < /    \   __\  /    />      <   ______
  /_____/  \___ \ |   |  |__/       \   |  \  |   /    //   --   \ /_____/
          /____  >|___|____/______  /___|  /__|  /____/ \______  /
-              \/    ''' + CRED + "TigerShark" + CVIOLET + '''   \/     \/      ''' + UGREEN + "Ver: " + CBLUE + "5.6"  + CVIOLET + '''      \/    ''' + CEND)
+              \/    ''' + CRED + "TigerShark" + CVIOLET + '''   \/     \/      ''' + UGREEN + "Ver: " + CBLUE + "5.8"  + CVIOLET + '''      \/    ''' + CEND)
 
         exit
 
