@@ -66,11 +66,15 @@ with customizable payloads, in multiple different scripting languages.
 
 # IMPORTANT
 
-This software should not be used within any system or
-network for which you do not have permission, nor should
-it be used for any illegal or illicit purposes. The author
-takes no responsibility for any damages that may be caused
-by the software in this repository.
+This framework was made for educational purposes, as well
+as for use by cyber security professionals <em>with signed 
+written permission</em>, to conduct - and speed up - tasks 
+during a penetration test. 
+This software should not be used within any system or network 
+for which you do not have <strong>explicit</strong> concent, 
+nor should it be used for any illegal or illicit purposes. 
+The author hereby takes no responsibility for any damages
+that may be caused by the use of this repository.
 
 # Installation
 
