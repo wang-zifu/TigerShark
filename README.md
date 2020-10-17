@@ -9,7 +9,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5.6-red">
+ <img align="center" src="https://img.shields.io/badge/Version-5.8-red">
  <!--<br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 --></p>
@@ -26,7 +26,7 @@
 
 - Phishing Kit
 
-# Version 5.6
+# Version 5.8
 <strong><em>@Release
 <!-- <br />
 @ Revision 1-->
@@ -46,6 +46,8 @@ with customizable payloads, in multiple different scripting languages.
 - <strong>GoSmish</strong> - SMS Payload delivery using GoPhish framework & campaign data (Through Twilio)<br />
 &emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.
 - <strong>MashPhish</strong> - Masking Phishing URL's<br />
+- <strong>URLCADIZ</strong> - Masked URL generation<br />
+- <strong>Shark</strong> - PHP Phishing Tool
 
 @ CVE's
 - <strong>2018-8174</strong>

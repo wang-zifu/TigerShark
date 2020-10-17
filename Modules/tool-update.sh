@@ -83,7 +83,9 @@ git fetch && git pull &>/dev/null
 cd ../URLCADIZ
 git fetch && git pull
 python3 -m pip install -r requirements.txt
-
+cd ../shark
+git fetch && git pull
+bash kali-setup
 
 sleep 5
 echo -e "${ORNG}================================+${NC}"

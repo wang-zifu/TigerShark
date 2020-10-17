@@ -485,6 +485,14 @@ if [[ ! -d "URLCADIZ" ]]; then
 	git clone https://github.com/PerezMascato/URLCADIZ.git
 	python3 -m pip install -r requirements.txt
 fi
+
+# Shark
+cd /opt/TigerShark/tools
+if [[ ! -d 'shark' ]]; then
+	git clone https://github.com/Bhaviktutorials/shark
+	cd shark
+	bash kali-setup
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##
