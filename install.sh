@@ -502,6 +502,12 @@ if [[ ! -d 'sgn' ]]; then
 	sudo apt-get install libcapstone-dev
 	go build .
 fi
+
+cd /opt/TigerShark/tools
+# FAQUE
+if [[ ! -d 'FAQUE' ]]; then
+	git clone https://github.com/ByDog3r/FAQUE
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##

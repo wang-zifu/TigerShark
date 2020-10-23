@@ -37,12 +37,13 @@ spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit 
 with customizable payloads, in multiple different scripting languages.
 
 
-@ Additions
+@ Additions<br />
 = Version 6<br />
 - <strong>MashPhish</strong> - Masking Phishing URL's<br />
 - <strong>URLCADIZ</strong> - Masked URL generation<br />
 - <strong>Shark</strong> - PHP Phishing Tool<br />
 - <strong>Shikata Gai Ni</strong> - Shikata Gai Ni encoder rewritten and optimized in Golang<br />
+- <strong>FAQUE</strong> - FakeIdentity for Phishing Mails.<br />
 <br />
 = Version 5.6<br />
 - <strong>Nero-Phishing-Server</strong> - Webcloning for phishing scenarios
