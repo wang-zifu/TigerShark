@@ -38,6 +38,13 @@ with customizable payloads, in multiple different scripting languages.
 
 
 @ Additions
+= Version 6<br />
+- <strong>MashPhish</strong> - Masking Phishing URL's<br />
+- <strong>URLCADIZ</strong> - Masked URL generation<br />
+- <strong>Shark</strong> - PHP Phishing Tool<br />
+- <strong>Shikata Gai Ni</strong> - Shikata Gai Ni encoder rewritten and optimized in Golang<br />
+<br />
+= Version 5.6<br />
 - <strong>Nero-Phishing-Server</strong> - Webcloning for phishing scenarios
 - <strong>DKMC</strong> - 'Don't Kill My Cat' Payload Delivery using a PowerShell OneLiner
 - <strong>Mouse</strong> - Mac & iOS Post Exploitation Tool
@@ -45,9 +52,6 @@ with customizable payloads, in multiple different scripting languages.
 - <strong>WhatPhish</strong> - Tool for whatsapp phishing with OTP options provided 
 - <strong>GoSmish</strong> - SMS Payload delivery using GoPhish framework & campaign data (Through Twilio)<br />
 &emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.
-- <strong>MashPhish</strong> - Masking Phishing URL's<br />
-- <strong>URLCADIZ</strong> - Masked URL generation<br />
-- <strong>Shark</strong> - PHP Phishing Tool
 
 @ CVE's
 - <strong>2018-8174</strong>

@@ -268,12 +268,16 @@ droid(){
 obs(){
     echo -e "${RED}"
         PS3='How would you like to obfuscate your payload?'
-            options=("Graffiti" "Back")
+            options=("Graffiti" "Shikata Gai Ni" "Back")
             select opt in "${options[@]}"
             do
                 case $opt in
                     "Graffiti")
                         ./Modules/Droppers/Obs/graffiti.sh
+                        ;;
+
+                    "Shikata Gai Ni")
+                        ./Modules/Droppers/Obs/sg.sh
                         ;;
 
                     "Back")

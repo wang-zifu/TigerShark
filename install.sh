@@ -493,6 +493,16 @@ if [[ ! -d 'shark' ]]; then
 	cd shark
 	bash kali-setup
 fi
+
+# Shikata Gai Ni
+cd /opt/TigerShark/tools
+if [[ ! -d 'sgn' ]]; then
+	git clone https://github.com/EgeBalci/sgn
+	cd sgn
+	go get github.com/EgeBalci/sgn
+	sudo apt-get install libcapstone-dev
+	go build .
+fi
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##
