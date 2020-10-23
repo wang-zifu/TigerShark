@@ -496,11 +496,7 @@ fi
 # Shikata Gai Ni
 cd /opt/TigerShark/tools
 if [[ ! -d 'sgn' ]]; then
-	git clone https://github.com/EgeBalci/sgn
-	cd sgn
-	go get github.com/EgeBalci/sgn
-	sudo apt-get install libcapstone-dev
-	go build .
+	sudo docker pull egee/sgn
 fi
 
 cd /opt/TigerShark/tools

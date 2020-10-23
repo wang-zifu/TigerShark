@@ -10,7 +10,7 @@ cd tools/sgn
 echo -e "${RED}"
 figlet -f mini "Shikata Gai Ni"
 echo -e "${NC}"
-echo -e "${ORNG}Please enter the full path/to/payload${NC}"
+echo -e "${ORNG}Please copy your payload to ${LP}/tmp ${ORNG}dir\n${W}When ready please enter the name of your payload${NC}"
 read PAY
 echo -e "${ORNG}Is your payload a 32-bit or 64-bit binary? (${YLW}3/6${ORNG})${NC}"
 read ARCH
@@ -43,17 +43,19 @@ echo -e "${ORNG}Please enter the max number of bytes for obfuscation ${YLW}(15+)
 read OBF
 echo -e "${ORNG}Please enter the name for output file${NC}"
 read OUT
-echo -e "\n${RED}Selectd Variables:${NC}"
+echo -e "\n${RED}Selected Variables:${NC}"
 echo -e "============================================"
-echo -e "${LP}Path to Payload      : ${W}${PAY} ${NC}"
-echo -e "${LP}Architecture Type    : ${W}x${ARC}"
-echo -e "${LP}Using Ascii Payload  : ${W}${ASO} ${NC}"
-echo -e "${LP}BadChars To Remove   : ${W}${CHARS} ${NC}"
-echo -e "${LP}Encoding Loop Amount : ${W}${ENC} ${NC}"
-echo -e "${LP}Max Obfuscation Bytes: ${W}${OBF} ${NC}"
-echo -e "${LP}Name of Output File  : ${W}${OUT} ${NC}"
+echo -e "${LP}Original Payload Name : ${W}${PAY} ${NC}"
+echo -e "${LP}Architecture Type     : ${W}x${ARC}"
+echo -e "${LP}Using Ascii Payload   : ${W}${ASO} ${NC}"
+echo -e "${LP}BadChars To Remove    : ${W}${CHARS} ${NC}"
+echo -e "${LP}Encoding Loop Amount  : ${W}${ENC} ${NC}"
+echo -e "${LP}Max Obfuscation Bytes : ${W}${OBF} ${NC}"
+echo -e "${LP}Name of Output Payload: ${W}${OUT} ${NC}"
 echo -e "============================================"
-sgn -a ${ARC} ${ASCII} ${BADC} -c ${ENC} -max ${OBF} -o ${OUT} ${PAY}
+sudo docker run -it --name building -v /tmp/:/tmp/ egee/sgn -a ${ARC} ${ASCII} ${BADC} -c ${ENC} -max ${OBF} -o /tmp/${OUT} /tmp/${PAY}
 sleep 3
+sudo docker cp building:/tmp/${OUT} ~/Desktop
+echo -e "${W}${OUT} has been encoded and copied to your Desktop${NC}"
 cd /opt/TigerShark
 ./tigershark
