@@ -188,13 +188,12 @@ fi
 
 cd /opt/TigerShark/tools
 # Pupy
-if [[ -d 'pupy' ]]; then
-	sleep 1
-else
+if [[ ! -d 'pupy' ]]; then
 	git clone --recursive https://github.com/n1nj4sec/pupy.git
 	cd pupy
 	sudo python2 -m pip install virtualenv
-	sudo python create-workspace.py pupyw
+	sudo python create-workspace.py -BG pupyw
+	echo "export PATH=/opt/TigerShark/tools/pupy/G:$PATH" >> ~/.bashrc
 	sleep 5
 	mv /opt/TigerShark/.vs/pupy.conf.default -t /opt/TigerShark/tools/pupy/pupy
 fi
