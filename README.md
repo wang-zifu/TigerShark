@@ -37,7 +37,7 @@ spammers to create a fully customizable <strong>Phishing Kit</strong>. This kit 
 with customizable payloads, in multiple different scripting languages.
 
 
-@ Additions
+@ Additions<br />
 = Version 6<br />
 - <strong>MashPhish</strong> - Masking Phishing URL's<br />
 - <strong>URLCADIZ</strong> - Masked URL generation<br />
