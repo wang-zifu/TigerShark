@@ -33,7 +33,7 @@ with customizable payloads, in multiple different scripting languages.
 # Version 6
 
 @ Additions<br />
-- <strong>MashPhish</strong> - Masking Phishing URL's<br />
+- <strong>MaskPhish</strong> - Masking Phishing URL's<br />
 - <strong>URLCADIZ</strong> - Masked URL generation<br />
 - <strong>Shark</strong> - PHP Phishing Tool<br />
 - <strong>Shikata Gai Ni</strong> - Shikata Gai Ni encoder rewritten and optimized in Golang<br />
