@@ -33,23 +33,9 @@ with customizable payloads, in multiple different scripting languages.
 # Version 6
 
 @ Additions<br />
-- <strong>MaskPhish</strong> - Masking Phishing URL's<br />
-- <strong>URLCADIZ</strong> - Masked URL generation<br />
-- <strong>Shark</strong> - PHP Phishing Tool<br />
+- <strong>Blackeye-2.0</strong> - Phishing tool
 - <strong>Shikata Gai Ni</strong> - Shikata Gai Ni encoder rewritten and optimized in Golang<br />
 - <strong>FAQUE</strong> - FakeIdentity for Phishing Mails.<br />
-<br />
-
-# Version 5.6
-
-@ Additions:<br />
-- <strong>Nero-Phishing-Server</strong> - Webcloning for phishing scenarios<br />
-- <strong>DKMC</strong> - 'Don't Kill My Cat' Payload Delivery using a PowerShell OneLiner<br />
-- <strong>Mouse</strong> - Mac & iOS Post Exploitation Tool<br />
-- <strong>LockPhish</strong> - Designed to grab Windows credentials, Android PIN and iPhone Passcode using a https link.<br />
-- <strong>WhatPhish</strong> - Tool for whatsapp phishing with OTP options provided <br />
-- <strong>GoSmish</strong> - SMS Payload delivery using GoPhish framework & campaign data (Through Twilio)<br />
-&emsp;<strong><em>'-->&emsp;&ensp;Warning:</em></strong>&ensp;Twilio may block the account for malicious usage.<br />
 <br />
 
 # CVE's
@@ -143,6 +129,7 @@ that may be caused by the use of this repository.
 <br />- <a href="https://github.com/entynetproject/mouse">Mouse</a>
 <br />- <a href="https://github.com/JasonJerry/lockphish">LockPhish</a>
 <br />- <a href="https://github.com/Ignitetch/whatsapp-phishing">WhatPhish</a>
+<br />- <a href="https://github.com/j-dogcoder/Blackeye-2.0">Blackeye-2.0</a>
 </details>
 
 # USER LICENCE

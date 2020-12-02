@@ -513,7 +513,7 @@ phishing_mods(){
 single_pole(){
     echo -e "${YLW}"
     PS3='Please Select Your Tool for Single-Page Phisher Generation'
-        options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper" "LockPhish" "WhatPhish" "Shark" "Back")
+        options=("Artemis" "HiddenEye" "PhishX" "WeeMan" "CredSniper" "LockPhish" "WhatPhish" "Shark" "Blackeye-2" "Back")
         select opt in "${options[@]}"
         do
             case $opt in
@@ -547,6 +547,10 @@ single_pole(){
                     
                 "Shark")
                     ./Modules/Phishing/Singular/shark.sh
+                    ;;
+
+                "Blackeye-2")
+                    ./Modules/Phishing/Singular/blackeye.sh
                     ;;
 
                 "Back")

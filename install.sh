@@ -504,6 +504,13 @@ cd /opt/TigerShark/tools
 if [[ ! -d 'FAQUE' ]]; then
 	git clone https://github.com/ByDog3r/FAQUE
 fi
+
+cd /opt/TigerShark/tools
+# Blackeye
+if [[ ! -d 'Blackeye-2.0' ]]; then
+	git clone https://github.com/j-dogcoder/Blackeye-2.0
+fi
+
 ###################################################################################################################################################
 ###############################
 ##  Final TigerShark Setup   ##
