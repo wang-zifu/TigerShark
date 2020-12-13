@@ -39,7 +39,7 @@ cred_opts(){
     PORT='443'
     echo -e "${W}Please enter the hostname to be used for SSL${NC}"
     read HOSTNAME
-    HOSTOPT='--hostname ${HOSTNAME}'
+    HOSTOPT="--hostname ${HOSTNAME}"
   else
     SSL=''
     PORT='80'
