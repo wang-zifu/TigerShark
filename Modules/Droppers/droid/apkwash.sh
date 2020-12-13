@@ -17,9 +17,9 @@ echo -e "${W}Default payload is ${DLOAD}, press enter to use this payload or ple
 read ALOAD 
 # Payload Opts
 if [[ ${DLOAD} == ${ALOAD} ]]; then
-    LOAD='${DLOAD}'
+    LOAD="${DLOAD}"
 else
-    LOAD='${ALOAD}'
+    LOAD="${ALOAD}"
 fi
 echo -e "${W}Would you like to create a ${YLW}p${W}ayload or inject meterpreter into ${YLW}l${W}egitimate apk? (${YLW}p${W}/${YLW}l${W})"
 read CLOAD
