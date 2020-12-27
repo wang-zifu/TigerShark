@@ -10,13 +10,12 @@ sudo apt-get install golang-1.* golang golang-1.*-go golang-1.*-src git python2 
 echo -e "${YLW}This script will download and install all the tools needed for TigerShark to run."
 echo -e "If this is okay, hit ${LP}enter${YLW} - otherwise ${RED}Ctrl${W} + ${RED}c ${YLW}to cancel${NC}"
 read ACCEPT
-if [[ -d '/opt/TigerShark' ]]; then
-	sleep 1
-else
+if [[ ! -d '/opt/TigerShark' ]]; then
 	pwd
 	cd .. 
 	sudo mv TigerShark -t /opt
 	sudo chown $USER:$USER -R /opt/TigerShark
+	chmod +x /opt/TigerShark --recursive
 fi
 echo -e "${LP}==========================================================================${NC}"
 cd /opt/TigerShark
@@ -536,11 +535,10 @@ if [[ $UPQ == "i" ]]; then
 else
 	if [[ -f /usr/sbin/tigershark ]]; then
 		cd /opt/TigerShark
-		chmod +x tigershark
+		sudo chown $USER:$USER -R /opt/TigerShark
+		chmod +x /opt/TigerShark --recursive
 		sudo cp tigershark -t /usr/sbin
 		sudo chown $USER:$USER /usr/sbin/tigershark
-	else
-		sleep 1
 	fi
 	echo -e "${RED}Would you like to update tools as well?(y/n)${NC}"
 	read TOOLUP
