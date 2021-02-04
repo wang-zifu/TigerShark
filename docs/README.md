@@ -11,7 +11,7 @@
  <img align="center" src="https://img.shields.io/github/stars/s1l3nt78/TigerShark">
  <br />
  <img align="center" src="https://img.shields.io/badge/Build-Release-orange">
- <img align="center" src="https://img.shields.io/badge/Version-5.6-red">
+ <img align="center" src="https://img.shields.io/badge/Version-6-red">
 <!-- <br>
  <img align="center" src="https://img.shields.io/badge/Revision-1-green">
 --></p>
