@@ -18,7 +18,7 @@
 
 
 # TigerShark
-<strong><em>s1l3nt78 </strong>
+<em>s1l3nt78
  <br>
  Because phishing is a great way to pass the time.</em>
 <br>
