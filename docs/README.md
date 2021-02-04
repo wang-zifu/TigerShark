@@ -26,7 +26,7 @@
 
 - Phishing Kit
 
-# Version 5.5
+# Version 6
 <strong><em>@Release</em></strong>
  <!--<br />
 @Revision 1
