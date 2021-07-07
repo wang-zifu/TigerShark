@@ -1,6 +1,4 @@
 
-*.ini
-.vs/ProjectSettings.json
-.vs/slnx.sqlite
+*.sqlite
+*.json
 .vs/TigerShark/v16/.suo
-.vs/VSWorkspaceState.json

@@ -6,9 +6,11 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/PhishX
-echo -e "${ORNG}"
-figlet -f mini "PhishX"
+cd tools/Graffiti
+echo -e "${RED}"
+figlet -f mini Graffiti
 echo -e "${NC}"
-python3 PhishX.py 
-cd ../..
+python3 graffiti.py
+sleep 3
+cd /opt/TigerShark
+./tigershark

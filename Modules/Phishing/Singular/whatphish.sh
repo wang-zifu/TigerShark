@@ -6,9 +6,9 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/PhishX
-echo -e "${ORNG}"
-figlet -f mini "PhishX"
+cd tools/whatsapp-phishing
+echo -e "${RED}"
+figlet -f mini WhatPhish
 echo -e "${NC}"
-python3 PhishX.py 
-cd ../..
+sudo ./Whatsapp.sh
+sleep 3

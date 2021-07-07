@@ -6,10 +6,12 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/HiddenEye-DarkSecDevelopers
+cd tools/Cuteit
 echo -e "${ORNG}"
-figlet -f mini "HiddenEye"
+figlet -f mini CuteIt
 echo -e "${NC}"
-python3 HiddenEye.py 
-cd ../..
+echo -e "${W}Please enter the IP or URL to prettify${NC}"
+read TARGET
+python3 Cuteit.py ${TARGET}
+cd /opt/TigerShark
 ./tigershark

@@ -6,10 +6,11 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/HiddenEye-DarkSecDevelopers
+cd tools/PhishMailer
 echo -e "${ORNG}"
-figlet -f mini "HiddenEye"
+figlet -f mini "PhishMailer"
 echo -e "${NC}"
-python3 HiddenEye.py 
+sudo python3 PhishMailer.py
+
 cd ../..
 ./tigershark

@@ -27,5 +27,3 @@ sleep 5
 rm config.js
 mv config.js.bak config.js
 sleep 2
-cd ../..
-./tigershark

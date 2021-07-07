@@ -6,10 +6,10 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/HiddenEye-DarkSecDevelopers
 echo -e "${ORNG}"
-figlet -f mini "HiddenEye"
+figlet -f mini "EvilURL"
 echo -e "${NC}"
-python3 HiddenEye.py 
+cd tools/EvilURL
+python3 evilurl.py 
 cd ../..
 ./tigershark

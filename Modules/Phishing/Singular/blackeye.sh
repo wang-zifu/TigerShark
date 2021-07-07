@@ -6,10 +6,9 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/HiddenEye-DarkSecDevelopers
+cd tools/Blackeye-2.0
 echo -e "${ORNG}"
-figlet -f mini "HiddenEye"
+figlet -f mini "Blackeye-2.0"
 echo -e "${NC}"
-python3 HiddenEye.py 
+bash blackeye.sh
 cd ../..
-./tigershark

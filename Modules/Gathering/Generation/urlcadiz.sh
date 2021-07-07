@@ -6,9 +6,9 @@ LP='\033[1;35m'
 YLW='\033[1;33m'
 LBBLUE='\e[104m'
 
-cd tools/PhishX
-echo -e "${ORNG}"
-figlet -f mini "PhishX"
+cd tools/URLCADIZ
+echo -e "${RED}"
+figlet -f mini UrlCadiz
 echo -e "${NC}"
-python3 PhishX.py 
-cd ../..
+python3 URLCADIZ.py
+sleep 3

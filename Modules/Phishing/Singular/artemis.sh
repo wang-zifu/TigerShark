@@ -14,7 +14,7 @@ echo -e "${W}Please enter the target domain's page to use for bait"
 echo -e "${RED}eg. 'https://github.com/login'"
 read DOM
 sleep 1
-./builder.py '${DOM}'
+./builder.py "${DOM}"
 
 cd ../..
 ./tigershark
